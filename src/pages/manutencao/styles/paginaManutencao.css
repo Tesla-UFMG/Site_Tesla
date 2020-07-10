@@ -1,0 +1,41 @@
+#manutencao {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#manutencao .row {
+    position: absolute;
+    top: 20vh;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#manutencao .row .img-fluid {
+    width: 25vw;
+}
+
+#manutencao .row h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 3.7vw;
+
+    color:black;
+}
+
+#manutencao .row p {
+    font-family: Gilroy-Light;
+    font-size: 2.4vw;
+
+    margin: 0 10vw;
+
+    text-align: center;
+}
