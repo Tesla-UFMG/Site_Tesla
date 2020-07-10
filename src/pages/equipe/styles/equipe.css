@@ -1,0 +1,15 @@
+#pagina-equipe #Equipe2020 {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 8vh;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#pagina-equipe #Equipe2020 .img-fluid {
+    height: 11vw;
+    width: 11vw;
+    border-radius: 50%;
+}

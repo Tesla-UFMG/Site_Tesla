@@ -1,0 +1,126 @@
+.div1 {
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+.div1 .content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+
+    top: 60vh;
+    left: 5vw;
+}
+
+.div1 .content .section-title {
+    font-family: Gilroy-Extrabold;
+    /* font-size: 8rem; */
+    font-size: 9.3vw;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+.div1 .content .section-paragraph {
+    font-family: Gilroy-Light;
+    /* font-size: 3.4rem; */
+    font-size: 4vw;
+    
+    color:white;
+
+    margin: 0;
+
+    position: relative;
+    /* bottom: 40px; */
+    bottom: 3vw;
+}
+
+#NK319-1 {
+    background-image: url('../../../assets/img/fotos/section1.jpg');
+}
+
+#NK218-1 {
+    background-image: url('../../../assets/img/fotos/section1.jpg');
+}
+
+#Kayran-1 {
+    background-image: url('../../../assets/img/fotos/Kayran.jpg');
+}
+/* 
+section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px 15px;
+    position: relative;
+    height: 625px;
+    background-attachment: fixed;
+} */
+
+/* .car-name {
+    font-size: 120px;
+    color:white;
+    font-family: Gilroy-Extrabold;
+    text-transform: uppercase;
+}
+
+.position {
+    color:white;
+    font-family: Gilroy-Light;
+    font-size: 50px;
+}
+
+.page-title {
+    position: absolute; 
+    bottom: 10vh; 
+    left: 10vh;
+}
+
+#NK319-1 {
+    background-image: url('../../../assets/img/fotos/_REN7187.jpg');
+}
+
+.car-title {
+    position: relative; 
+    top: 40px;
+}
+
+#NK218-1 {
+    background-image: url('../../../assets/img/fotos/section1.jpg');
+}
+
+#NK218-1 .car-title {
+    left: 824px
+}
+
+#NK218-1 .position {
+    position: relative;
+    left: 717px;
+}
+
+#Kayran-1 {
+    background-image: url('../../../assets/img/fotos/Kayran.jpg');
+} */
+/*
+#Kayran-1 .page-title {
+    bottom: 0;
+}
+
+#Kayran-1 .car-title {
+    top: 0;
+    bottom: 15px;
+    left: 745px;
+}
+
+#Kayran-1 .position {
+    position: relative;
+    left: 745px;
+    bottom: 55px;
+}*/

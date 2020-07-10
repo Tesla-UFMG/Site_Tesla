@@ -1,0 +1,30 @@
+#pagina-equipe #Equipe2020 .capitao {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    padding-left: 20vw;
+}
+
+#pagina-equipe #Equipe2020 .capitao .img-fluid {
+    width: 15vw;
+    height: 15vw;
+}
+
+#pagina-equipe #Equipe2020 .capitao h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 4.5vw;
+
+    text-transform: uppercase;
+
+    color: black;
+}
+
+#pagina-equipe #Equipe2020 .capitao h2 {
+    font-family: Gilroy-Light;
+    font-size: 3vw;
+
+    text-transform: uppercase;
+
+    color: black;
+}

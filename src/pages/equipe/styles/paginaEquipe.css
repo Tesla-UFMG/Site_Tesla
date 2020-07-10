@@ -1,0 +1,154 @@
+#pagina-equipe #inicio-equipe {
+    background-image: url('../../../assets/img/fotos/Oprimogenito.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#pagina-equipe #inicio-equipe .content {
+    margin-left: 66%;
+    padding-right: 15px;
+
+    position: absolute;
+    top: 45vh;
+
+    text-align: end;
+}
+
+#pagina-equipe #inicio-equipe .content h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    color: white;
+    line-height: 5vw;
+}
+
+#pagina-equipe #inicio-equipe .content p {
+    font-family: Gilroy-Light;
+    font-size: 1.5rem;
+
+    text-align: end;
+
+    color: white;
+    line-height: 2.2vw;
+}
+
+#pagina-equipe #video {
+    padding-top: 8vh;
+    
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    padding-bottom: 5vh;
+}
+
+#pagina-equipe #video .embed {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 56.25%;
+}
+
+#pagina-equipe #video .embed iframe{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+#pagina-equipe #video .scroll-bot-icon {
+    position: relative;
+    top: 4vh;
+    left: 34.5vw;
+}
+/* 
+#pagina-equipe #Equipe2020 {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 8vh;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#pagina-equipe #Equipe2020 .img-fluid {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#pagina-equipe #Equipe2020 .capitao {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    padding-left: 20vw;
+}
+
+#pagina-equipe #Equipe2020 .capitao .img-fluid {
+    width: 200px;
+    height: 200px;
+}
+
+#pagina-equipe #Equipe2020 .capitao h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 4rem;
+
+    text-transform: uppercase;
+
+    color: black;
+}
+
+#pagina-equipe #Equipe2020 .capitao h2 {
+    font-family: Gilroy-Light;
+    font-size: 3rem;
+
+    text-transform: uppercase;
+
+    color: black;
+} */
+/* 
+#pagina-equipe #Equipe2020 .subsistemas {
+    display: flex;
+    flex-direction: column;
+}
+
+#pagina-equipe #Equipe2020 .subsistemas h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 4rem;
+
+    text-transform: uppercase;
+
+    color: black;
+
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+#pagina-equipe #Equipe2020 .subsistemas .membros {
+    display: flex;
+
+    text-align: center;
+} */
+/* 
+#pagina-equipe #Equipe2020 .subsistemas .membros .nome {
+    font-family: Gilroy-Light;
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    margin: 0;
+}
+
+#pagina-equipe #Equipe2020 .subsistemas .membros .cargo {
+    font-family: Gilroy-Light;
+    font-size: 1rem;
+} */

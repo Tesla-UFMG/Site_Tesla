@@ -1,0 +1,33 @@
+.navbar-tesla {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    color:white;
+}
+
+.navbar-tesla .logo-tesla {
+    height: 50px;
+}
+
+.navbar-tesla .navbar-tesla-nav {
+    font-family: Gilroy-Extrabold;
+    font-size: 18px;
+    color:white;
+    margin-left: 4rem;
+}
+
+.navbar-tesla .navbar-tesla-nav .nav-link-p-style {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-tesla .navbar-tesla-nav .nav-link-p-style:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-tesla #sandwich-icon {
+    height:30px
+}

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Gilroy-Light;
+    src: url("assets/fonts/Gilroy-Light.otf")
+}
+
+@font-face {
+    font-family: Gilroy-Extrabold;
+    src: url("assets/fonts/Gilroy-ExtraBold.otf")
+}
+
+.scroll-top-icon {
+    height: 25px;
+    width: 25px;
+
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    transform: rotate(180deg);
+}
+
+.scroll-bot-icon {
+    height: 25px;
+    width: 25px;
+
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+}
+

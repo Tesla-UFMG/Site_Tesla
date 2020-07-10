@@ -1,0 +1,338 @@
+.lateral-scroll-menu {
+    position: absolute;
+    left: 5px;
+    top: calc(50vh - 90px);
+}
+
+.lateral-scroll-menu .lateral-scroll-menu-item {
+    display: block;
+
+    height: 13px;
+    margin-bottom: 5px;
+}
+
+.lateral-scroll-menu .lateral-scroll-menu-item .lateral-scroll-circle {
+    height: 14px;
+}
+
+#page1-historia {
+    background-image: url('../../assets/img/fotos/section1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#page1-historia .content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+
+    top: 30vh;
+}
+
+#page1-historia .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-size: 4rem;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+#page1-historia .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 2.2rem;
+    
+    color:white;
+
+    margin: 0;
+
+    position: relative;
+    bottom: 15px;
+}
+
+#page1-historia .content .section-button {
+    border: 2px solid white;
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color:white;
+
+    padding: 3px 25px;
+    width: 205px;
+
+    position: relative;
+    bottom: 10px;
+}
+
+#page1-historia .content .section-button:hover {
+    transition: .6s;
+    
+    color: black;
+    background-color: white;
+
+    text-decoration: none;
+}
+
+#page1-prototipos {
+    background-image: url('../../assets/img/fotos/section2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#page1-prototipos .content {
+    display: flex;
+
+    text-align: center;
+
+    position: relative;
+    top: 10vh;
+    margin: 0;
+}
+
+#page1-prototipos .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-size: 5rem;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+#page1-prototipos .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 2rem;
+
+    line-height: 35px;
+    
+    color:white;
+}
+
+#page1-prototipos .content .section-button {
+    border: 2px solid white;
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color:white;
+
+    padding: 3px 25px;
+    width: 170px;
+}
+
+#page1-prototipos .content .section-button:hover {
+    transition: .6s;
+    
+    color: black;
+    background-color: white;
+
+    text-decoration: none;
+}
+
+#page1-equipe {
+    background-image: url('../../assets/img/fotos/section3.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#page1-equipe .content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: start;
+
+    top: 63vh;
+    left: 2vw;
+}
+
+#page1-equipe .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+#page1-equipe .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 2.5rem;
+
+    line-height: 35px;
+    text-align: start;
+    
+    color:white;
+}
+
+#page1-equipe .content .section-button {
+    border: 2px solid white;
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color:white;
+
+    padding: 3px 25px;
+    width: 170px;
+}
+
+#page1-equipe .content .section-button:hover {
+    transition: .6s;
+    
+    color: black;
+    background-color: white;
+
+    text-decoration: none;
+}
+
+#page1-parceiros {
+    background-image: url('../../assets/img/fotos/section4.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#page1-parceiros .content {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: start;
+
+    top: 58vh;
+    left: 2vw;
+}
+
+#page1-parceiros .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+#page1-parceiros .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 2.5rem;
+
+    line-height: 35px;
+    text-align: start;
+    
+    color:white;
+}
+
+#page1-parceiros .content .buttons {
+    display: flex;
+}
+
+#page1-parceiros .content .buttons .b2 {
+    margin-left: 20px;
+}
+
+#page1-parceiros .content .buttons .section-button {
+    border: 2px solid white;
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color:white;
+
+    padding: 3px 25px;
+    width: 220px;
+}
+
+#page1-parceiros .content .section-button:hover {
+    transition: .6s;
+    
+    color: black;
+    background-color: white;
+
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    #page1-historia .content {
+        max-width: 100%;
+    }
+
+    #page1-prototipos .content .col {
+        flex-basis: auto;
+    }
+
+    #page1-equipe .content {
+        max-width: 100%;
+        align-items: center;
+        left: 0;
+    }
+
+    #page1-equipe .content .section-paragraph {
+        text-align: center;
+    }
+
+    #page1-parceiros .content {
+        max-width: 100%;
+        align-items: center;
+        top: 40vh;
+        left: 0;
+    }
+
+    #page1-parceiros .content .section-paragraph {
+        text-align: center;
+    }
+
+    #page1-parceiros .content .buttons {
+        flex-direction: column;
+    }
+
+    #page1-parceiros .content .buttons .b2 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    #page1-prototipos .content .section-title {
+        font-size: 3rem;
+    }
+
+    #page1-parceiros .content {
+        top: 30vh;
+    }
+
+    #page1-equipe .content {
+        top: 30vh;
+    }
+}
+
+@media (max-width: 380px) {
+    #page1-parceiros .content .section-title {
+        font-size: 3rem;
+    }
+}

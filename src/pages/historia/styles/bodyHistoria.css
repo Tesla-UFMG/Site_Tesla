@@ -1,0 +1,117 @@
+.positions {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.positions .year {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.positions .year h1 {
+    font-family: Gilroy-Extrabold;
+    font-size: 10rem;
+
+    color: black;
+
+    border-bottom: 6px solid #4ed840;
+
+    height: 30vh;
+}
+
+.positions .capitao {
+    font-family: Gilroy-Light;
+    font-size: 1.3rem;
+
+    margin-top: 3vh;
+}
+
+.positions .capitao strong {
+    font-family: Gilroy-Extrabold;
+
+    color: black;
+}
+
+.positions .positions2 {
+    text-align: center;
+
+    margin-top: 7vh;
+}
+
+.positions .positions2 .col p {
+    font-family: Gilroy-Light;
+    font-size: 1.5rem;
+}
+
+.positions .positions2 .col .colocacao {
+    font-family: Gilroy-Light;
+    font-size: 3.5rem;
+
+    color: black;
+
+    margin: 0;
+    height: 55px;
+}
+
+.positions .positions2 .geral {
+    position: relative;
+    bottom: 20px;
+}
+
+.positions .positions2 .geral p {
+    font-family: Gilroy-Extrabold;
+    font-size: 2rem;
+
+    color: black;
+}
+
+.positions .positions2 .geral .colocacao {
+    font-family: Gilroy-Extrabold;
+    font-size: 4.5rem;
+
+    color: black;
+
+    height: 68px;
+}
+
+.embed {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 56.25%;
+}
+
+.embed iframe{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+.legend {
+    text-align: end;
+
+    margin-top: 9vh;
+    margin-bottom: 10vh;
+}
+
+.legend p {
+    font-family: Gilroy-Extrabold;
+    font-size: 1.5rem;
+
+    color: black;
+
+    line-height: 1.8vw;
+}
+
+.row-img {
+    padding: 4vw;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
