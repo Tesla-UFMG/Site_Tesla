@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Footer from '../../components/footer'
-
 import { withRouter } from 'react-router-dom'
 
 import image_Kayran_2 from '../../assets/img/fotos/section2.jpg'

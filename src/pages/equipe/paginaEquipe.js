@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/paginaEquipe.css'
 
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import image_inicio from '../../assets/img/fotos/_MG_0002-Pano.jpg'
@@ -34,7 +34,7 @@ class PaginaEquipe extends React.Component {
 
                 <div id="video" className="row">
                     <div className="embed">
-                        <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" title="Video Equipe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
                     <HashLink to="/equipe#Equipe2020">

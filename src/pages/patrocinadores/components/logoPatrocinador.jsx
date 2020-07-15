@@ -4,7 +4,7 @@ export default class LogoPatrocinador extends Component {
     render() {
         const {img} = this.props
         return(
-        <img src={img}></img>
+            <img src={img} alt="Logo patrociandor"></img>
         )
     }
    

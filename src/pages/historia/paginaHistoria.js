@@ -4,7 +4,7 @@ import './styles/paginaHistoria.css'
 
 import BodyHistoria from './components/bodyHistoria';
 
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import image_inicio from '../../assets/img/fotos/_MG_0002-Pano.jpg'
@@ -44,7 +44,7 @@ class PaginaHistoria extends React.Component {
                         
                         <div id="intro-geral">
                             <div className="embed">
-                                <iframe src="https://www.youtube.com/embed/rWRNxqqoXl4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/rWRNxqqoXl4" title="Video 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         
                             <div className="text">
@@ -101,7 +101,7 @@ class PaginaHistoria extends React.Component {
                             prova4= "enduro"
                             posicao5= "10°"
                             prova5= "apresentação"
-                            videoLink= {[<iframe src="https://www.youtube.com/embed/lPQjy78QGok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
+                            videoLink= {[<iframe src="https://www.youtube.com/embed/lPQjy78QGok" title="Video 2017" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
                             legenda= "Em 2017 projetos ousados e alguns até mesmo inéditos no país começam a ganhar vida, enquanto um patrocínio salvador abraça a nossa causa."
                             textos= {[<div className="text">
                                         <p>
@@ -169,7 +169,7 @@ class PaginaHistoria extends React.Component {
                             prova4= "enduro"
                             posicao5= "2°"
                             prova5= "autocross"
-                            videoLink= {[<iframe src="https://www.youtube.com/embed/s_YGnP0zI4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
+                            videoLink= {[<iframe src="https://www.youtube.com/embed/s_YGnP0zI4s" title="Video 2018" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
                             legenda= "Com a nova mentalidade de “um passo de cada vez”, conseguir a aprovação dos juízes nas inspeções técnicas de segurança passa a ser o principal objetivo."
                             textos= {[<div className="text">
                                         <p>
@@ -250,7 +250,7 @@ class PaginaHistoria extends React.Component {
                             prova4= "enduro"
                             posicao5= "5°"
                             prova5= "autocross"
-                            videoLink= {[<iframe src="https://www.youtube.com/embed/-MkqLh-w-Ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
+                            videoLink= {[<iframe src="https://www.youtube.com/embed/-MkqLh-w-Ew" title="Video 2019" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]}
                             legenda= "2019 começa grande. Conseguimos um patrocínio financeiro de peso. Ousamos e iniciamos o desenvolvimento de sistemas que antes julgávamos impossíveis de serem feitos."
                             textos= {[<div className="text">
                                         <p>

@@ -12,7 +12,7 @@ import image_scroll_icon from '../../assets/icons/scroll-icon.svg'
 class PaginaInicial extends React.Component {
     render() {
         return (
-            <div>
+            <div id="page1">
                 <div id="page1-historia" className="container-fluid px-0">
                     <div className="col-6 content">
                         <h1 className="section-title">Bem-Vindos!</h1>

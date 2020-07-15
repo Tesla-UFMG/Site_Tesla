@@ -15,6 +15,14 @@
     height: 14px;
 }
 
+#page1-prototipos .scroll-top-icon,
+#page1-equipe .scroll-top-icon,
+#page1-parceiros .scroll-top-icon {
+    top: 25px;
+    right: 70px;
+    z-index: 2;
+}
+
 #page1-historia {
     background-image: url('../../assets/img/fotos/section1.jpg');
     background-size: cover;
@@ -158,7 +166,7 @@
     flex-direction: column;
 
     text-align: center;
-    align-items: start;
+    align-items: flex-start;
 
     top: 63vh;
     left: 2vw;
@@ -221,7 +229,7 @@
     flex-direction: column;
 
     text-align: center;
-    align-items: start;
+    align-items: flex-start;
 
     top: 58vh;
     left: 2vw;

@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
 
-    align-items: start;
+    align-items: flex-start;
 
     top: 60vh;
     left: 5vw;
@@ -43,11 +43,11 @@
 }
 
 #NK319-1 {
-    background-image: url('../../../assets/img/fotos/section1.jpg');
+    background-image: url('../../../assets/img/fotos/_REN7187.jpg');
 }
 
 #NK218-1 {
-    background-image: url('../../../assets/img/fotos/section1.jpg');
+    background-image: url('../../../assets/img/fotos/_MG_8933.jpg');
 }
 
 #Kayran-1 {
