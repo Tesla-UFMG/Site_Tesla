@@ -4,7 +4,7 @@ import './styles/footer.css'
 
 import { Link } from 'react-router-dom'
 
-import logo_footer from '../assets/img/logos/Logo p fundo preto.svg'
+import logo_footer from '../../assets/img/logos/Logo p fundo preto.svg'
 
 function Footer() {
     return(

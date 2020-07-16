@@ -1,8 +1,8 @@
 import React from 'react';
 
-import NavBar from './components/navbar'
+import NavBar from './components/navbar/navbar'
 import Rotas from './rotas'
-import Footer from './components/footer'
+import Footer from './components/footer/footer'
 
 import { BrowserRouter } from 'react-router-dom'
 

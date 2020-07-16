@@ -1,0 +1,15 @@
+.navbar .navbar-nav {
+    font-family: Gilroy-Extrabold;
+    font-size: 18px;
+    margin-left: 4rem;
+}
+
+.navbar .navbar-nav .nav-link-p-style {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link-p-style:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
