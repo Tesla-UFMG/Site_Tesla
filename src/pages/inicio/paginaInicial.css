@@ -98,7 +98,7 @@
     text-align: center;
 
     position: relative;
-    top: 10vh;
+    top: 13vh;
     margin: 0;
 }
 
@@ -160,7 +160,7 @@
     text-align: center;
     align-items: flex-start;
 
-    top: 63vh;
+    top: 58vh;
     left: 2vw;
 }
 
@@ -223,7 +223,7 @@
     text-align: center;
     align-items: flex-start;
 
-    top: 58vh;
+    top: 55vh;
     left: 2vw;
 }
 
@@ -277,7 +277,64 @@
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1440px) {
+    #page1-parceiros .content {
+        top: 52vh;
+    }
+
+    #page1-parceiros .content .section-paragraph {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    #page1-prototipos .content .section-title {
+        font-size: 4rem;
+    }
+
+    #page1-prototipos .content .section-paragraph {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #page1-historia .content .section-title {
+        font-size: 3rem;
+    }
+
+    #page1-historia .content .section-paragraph {
+        font-size: 1.6rem;
+        bottom: 10px;
+    }
+
+    #page1-prototipos .content .section-title {
+        font-size: 3.5rem;
+    }
+
+    #page1-prototipos .content .section-paragraph {
+        font-size: 1.5rem;
+        line-height: 28px;
+    }
+
+    #page1-equipe .content .section-title {
+        font-size: 4rem;
+    }
+
+    #page1-equipe .content .section-paragraph {
+        font-size: 2.2rem;
+    }
+
+    #page1-parceiros .content .section-title {
+        font-size: 4rem;
+    }
+
+    #page1-parceiros .content .section-paragraph {
+        font-size: 1.6rem;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
     #page1-historia .content {
         max-width: 100%;
     }
@@ -290,6 +347,8 @@
         max-width: 100%;
         align-items: center;
         left: 0;
+
+        top: 24vh;
     }
 
     #page1-equipe .content .section-paragraph {
@@ -322,17 +381,55 @@
         font-size: 3rem;
     }
 
+    #page1-prototipos .content .section-paragraph {
+        font-size: 1.3rem;
+    }
+
     #page1-parceiros .content {
         top: 30vh;
     }
 
-    #page1-equipe .content {
-        top: 30vh;
+    #page1-parceiros .content .section-title {
+        font-size: 3.5rem;
+    }
+
+    #page1-parceiros .content .section-paragraph {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 380px) {
     #page1-parceiros .content .section-title {
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 375px) {
+    #page1-historia .content .section-title {
+        font-size: 2.5rem;
+    }
+
+    #page1-historia .content .section-paragraph {
+        font-size: 1.4rem;
+        bottom: 10px;
+    }
+
+    #page1-historia .content .section-button {
+        font-size: 17px;
+        padding: 3px 20px;
+        width: 175px;
+        bottom: 0;
+    }
+
+    #page1-prototipos .content .section-title {
+        font-size: 2.5rem;
+    }
+
+    #page1-prototipos .content .section-paragraph {
+        font-size: 1.1rem;
+    }
+
+    #page1-equipe .content .section-paragraph {
+        font-size: 1.8rem;
     }
 }
