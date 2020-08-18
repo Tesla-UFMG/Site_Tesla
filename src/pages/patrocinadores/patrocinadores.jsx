@@ -2,7 +2,6 @@ import React from 'react'
 
 import { withRouter } from 'react-router-dom'
 
-
 import Patrocinador from './components/patrocinador'
 import Classificacao from './components/classificacao'
 

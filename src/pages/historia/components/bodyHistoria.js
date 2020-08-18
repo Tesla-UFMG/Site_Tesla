@@ -12,24 +12,24 @@ function BodyHistoria(props) {
                     <p className="capitao"><strong>{props.capitao}:</strong> {props.capitaoNome}</p>
                 </div>
 
-                <div className="row positions2">
-                    <div className="col">
+                <div className="positions2">
+                    <div className="position-col">
                         <p className="colocacao">{props.posicao1}</p>
                         <p>{props.prova1}</p>
                     </div>
-                    <div className="col">
+                    <div className="position-col">
                         <p className="colocacao">{props.posicao2}</p>
                         <p>{props.prova2}</p>
                     </div>
-                    <div className="col geral">
+                    <div className="position-col geral">
                         <p className="colocacao">{props.posicao3}</p>
                         <p>{props.prova3}</p>
                     </div>
-                    <div className="col">
+                    <div className="position-col">
                         <p className="colocacao">{props.posicao4}</p>
                         <p>{props.prova4}</p>
                     </div>
-                    <div className="col">
+                    <div className="position-col">
                         <p className="colocacao">{props.posicao5}</p>
                         <p>{props.prova5}</p>
                     </div>

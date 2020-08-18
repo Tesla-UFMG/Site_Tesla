@@ -13,7 +13,7 @@
 
     align-items: center;
 
-    padding-top: 5vh;
+    height: 100%;
 }
 
 .div1 .row .paragraphs {
@@ -26,11 +26,10 @@
 .div1 .row .paragraphs p {
     color: #58595b;
     font-family: Gilroy-Light;
-    font-size: 1.5rem;
 
     text-indent: 1.5em;
-    line-height: 30px;
-    font-size: 1.43rem;
+    line-height: 2vw;
+    font-size: 2vw;
     text-align: justify;
 }
 
@@ -49,18 +48,15 @@
     display: flex;
 
     align-items: center;
-
-    height: 18vh;
 }
 
 .div1 .row .info .row {
-    width: 40vw;
-    height: 18vh;
+    width: 100%;
 }
 
 .div1 .row .info .geral-position {
     font-family: Gilroy-Extrabold;
-    font-size: 80px;
+    font-size: 6vw;
     
     text-transform: uppercase;
     
@@ -69,21 +65,23 @@
 
 .div1 .row .info .colocacoes {
     font-family: Gilroy-Light;
-    font-size: 50px;
+    font-size: 4vw;
 
     color: black;
 
     text-align: center;
+
+    margin: 0;
 }
 
 .div1 .row .info .provas {
     font-family: Gilroy-Light;
-    font-size: 30px;
+    font-size: 2vw;
 
     color: black;
 
     text-align: center;
 
     position: relative;
-    bottom: 40px;
+    bottom: 2vw;
 }

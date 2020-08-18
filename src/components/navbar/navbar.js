@@ -40,7 +40,7 @@ class Header extends React.Component {
                     <div className="bar3"></div>
                 </div>
 
-                <div id={this.state.width ? 'mySidenavOpen' : 'mySidenav'} class="sidenav">
+                <div id={this.state.width ? 'mySidenavOpen' : 'mySidenav'} className="sidenav">
                     <Link to="/Historia">História</Link>
                     <Link to="/PrototiposNK319">Prototipos</Link>
                     <Link to="/Equipe">Equipe</Link>

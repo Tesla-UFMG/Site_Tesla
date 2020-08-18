@@ -11,7 +11,9 @@ function Section4(props) {
         <div id={props.Id} className="container-fluid px-0 div4">
             <div className="row row-cols-1">
                 <div className="col infos">
-                    <p className="title">ELETRÔNICA</p>
+                    <div className="titleWrapper">
+                        <p className="title">ELETRÔNICA</p>
+                    </div>
                     <p className="text-elec">
                         {props.textEletronica}
                     </p>
@@ -32,7 +34,9 @@ function Section4(props) {
                         {props.textBMS}
                     </p>
 
-                    <p className="title">MECÂNICA</p>
+                    <div className="titleWrapper">
+                        <p className="title">MECÂNICA</p>
+                    </div>
                     <p className="subsistems powertrain">POWERTRAIN</p>
                     <div className="powertrain2">
                         {props.textPowertrain}

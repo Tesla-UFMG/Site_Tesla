@@ -13,15 +13,19 @@
 
     align-items: center;
 
-    padding-top: 5vh;
+    padding-top: 7vh;
+
+    height: 100%;
 }
 
 .div3 .row .imagem-detec{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div3 .row .imagem-detec .detec {
-    width: 18vw;
+    width: 15vw;
     
     margin: 20px 15px 20px 15px;
 }
@@ -36,18 +40,18 @@
 
 .div3 .row .infos .title-spec {
     font-family: Gilroy-Extrabold;
-    font-size: 30px;
+    font-size: 2vw;
 
     color:white;
 }
 
 .div3 .row .infos .spec {
     font-family: Gilroy-Light;
-    font-size: 30px;
+    font-size: 1.7vw;
 
     color:white;
     position: relative;
-    bottom: 10px;
+    bottom: 0.5vw;
 }
 
 #Kayran-3 .detec {

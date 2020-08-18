@@ -12,7 +12,7 @@
 
 .positions .year h1 {
     font-family: Gilroy-Extrabold;
-    font-size: 10rem;
+    font-size: 13vw;
 
     color: black;
 
@@ -23,7 +23,7 @@
 
 .positions .capitao {
     font-family: Gilroy-Light;
-    font-size: 1.3rem;
+    font-size: 1.3vw;
 
     margin-top: 3vh;
 }
@@ -35,45 +35,47 @@
 }
 
 .positions .positions2 {
+    display: flex;
     text-align: center;
+    justify-content: space-between;
 
     margin-top: 7vh;
+
+    padding: 0 5vw;
 }
 
-.positions .positions2 .col p {
+.positions .positions2 .position-col p {
     font-family: Gilroy-Light;
-    font-size: 1.5rem;
+    font-size: 2vw;
 }
 
-.positions .positions2 .col .colocacao {
+.positions .positions2 .position-col .colocacao {
     font-family: Gilroy-Light;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
 
     color: black;
 
     margin: 0;
-    height: 55px;
+    height: 4vw;
 }
 
 .positions .positions2 .geral {
     position: relative;
-    bottom: 20px;
+    bottom: 1.5vw;
 }
 
 .positions .positions2 .geral p {
     font-family: Gilroy-Extrabold;
-    font-size: 2rem;
+    font-size: 2.5vw;
 
     color: black;
 }
 
 .positions .positions2 .geral .colocacao {
     font-family: Gilroy-Extrabold;
-    font-size: 4.5rem;
+    font-size: 4.5vw;
 
     color: black;
-
-    height: 68px;
 }
 
 .embed {
@@ -102,7 +104,7 @@
 
 .legend p {
     font-family: Gilroy-Extrabold;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 
     color: black;
 
