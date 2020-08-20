@@ -1,6 +1,5 @@
 import React from 'react';
 
-import NavBar from './components/navbar/navbar'
 import Rotas from './rotas'
 import Footer from './components/footer/footer'
 
@@ -10,7 +9,6 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <NavBar />
         <Rotas />
         <Footer />
       </div>

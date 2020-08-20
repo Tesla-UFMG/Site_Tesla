@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 class NavItem extends React.Component {
     render() {
         return (
-            <div id={this.props.idNavItem} className="collapse navbar-collapse">
+            <div id={this.props.idNavItem} className="collapse navbar-collapse" >
                 <ul className="navbar-nav mr-auto">
 
                     <li className="nav-item mx-3">

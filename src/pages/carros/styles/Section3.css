@@ -57,71 +57,9 @@
 #Kayran-3 .detec {
     width: 30vw;
 
-    position: relative;
-    left: 19vh;
-
     margin: 0;
 }
 
 #Kayran-3 .scroll-bot-icon {
     display: none;
 }
-
-/* section {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 56px 15px;
-    position: relative;
-    height: 625px;
-    background-attachment: fixed;
-}
-
-#NK319-3, #NK218-3, #Kayran-3 {
-    background-color: black;
-}
-
-.detec {
-    width: 223px;
-    position: relative; 
-    left: 130px; 
-    margin: 20px 15px 20px 15px;
-}
-
-.text {
-    position: relative; 
-    left: 340px; 
-    bottom: 15px; 
-    height: 500px;
-}
-
-.text .title-spec {
-    font-size: 30px;
-    color:white;
-    font-family: Gilroy-Extrabold;
-    position: relative;
-}
-
-.text .spec {
-    color:white;
-    font-family: Gilroy-Light;
-    font-size: 30px;
-    position: relative;
-    bottom: 17px;
-}
-
-#Kayran-3 .detec {
-    left: 0px;
-    margin: 0;
-    width: 425px;
-    bottom: 25px;
-}
-
-#Kayran-3 .infos {
-    position: relative;
-    right: 100px;
-}
-
-#Kayran-3 .scroll-bot-icon {
-    display: none;
-} */

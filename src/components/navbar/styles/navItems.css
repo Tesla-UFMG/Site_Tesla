@@ -13,3 +13,15 @@
     text-decoration: underline;
     color: #ffffff;
 }
+
+#none {
+    display: none !important;
+}
+
+#preto .navbar-nav .nav-link-p-style {
+    color: black;
+}
+
+#preto .navbar-nav .nav-link-p-style:hover {
+    color: black;
+}

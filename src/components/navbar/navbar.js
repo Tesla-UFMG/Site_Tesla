@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import NavItem from './components/navItems'
 
 import image_logo_tesla from '../../assets/img/logos/logo-fundo-preto.png'
+import logo_tesla_preto from '../../assets/img/logos/Sem senoide preta.svg'
 
 class Header extends React.Component {
 
@@ -29,12 +30,12 @@ class Header extends React.Component {
         return (
             <nav className="navbar navbar-expand-md">
                 <Link className="navbar-brand" to="/">
-                    <img src={image_logo_tesla} className="img-fluid logo-tesla" alt="Logo Tesla"></img>
+                    <img src={this.props.color === 'preto' ? logo_tesla_preto : image_logo_tesla} className={"img-fluid logo-tesla " + this.props.color} alt="Logo Tesla"></img>
                 </Link>
 
-                <NavItem />
+                <NavItem idNavItem={this.props.display} />
 
-                <div id={this.state.change ? 'change' : 'noChange'} className="menuIcon" onClick={this.toggleMenuIcon}>
+                <div id={this.state.change ? 'change' : 'noChange'} className={"menuIcon " + this.props.color} onClick={this.toggleMenuIcon}>
                     <div className="bar1"></div>
                     <div className="bar2"></div>
                     <div className="bar3"></div>

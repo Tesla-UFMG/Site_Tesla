@@ -2,14 +2,22 @@ import React from 'react'
 
 import { withRouter } from 'react-router-dom'
 
-import Patrocinador from './components/patrocinador'
-import Classificacao from './components/classificacao'
+import NavBar from '../../components/navbar/navbar';
+
+import Manutencao from '../manutencao/paginaManutencao';
+
+// import Patrocinador from './components/patrocinador'
+// import Classificacao from './components/classificacao'
 
 class PaginaPatrocinadores extends React.Component {
     render(){
         return(
             <div>
-                <br></br>
+                <NavBar color='preto' display='preto' />
+
+                <Manutencao />
+
+                {/* <br></br>
                 <br></br>
                 <br></br>
                 <Classificacao nome="platina"></Classificacao>
@@ -20,7 +28,7 @@ class PaginaPatrocinadores extends React.Component {
                 <Classificacao nome="prata"></Classificacao>
                 <hr></hr>
                 <Classificacao nome="bronze"></Classificacao>
-                <hr></hr>
+                <hr></hr> */}
             </div>
         )
     }

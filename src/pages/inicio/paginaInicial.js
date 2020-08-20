@@ -2,6 +2,8 @@ import React from 'react';
 
 import './paginaInicial.css'
 
+import NavBar from '../../components/navbar/navbar';
+
 import { withRouter, Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
@@ -13,6 +15,8 @@ class PaginaInicial extends React.Component {
     render() {
         return (
             <div id="page1">
+                <NavBar />
+
                 <div id="page1-historia" className="container-fluid px-0">
                     <div className="col-6 content">
                         <h1 className="section-title">Bem-Vindos!</h1>
