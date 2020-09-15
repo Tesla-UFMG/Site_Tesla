@@ -16,6 +16,69 @@ import Subsistema from './components/subsistema'
 import Capitao from './components/capitao'
 import Membro from './components/membro'
 
+const dados = [
+    {
+        "equipe": "2020",
+        "capitao": {
+            "imagem": image_inicio,
+            "sexo": "M",
+            "nome": "Fulano de Tal" 
+        },
+        "subsistema": [
+            {
+                "nome": "Administração",
+                "membros": [
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                ]
+            },
+            {
+                "nome": "Dinâmica",
+                "membros": [
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                    {
+                        "imagem": image_inicio,
+                        "nome": "Matheus Felicetti",
+                        "cargo": "Vice-Capitão"
+                    },
+                ]
+            },
+        ]
+    }
+]
+
 function PaginaEquipe() {
     const [{ color, display }, handleScroll] = useNavBar();
     
@@ -63,70 +126,24 @@ function PaginaEquipe() {
                     <img src={image_scroll_icon_black} alt="scroll icon" className="scroll-bot-icon"></img>
                 </HashLink>
             </div>
-            
-            <Equipe 
-                Id= "Equipe2020"
-                capitao= {[
-                    <Capitao
-                        imageCapitao= {image_inicio}
-                        capitao= "Capitão"
-                        nomeCapitao= "Fulano de Tal"
-                    />
-                ]}
-                subsistemas= {[
-                    <Subsistema 
-                        subsistema= "Administração"
-                        membros= {[
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />
-                        ]}
-                    />,
-                    <Subsistema 
-                        subsistema= "Dinâmica"
-                        membros= {[
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />,
-                            <Membro 
-                                imagePath= {image_inicio}
-                                nome= "Matheus Felicetti"
-                                cargo= "Vice-Capitão"
-                            />
-                        ]}
-                    />
-                ]}
-            />
 
+            {dados.map(equipe => {
+                return (<Equipe Id={"Equipe" + equipe.equipe}
+                    capitao={<Capitao imageCapitao={equipe.capitao.imagem} capitao={equipe.capitao.sexo} nomeCapitao={equipe.capitao.nome} />}
+                    subsistemas={equipe.subsistema.map(subsistema => {
+                        return (<Subsistema subsistema={subsistema.nome} 
+                            membros={subsistema.membros.map(membro => {
+                                return (<Membro 
+                                    imagePath={membro.imagem}
+                                    nome={membro.nome}
+                                    cargo={membro.cargo}
+                                />)
+                            })}
+                        />)
+                    })}
+                />)
+            })}
+            
         </div>
     );
 }
