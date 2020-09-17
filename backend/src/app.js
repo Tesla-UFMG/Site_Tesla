@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 
 
-app.use('/patrocinadores', indexRoute)
+app.use('/', indexRoute)
 app.use('/patrocinadores', patrocinadoresRoute)
 
 

@@ -28,6 +28,11 @@ const patrocinadoresSchema = new Schema({
     instagram: {
         type: String,
         trim: true
+    },
+    ativo: {
+        type: Boolean,
+        default: false,
+        required: [true, "O patrocinador precisa ter um status "]
     }
 
 
@@ -35,13 +40,14 @@ const patrocinadoresSchema = new Schema({
 })
 
 /*
+    {
     "nome" : "nome",
     "descricao" : "xpto",
-    "logo: "caminho",
+    "logo": "caminho",
     "link" : "http://google.com.br",
-    "facebook" : "facebook.com/bnmachado"
+    "facebook" : "facebook.com/bnmachado",
     "instagram" : "https://instagram.com.br/bnmachado"
-        "
+}
 */
 
 
