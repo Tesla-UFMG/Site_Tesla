@@ -4,12 +4,10 @@ const Schema = mongoose.Schema
 const patrocinadoresSchema = new Schema({
     nome: {
         type: String,
-        require: [true, "O sistema nao permite criar um patrocinador Anonimo."],
         trim: true              
     },
     descricao: {
         type: String,
-        required: [true, "O Patrocinador precisa de um descricao para ser adicionado na pagina"],
         trim: true
     },
     logo: {
@@ -32,7 +30,6 @@ const patrocinadoresSchema = new Schema({
     ativo: {
         type: Boolean,
         default: false,
-        required: [true, "O patrocinador precisa ter um status "]
     }
 
 

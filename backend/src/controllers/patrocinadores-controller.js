@@ -1,4 +1,5 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const ValidationContract = require('../validators/validation-contract');
 const Patrocinadores = mongoose.model("Patrocinadores")
 
 exports.get = (req,res,next) =>{
@@ -27,6 +28,16 @@ exports.getForAdmin = (req,res,next) => {
 }*/
 
 exports.post = (req,res,next) => {
+
+    let contract = new ValidationContract();
+    contract.hasMinLen(req.body.nome,3, 'O nome deve ter pelo menos 3 caracteres')
+    contract.hasMinLen(req.body.descricao,20, 'A descrição não pode ter menos de 20 caracteres')
+    contract.isRequired(req.body.logo, 'O patrocinador precisa ter uma logo cadastrada!')
+
+    if(!contract.isValid()){
+        res.status(400).send(contract.errors()).end()
+        return
+    }
     var patrocinador = new Patrocinadores(req.body);
     patrocinador
         .save()
@@ -42,6 +53,17 @@ exports.post = (req,res,next) => {
 }
 
 exports.put = (req,res,next) => {
+    
+    let contract = new ValidationContract();
+    contract.hasMinLen(req.body.nome,3, 'O nome deve ter pelo menos 3 caracteres')
+    contract.hasMinLen(req.body.descricao,20, 'A descrição não pode ter menos de 20 caracteres')
+    contract.isRequired(req.body.logo, 'O patrocinador precisa ter uma logo cadastrada!')
+
+    if(!contract.isValid()){
+        res.status(400).send(contract.errors()).end()
+        return
+    }
+
     Patrocinadores
         .findByIdAndUpdate(req.params.id, {
             $set: {
