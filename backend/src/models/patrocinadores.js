@@ -4,17 +4,17 @@ const Schema = mongoose.Schema
 const patrocinadoresSchema = new Schema({
     nome: {
         type: String,
-        require: true,
+        require: [true, "O sistema nao permite criar um patrocinador Anonimo."],
         trim: true              
     },
     descricao: {
         type: String,
-        required: true,
+        required: [true, "O Patrocinador precisa de um descricao para ser adicionado na pagina"],
         trim: true
     },
     logo: {
         type: String,
-        required: true,
+        required: [true, "O Patrocinador precisa de uma logo para servir de link!"],
         trim: true
     },
     link: {
@@ -44,5 +44,5 @@ const patrocinadoresSchema = new Schema({
         "
 */
 
-const Patrocinadores = mongoose.model('Patrocinadores',patrocinadoresSchema)
-module.exports = Patrocinadores
+
+module.exports = mongoose.model('Patrocinadores',patrocinadoresSchema)
