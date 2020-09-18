@@ -1,6 +1,3 @@
-const mongoose = require('mongoose');
-const Patrocinadores = mongoose.model("Patrocinadores")
-
 const ValidationContract = require('../validators/validation-contract');
 const repository = require('../repositories/patrocinadores-repository')
 
