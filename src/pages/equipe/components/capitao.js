@@ -7,7 +7,7 @@ function Capitao(props) {
         <div className="row capitao">
             <img src={`${props.imageCapitao}`} className="img-fluid" alt="Capitao"></img>
             <div>
-                <h1>{props.capitao}</h1>
+                <h1>{props.capitao === 'M' ? "Capitão" : "Capitã"}</h1>
                 <h2>{props.nomeCapitao}</h2>
             </div>
         </div>
@@ -15,3 +15,5 @@ function Capitao(props) {
 }
 
 export default Capitao;
+
+// `${props.imageCapitao}`
