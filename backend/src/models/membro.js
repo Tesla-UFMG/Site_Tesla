@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const membrosSchema = new Schema({
+const membroSchema = new Schema({
     nome: {
         type: String,
         require: true,
@@ -24,9 +24,6 @@ const membrosSchema = new Schema({
         type: String,
         trim: true
     },
-    
-
-
 })
 
 /*
@@ -37,5 +34,5 @@ const membrosSchema = new Schema({
     "img" : "rota"
 */
 
-const Membros = mongoose.model('Membros',membrosSchema)
-module.exports = Membros
+const Membro = mongoose.model('Membro',membroSchema)
+module.exports = Membro

@@ -1,23 +1,23 @@
 const mongoose = require('mongoose');
 const Patrocinadores = mongoose.model("Patrocinadores")
 
-exports.get = () => {
-    return Patrocinadores
-        .find({})
+exports.get = async() => {
+    const res = await Patrocinadores.find({})
+    return res
 }
 
-exports.getById = (id) => {
-    return Patrocinadores
-        .findById(id)
+exports.getById = async(id) => {
+    const res = await Patrocinadores.findById(id)
+    return res
 }
 
-exports.create = (data) => {
+exports.create = async(data) => {
     let patrocinador = new Patrocinadores(data);
-    return patrocinador.save()
+    await patrocinador.save()
 }
 
-exports.update = (id , data) => {
-    return Patrocinadores
+exports.update = async(id , data) => {
+    await Patrocinadores
         .findByIdAndUpdate(id, {
             $set: {
                 nome: data.nome,
@@ -31,7 +31,7 @@ exports.update = (id , data) => {
         })
 }
 
-exports.delete = (id) => {
-    return Patrocinadores
+exports.delete = async(id) => {
+    await Patrocinadores
     .findByIdAndRemove(id)
 }

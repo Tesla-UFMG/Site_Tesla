@@ -10,6 +10,7 @@ mongoose.connect('mongodb+srv://bruno:T3sla.lindos@site.j6bsq.gcp.mongodb.net/te
 
 //Carrega models
 const Patrocinadores = require('./models/patrocinadores')
+const Membro = require('./models/membro')
 //Carrega as rotas
 const indexRoute = require('./routes/index-route')
 const patrocinadoresRoute = require('./routes/patrocinadores-route')
