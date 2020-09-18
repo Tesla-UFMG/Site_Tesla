@@ -10,11 +10,6 @@ const patrocinadoresSchema = new Schema({
         type: String,
         trim: true
     },
-    logo: {
-        type: String,
-        required: [true, "O Patrocinador precisa de uma logo para servir de link!"],
-        trim: true
-    },
     link: {
         type: String,
         trim: true
@@ -30,6 +25,11 @@ const patrocinadoresSchema = new Schema({
     ativo: {
         type: Boolean,
         default: false,
+    },
+    logo: {
+        type: String,
+        required: [true, "O Patrocinador precisa de uma logo para servir de link!"],
+        trim: true
     }
 
 
@@ -40,10 +40,10 @@ const patrocinadoresSchema = new Schema({
     {
     "nome" : "nome",
     "descricao" : "xpto",
-    "logo": "caminho",
     "link" : "http://google.com.br",
     "facebook" : "facebook.com/bnmachado",
-    "instagram" : "https://instagram.com.br/bnmachado"
+    "instagram" : "https://instagram.com.br/bnmachado",
+    "logo": "caminho"
 }
 */
 

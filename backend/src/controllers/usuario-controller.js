@@ -1,5 +1,8 @@
 const ValidationContract = require('../validators/validation-contract');
 const repository = require('../repositories/usuario-repository')
+const md5 = require('md5') // lembrar de criptografar depois
+
+//const emailService = require('../services/email-service')
 
 exports.get = async(req,res,next) => {
     try{
@@ -24,6 +27,7 @@ exports.post = async(req,res,next) => {
     
     try{
         await repository.create(req.body)
+        //emailService.send(req.body.email, 'Bem Vindo Ao Tesla' , global.EMAIL_TMPL.replace('{0}', req.body.name))
         res.status(201).send({
             message: 'Usuario cadastrado com sucesso!'
         })
