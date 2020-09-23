@@ -6,13 +6,25 @@ const usuarioSchema = new Schema({
         type: String,
         trim: true              
     },
-    email: {
-        type: String,
-    },
-    senha: {
+    sobrenome: {
         type: String,
         trim: true
     },
+    email: {
+        type: String,
+        trim: true,
+        unique: [true, "O email já está sendo usado"]
+
+    },
+    senha: {
+        type: String,
+        required: true
+    },
+    admin: {
+        type: Boolean,
+        default: false
+    }
+
 })
 
 /*

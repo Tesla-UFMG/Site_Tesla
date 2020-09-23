@@ -45,7 +45,7 @@ exports.post = async(req,res,next) => {
         let buffer = new Buffer(matches[2], 'base64')
 
         //Salva a imagem
-        await blobSvc.createBlockBlobFromText('patrocinadores-img',fileName,buffer, {
+        blobSvc.createBlockBlobFromText('patrocinadores-img',fileName,buffer, {
             contentType: type
         }, function (error, result, response) {
             if(erro){

@@ -30,6 +30,26 @@ ValidationContract.prototype.isEmail = (value, message) => {
         errors.push({ message: message })
 }
 
+ValidationContract.prototype.existsOrError = (value, message) => {
+    if(!value){
+        errors.push({ message: message })
+    }
+    if(Array.isArray(value) && value.lenght === 0){
+        errors.push({ message: message })
+    }
+    if(typeof value === 'string' && !value.trim()){
+        errors.push({ message: message })
+    }
+    if(value === null){
+        errors.push({ message: message })
+    }
+}
+ValidationContract.prototype.equalsOrError = (value1,value2, msg) => {
+    if(value1 !== value2){
+        errors.push({ message: message })
+    }
+}
+
 ValidationContract.prototype.errors = () => { 
     return errors;
 }
@@ -41,5 +61,7 @@ ValidationContract.prototype.clear = () => {
 ValidationContract.prototype.isValid = () => {
     return errors.length == 0
 }
+
+
 
 module.exports = ValidationContract

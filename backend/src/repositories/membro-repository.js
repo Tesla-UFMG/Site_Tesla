@@ -1,19 +1,19 @@
 const mongoose = require('mongoose')
-const Usuario = mongoose.model('Usuario')
+const Membros = mongoose.model('Membro')
 
 
 exports.get = async() => {
-    const res = await Usuario.find({})
+    const res = await Membros.find({})
     return res
 }
 
 exports.create = async(data) => {
-    let usuario = new Usuario(data);
-    await usuario.save()
+    let membro = new Membros(data);
+    await membro.save()
 }
 
 exports.update = async(id , data) => {
-    await Usuario
+    await Membros
         .findByIdAndUpdate(id, {
             $set: {
                 nome: data.nome,
@@ -24,6 +24,6 @@ exports.update = async(id , data) => {
 }
 
 exports.delete = async(id) => {
-    await Usuario
+    await Membros
     .findByIdAndRemove(id)
 }
