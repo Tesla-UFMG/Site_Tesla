@@ -11,6 +11,7 @@ exports.getById = async(id) => {
     return res
 }
 
+
 exports.create = async(data) => {
     let patrocinador = new Patrocinadores(data);
     await patrocinador.save()

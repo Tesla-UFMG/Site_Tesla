@@ -7,15 +7,6 @@ const membroSchema = new Schema({
         require: true,
         trim: true              
     },
-    email: {
-        type: String,
-        require: true,
-        trim: true
-    },
-    ano: {
-        type: Number,
-        riquire: true,
-    },
     subsistema: {
         type: String,
         riquire: true,
@@ -32,11 +23,14 @@ const membroSchema = new Schema({
 })
 
 /*
+    {
     "nome" : "nome",
     "ano" : "2020",
-    "subsistema: "xxxxxxxx",
+    "subsistema": "xxxxxxxx",
     "Linkedin" : "http://xxxx..xxx.x",
     "img" : "rota"
+    }
+    
 */
 
 const Membro = mongoose.model('Membro',membroSchema)

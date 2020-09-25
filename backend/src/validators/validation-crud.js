@@ -1,6 +1,7 @@
 exports.existsOrError = (value,msg) =>{
     if(!value) throw msg
-    if(Array.isArray(value) && value.length) throw msg
+    if(Array.isArray(value) && (value.length == 0 || value == null)) throw msg
+    //if(Array.isArray(value) && value.length) throw msg
     if(typeof value === 'string' && !value.trim()) throw msg
 }
 
@@ -33,4 +34,8 @@ exports.hasMaxLen = (value,max,msg) => {
     if (!value || value.length > min){
         throw msg
     }
+}
+
+exports.isNumber = (string) =>{
+    return !isNaN(parseInt(string))
 }

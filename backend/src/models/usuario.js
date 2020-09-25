@@ -23,7 +23,12 @@ const usuarioSchema = new Schema({
     admin: {
         type: Boolean,
         default: false
+    },
+    autor: {
+        type: Boolean,
+        defaut: false
     }
+    
 
 })
 
