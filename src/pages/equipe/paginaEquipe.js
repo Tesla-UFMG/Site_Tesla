@@ -20,7 +20,7 @@ const dados = [
     {
         "equipe": "2020",
         "capitao": {
-            "imagem": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg",
+            "imagem": "https://docs.google.com/uc?id=11UTBbPsG0dY2fxPfOfxBFugmHquZKtBy",
             "sexo": "M",
             "nome": "Fulano de Tal" 
         },
