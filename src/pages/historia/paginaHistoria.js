@@ -13,6 +13,15 @@ import { HashLink } from 'react-router-hash-link';
 import image_inicio from '../../assets/img/fotos/_MG_0002-Pano.jpg'
 import image_equipe_2018 from '../../assets/img/fotos/section3.jpg'
 import image_scroll_icon_black from '../../assets/icons/scroll-icon-black.svg'
+import reuniao_novidades from '../../assets/img/fotos/historia/reuniao-novidades.png'
+import oficina_noite from '../../assets/img/fotos/historia/oficina-meia-noite.jpg'
+import equipe_2017 from '../../assets/img/fotos/historia/equipe-2017.png'
+import carro_gif from '../../assets/img/fotos/historia/_MG_7156.jpg'
+import carro_pista_2018 from '../../assets/img/fotos/historia/_MG_8969.jpg'
+import prova_design_2019 from '../../assets/img/fotos/historia/_REN6842.jpg'
+import trab_carro from '../../assets/img/fotos/historia/_REN6965.jpg'
+import carro_pista_2019 from '../../assets/img/fotos/historia/_REN7124.jpg'
+import equipe_2019 from '../../assets/img/fotos/historia/_REN7651.jpg'
 
 function PaginaHistoria() {
     const [{ color, display }, handleScroll] = useNavBar();
@@ -89,7 +98,7 @@ function PaginaHistoria() {
 
                         <div className="row title-img">
                             <h1 className="col">COMO <br></br>TUDO <br></br>COMEÇOU</h1>
-                            <img src={image_inicio} className="img-fluid col" alt="Fundadores do Fórmula Tesla UFMG"></img>
+                            <img src={reuniao_novidades} className="img-fluid col" alt="Fundadores do Fórmula Tesla UFMG"></img>
                         </div>
                         
                         <div className="text">
@@ -146,7 +155,7 @@ function PaginaHistoria() {
                                 </div>,
                                 <div className="text com-img">
                                     <div className="col">
-                                        <img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                        <img src={oficina_noite} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
                                     </div>
                                     <div className="col">
                                         <p>
@@ -174,7 +183,7 @@ function PaginaHistoria() {
                                         uma equipe sólida.
                                     </p>
                                 </div>]}
-                        imageEquipe= {[<img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>]}
+                        imageEquipe= {[<img src={equipe_2017} className="img-fluid" alt="Equipe de 2017"></img>]}
                     />
                     <BodyHistoria 
                         id= "Historia2018"
@@ -207,7 +216,7 @@ function PaginaHistoria() {
                                 </div>,
                                 <div className="text com-img">
                                     <div className="col">
-                                        <img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                        <img src={carro_gif} className="img-fluid" alt="Carro andando no teste"></img>
                                     </div>
                                     <div className="col">
                                         <p>
@@ -229,7 +238,7 @@ function PaginaHistoria() {
                                     </p>
                                 </div>,
                                 <div className="row row-img">
-                                    <img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                    <img src={carro_pista_2018} className="img-fluid" alt="Carro andando na pista"></img>
                                 </div>,
                                 <div className="text">
                                     <p>
@@ -307,7 +316,7 @@ function PaginaHistoria() {
                                         </p>
                                     </div>
                                     <div className="col">
-                                        <img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                        <img src={prova_design_2019} className="img-fluid" alt="Prova design"></img>
                                     </div>
                                 </div>,
                                 <div className="text">
@@ -322,7 +331,8 @@ function PaginaHistoria() {
                                     </p>
                                 </div>,
                                 <div className="row row-img">
-                                    <img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                    <img src={trab_carro} className="img-fluid" alt="Membros do Tesla trabalhando no carro" style={{"width": "48%", "marginRight": "30px"}}></img>
+                                    <img src={carro_pista_2019} className="img-fluid" alt="Carro na pista" style={{"width": "48%"}}></img>
                                 </div>,
                                 <div className="text">
                                     <p>
@@ -343,7 +353,7 @@ function PaginaHistoria() {
                                         ela ainda não havia acabado...
                                     </p>
                                 </div>]}
-                        imageEquipe= {[<img src={image_inicio} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>]}
+                        imageEquipe= {[<img src={equipe_2019} className="img-fluid" alt="Equipe de 2019"></img>]}
                     />
                 </div>
             </div>
