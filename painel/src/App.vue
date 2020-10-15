@@ -1,6 +1,6 @@
 <template>
 	<div id="app" :class="{'hide-menu':isMenuVisible}">
-		<Header title="Formula Tesla UFMG" :hideToggle="false" />
+		<Header title="Formula Tesla UFMG" :hideToggle="false" :hideUserDropdown="false"/>
 		<Menu />
 		<Content />
 		<Footer />
