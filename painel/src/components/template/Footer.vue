@@ -1,12 +1,13 @@
 <template>
     <footer class="footer">
-        <span>Copyright <strong>Formula Tesla UFMG</strong> © 2015-2018</span>
+        <span>Copyright <strong>Formula Tesla UFMG</strong> © 2020</span>
     </footer>
 </template>
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    
 }
 </script>
 
@@ -15,7 +16,7 @@ export default {
         grid-area: footer;
         background-color: #DDD;
         color: #333;
-        
+
         display: flex;
         align-items: center;
         justify-content: flex-end;
