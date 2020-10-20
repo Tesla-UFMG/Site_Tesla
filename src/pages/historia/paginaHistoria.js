@@ -97,7 +97,7 @@ function PaginaHistoria() {
                         </div>
 
                         <div className="row title-img">
-                            <h1 className="col">COMO <br></br>TUDO <br></br>COMEÇOU</h1>
+                            <h1 className="col">COMO TUDO COMEÇOU</h1>
                             <img src={reuniao_novidades} className="img-fluid col" alt="Fundadores do Fórmula Tesla UFMG"></img>
                         </div>
                         

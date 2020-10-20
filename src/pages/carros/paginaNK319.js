@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { withRouter, useHistory } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 import image_detec from '../../assets/icons/DTEC NK319.svg'
 import image_render_powertrain from '../../assets/img/renders/POWERTRAIN NK319.png'
@@ -19,7 +19,6 @@ import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
 
 function PaginaNK319() {
-    const history = useHistory();
     const [{ color, display }, handleScroll] = useNavBar();
     
     var last_known_scroll_position = 0;

@@ -23,11 +23,11 @@
     position: relative;
     top: 1.5vh;
 }
-
+/* 
 #inicio .content .page-title {
     display: flex;
     align-items: center;
-}
+} */
 
 #inicio .content h1 {
     font-family: Gilroy-Extrabold;
@@ -58,6 +58,10 @@
     padding-right: 12vw;
 }
 
+#conteudo .content #intro-geral {
+    padding-top: 20px
+}
+
 #conteudo .content .embed {
     position: relative;
 
@@ -77,32 +81,32 @@
 
 #conteudo .content .text p {
     font-family: Gilroy-Light;
-    font-size: 1.3vw;
+    font-size: 20px;
 
-    line-height: 1.8vw;
+    line-height: 23px;
 
     text-align: justify;
-    text-indent: 1.5rem;
+    text-indent: 3rem;
 }
 
 #conteudo .content .text {
-    margin-top: 8vh;
+    margin-top: 40px;
 }
 
 #conteudo .content .title-img {
     display: flex;
 
-    margin-top: 8vh;
+    margin-top: 40px;
 }
 
 #conteudo .content .title-img h1 {
     font-family: Gilroy-Extrabold;
-    font-size: 6vw;
+    font-size: 100px;
     text-transform: uppercase;
 
     color: black;
 
-    line-height: 6vw;
+    line-height: 90px;
 }
 
 #conteudo .content .com-img {
@@ -110,16 +114,23 @@
 }
 
 #conteudo .content .row-img {
-    padding: 4vw;
+    padding: 40px;
 
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
-@media (max-width: 1024px) {
-    #conteudo .content .text p {
-        font-size: 1.7vw;
-        line-height: 2vw;
+@media (max-width: 1370px) {
+    #conteudo .content .title-img h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 1060px) {
+    #conteudo .content .title-img h1 {
+        font-size: 60px;
+        line-height: 55px;
     }
 }
 
@@ -145,5 +156,97 @@
         font-size: 1.3rem;
 
         line-height: 2.8vw;
+    }
+}
+
+@media (max-width: 800px) {
+    #conteudo .content .title-img h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    #inicio .content p {
+        font-size: 24px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 660px) {
+    #conteudo .content .title-img h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    
+    #conteudo .content .text p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: 610px) {
+    #inicio .content p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    #conteudo .content .title-img {
+        flex-direction: column;
+    }
+
+    #conteudo .content .title-img h1 {
+        margin-bottom: 20px;
+    }
+
+    #conteudo .content .text p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    #inicio .content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    #inicio .content h1 {
+        font-size: 34px;
+        line-height: 41px;
+        margin-top: 20px;
+    }
+
+    #inicio .content p {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 405px) {
+    #inicio .content h1 {
+        margin-top: 14px;
+    }
+
+    #inicio .content p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    #inicio .content h1 {
+        margin-top: 10px;
+    }
+
+    #inicio .content p {
+        font-size: 14px;
+        line-height: 13px;
+        margin-top: 10px;
     }
 }
