@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/server.js",
+    "dev" : "nodemon ./bin/server.js"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
+
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
@@ -23,6 +26,7 @@
     "md5": "^2.3.0",
     "mongoose": "^5.10.5",
     "mongoose-auto-increment": "^5.0.1",
+    "muter": "^0.7.0",
     "sendgrid": "^2.0.0"
   }
 }

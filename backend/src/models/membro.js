@@ -12,6 +12,10 @@ const membroSchema = new Schema({
         riquire: true,
         trim: true,
     },
+    cargo: {
+        type: String,
+        trim: true
+    },
     linkedin: {
         type: String,
         trim: true
