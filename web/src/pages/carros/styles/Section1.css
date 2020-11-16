@@ -1,0 +1,107 @@
+.div1 {
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+.div1 .content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    top: 60vh;
+    left: 5vw;
+}
+
+.div1 .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-size: 9.3vw;
+    text-transform: uppercase;
+
+    color:white;
+
+    margin: 0;
+}
+
+.div1 .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 4vw;
+    
+    color:white;
+
+    margin: 0;
+
+    position: relative;
+    bottom: 3vw;
+}
+
+#NK319-1 {
+    background-image: url('../../../assets/img/fotos/_REN7187.jpg');
+}
+
+#NK218-1 {
+    background-image: url('../../../assets/img/fotos/_MG_8933.jpg');
+}
+
+#NK218-1 .content {
+    align-items: flex-end;
+    left: 48vw;
+}
+
+#Kayran-1 {
+    background-image: url('../../../assets/img/fotos/Kayran.jpg');
+}
+
+#Kayran-1 .content {
+    align-items: flex-end;
+    top: 9vh;
+    left: 48vw;
+}
+
+#Kayran-1 .content .section-paragraph {
+    font-size: 3.5vw;
+}
+
+#Kayran-1 .content .section-title {
+    font-size: 8vw;
+}
+
+@media (max-width: 750px) {
+    .div1 .content {
+        max-width: 60%;
+    }
+    
+    .div1 .content .section-title {
+        font-size: 11.3vw;
+    }
+
+    .div1 .content .section-paragraph {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .div1 .content {
+        max-width: 70%;
+        top: 18vh;
+    }
+    
+    .div1 .content .section-title {
+        font-size: 13.3vw;
+    }
+
+    .div1 .content .section-paragraph {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .div1 .content {
+        max-width: 80%;
+    }
+}
