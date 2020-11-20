@@ -1,0 +1,99 @@
+.cadastro .title {
+  font-family: Gilroy-Extrabold;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  color: #000;
+
+  margin-bottom: 10px;
+}
+
+.cadastro .text {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: #7c7c7c;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.cadastro input {
+  width: 100%;
+  height: 44px;
+
+  border-radius: 45px;
+  border: 1px solid #707070;
+
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+
+  color: #7C7C7C;
+
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.cadastro .cadastrar-button {
+  width: 100%;
+  height: 50px;
+
+  border-radius: 45px;
+  border: 2px solid #4ed840;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+
+  color: #4ed840;
+
+  transition: 0.4s;
+
+  cursor: pointer;
+}
+
+.cadastro .cadastrar-button:hover {
+  background-color: #4ed840;
+  color: #fff;
+}
+
+.cadastro .go-login {
+  display: flex;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.cadastro .go-login p {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #7c7c7c;
+
+  margin-bottom: 0;
+}
+
+.cadastro .go-login a {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #1d809a;
+
+  text-decoration: underline;
+
+  margin-left: 5px;
+}

@@ -9,7 +9,7 @@ import image_scroll_icon from '../../../assets/icons/scroll-icon.svg'
 function Section3(props) {
     return (
         <div id={props.Id} className="container-fluid px-0 div3">
-            <div className="row">
+            <div className="row content-row">
 
                 <div className="col imagem-detec">
                     {props.detec}

@@ -83,6 +83,23 @@
     .div1 .content .section-paragraph {
         font-size: 6vw;
     }
+
+    #Kayran-1 .content {
+        top: 13vh;
+        left: 36vw;
+    }
+    
+    #Kayran-1 .content .section-paragraph {
+        font-size: 5vw;
+    }
+
+    #Kayran-1 .content .section-title {
+        font-size: 11vw;
+    }
+
+    #NK218-1 .content {
+        left: 38vw;
+    }
 }
 
 @media (max-width: 500px) {
@@ -98,10 +115,35 @@
     .div1 .content .section-paragraph {
         font-size: 7vw;
     }
+
+    #Kayran-1 .content {
+        top: 14vh;
+        left: 24vw;
+    }
+    
+    #Kayran-1 .content .section-paragraph {
+        font-size: 6vw;
+    }
+
+    #Kayran-1 .content .section-title {
+        font-size: 13vw;
+    }
+
+    #NK218-1 .content {
+        left: 28vw;
+    }
 }
 
 @media (max-width: 350px) {
     .div1 .content {
         max-width: 80%;
+    }
+
+    #Kayran-1 .content {
+        left: 12vw;
+    }
+    
+    #NK218-1 .content {
+        left: 18vw;
     }
 }

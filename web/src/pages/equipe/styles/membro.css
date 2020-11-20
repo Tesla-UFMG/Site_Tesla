@@ -1,6 +1,10 @@
+#pagina-equipe #Equipe2020 .subsistemas .membros .membro {
+    max-width: 100%;
+}
+
 #pagina-equipe #Equipe2020 .subsistemas .membros .nome {
     font-family: Gilroy-Light;
-    font-size: 1.5rem;
+    font-size: 20px;
 
     font-weight: bold;
 
@@ -9,5 +13,51 @@
 
 #pagina-equipe #Equipe2020 .subsistemas .membros .cargo {
     font-family: Gilroy-Light;
-    font-size: 1rem;
+    font-size: 15px;
+}
+
+@media (max-width: 940px) {
+    #pagina-equipe #Equipe2020 .subsistemas .membros .nome {
+        font-size: 16px;
+    }
+    
+    #pagina-equipe #Equipe2020 .subsistemas .membros .cargo {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 780px) {
+    #pagina-equipe #Equipe2020 .subsistemas .membros .nome {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    #pagina-equipe #Equipe2020 .subsistemas .membros .membro img {
+        width: 18vw;
+        height: auto;
+    }
+
+    #pagina-equipe #Equipe2020 .subsistemas .membros .nome {
+        font-size: 22px;
+    }
+    
+    #pagina-equipe #Equipe2020 .subsistemas .membros .cargo {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    #pagina-equipe #Equipe2020 .subsistemas .membros .membro img {
+        width: 20vw;
+        height: auto;
+    }
+
+    #pagina-equipe #Equipe2020 .subsistemas .membros .nome {
+        font-size: 18px;
+    }
+    
+    #pagina-equipe #Equipe2020 .subsistemas .membros .cargo {
+        font-size: 14px;
+    }
 }

@@ -1,0 +1,84 @@
+.cadastro-senha .title {
+  font-family: Gilroy-Extrabold;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000;
+
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.cadastro-senha .text {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: #7c7c7c;
+
+  margin-bottom: 30px;
+}
+
+.cadastro-senha input {
+  width: 100%;
+  height: 44px;
+
+  border-radius: 45px;
+  border: 1px solid #707070;
+
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+
+  color: #7C7C7C;
+
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.cadastro-senha .continuar-button {
+  width: 100%;
+  height: 50px;
+
+  border-radius: 45px;
+  border: 2px solid #4ed840;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+
+  color: #4ed840;
+
+  transition: 0.4s;
+
+  cursor: pointer;
+
+  margin-top: 30px;
+}
+
+.cadastro-senha .continuar-button:hover {
+  background-color: #4ed840;
+  color: #fff;
+}
+
+.cadastro-senha .voltar {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #7c7c7c;
+
+  margin-bottom: 0;
+  margin-top: 30px;
+
+  cursor: pointer;
+}

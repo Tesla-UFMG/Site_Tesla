@@ -63,3 +63,31 @@
 #Kayran-3 .scroll-bot-icon {
     display: none;
 }
+
+@media (max-width: 720px) {
+    .div3 .content-row {
+        flex-wrap: unset;
+        flex-direction: column;
+
+        padding-top: 0;
+    }
+
+    .div3 .row .imagem-detec .detec {
+        width: 115px;
+    }
+
+    .div3 .content-row .infos .col {
+        align-items: center;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div3 .row .infos .spec {
+        font-size: 12px;
+    }
+
+    .div3 .row .infos .title-spec {
+        font-size: 14px;
+    }
+}

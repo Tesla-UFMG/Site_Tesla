@@ -108,7 +108,6 @@ function PaginaEquipe() {
                     <p className="section-paragraph">
                         Conheça os alunos que fazem esse projeto acontecer, 
                         distribuídos em 5 Sistemas, a equipe atualmente conta com 44 membros. 
-                        Clique na foto para e-mail pessoal.
                     </p>
                 </div>
 

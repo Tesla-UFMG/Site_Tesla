@@ -5,18 +5,43 @@
 
 #pagina-equipe #Equipe2020 .subsistemas h1 {
     font-family: Gilroy-Extrabold;
-    font-size: 4.5vw;
+    font-size: 60px;
 
     text-transform: uppercase;
 
     color: black;
 
-    margin-left: 40px;
+    /* margin-left: 40px; */
     margin-bottom: 40px;
 }
 
 #pagina-equipe #Equipe2020 .subsistemas .membros {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     text-align: center;
+}
+
+@media (max-width: 720px) {
+    #pagina-equipe #Equipe2020 .subsistemas .membros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    #pagina-equipe #Equipe2020 .subsistemas h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    #pagina-equipe #Equipe2020 .subsistemas h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    #pagina-equipe #Equipe2020 .subsistemas h1 {
+        font-size: 25px;
+    }
 }

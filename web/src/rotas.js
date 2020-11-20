@@ -9,6 +9,9 @@ import PaginaNK218 from './pages/carros/paginaNK218'
 import PaginaKayran from './pages/carros/paginaKayran'
 import PaginaEquipe from './pages/equipe/paginaEquipe'
 import PaginaPatrocinadores from './pages/patrocinadores/patrocinadores'
+import PaginaCadastro from './pages/forms/paginaCadastro'
+import PaginaSenha from './pages/forms/paginaSenha'
+import PaginaFimCadastro from './pages/forms/paginaFimCadastro'
 
 export default () => {
     return (
@@ -20,6 +23,9 @@ export default () => {
             <Route exact path="/PrototiposKayran" component={PaginaKayran} />
             <Route exact path="/Equipe" component={PaginaEquipe} />
             <Route exact path="/Patrocinadores" component={PaginaPatrocinadores} />
+            <Route exact path="/cadastrar" component={PaginaCadastro} />
+            <Route exact path="/cadastro-senha" component={PaginaSenha} />
+            <Route exact path="/fim-cadastro" component={PaginaFimCadastro} />
         </Switch>
     )
 }

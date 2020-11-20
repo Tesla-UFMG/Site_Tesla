@@ -28,3 +28,44 @@
 
     color: black;
 }
+
+@media (max-width: 880px) {
+    #pagina-equipe #Equipe2020 .capitao .img-fluid {
+        width: 18vw;
+        height: 18vw;
+    }
+}
+
+@media (max-width: 640px) {
+    #pagina-equipe #Equipe2020 .capitao .img-fluid {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    #pagina-equipe #Equipe2020 .capitao h1 {
+        font-size: 5.5vw;
+    }
+
+    #pagina-equipe #Equipe2020 .capitao h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 540px) {
+    #pagina-equipe #Equipe2020 .capitao .img-fluid {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    #pagina-equipe #Equipe2020 .capitao {
+        padding-left: 10vw;
+    }
+
+    #pagina-equipe #Equipe2020 .capitao h1 {
+        font-size: 6.5vw;
+    }
+
+    #pagina-equipe #Equipe2020 .capitao h2 {
+        font-size: 5vw;
+    }
+}

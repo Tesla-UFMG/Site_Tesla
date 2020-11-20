@@ -4,7 +4,7 @@ import '../styles/membro.css'
 
 function Membro(props) {
     return(
-        <div className="col">
+        <div className="membro">
             <img src={props.imagePath} className="img-fluid" alt="membro"></img>
             <p className="nome">{props.nome}</p>
             <p className="cargo">{props.cargo}</p>

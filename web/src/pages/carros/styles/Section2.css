@@ -61,6 +61,8 @@
     text-transform: uppercase;
     
     color:black;
+
+    margin-bottom: 0;
 }
 
 .div2 .row .info .colocacoes {
@@ -99,8 +101,72 @@
         flex-wrap: unset;
     }
 
-    .div2 .paragraphs,
-    .div2 .info {
+    .div2 .row .paragraphs,
+    .div2 .row .info {
         max-width: 100%;
+    }
+
+    .div2 .row .paragraphs {
+        padding: 80px 50px 0;
+    }
+
+    .div2 .row .paragraphs p {
+        line-height: 16px;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .div2 .row .info .row {
+        height: 60px;
+    }
+
+    .div2 .row .info .geral-position {
+        font-size: 40px;
+    }
+
+    .div2 .row .info .colocacoes {
+        font-size: 28px;
+    }
+
+    .div2 .row .info .provas {
+        font-size: 16px;
+    }
+
+    .div2 .row .info .provas {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .div2 .row .paragraphs p {
+        line-height: 16px;
+        font-size: 14px;
+    }
+
+    .div2 .row .info .row {
+        height: 50px;
+    }
+
+    .div2 .row .info .geral-position {
+        font-size: 34px;
+    }
+
+    .div2 .row .info .colocacoes {
+        font-size: 20px;
+    }
+
+    .div2 .row .info .provas {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .div2 .row .paragraphs p {
+        line-height: 13px;
+        font-size: 12px;
+    }
+
+    .div2 .row .paragraphs {
+        padding: 80px 30px 0;
     }
 }

@@ -25,3 +25,18 @@
 #preto .navbar-nav .nav-link-p-style:hover {
     color: black;
 }
+
+.navbar .navbar-nav .dropdown .nav-link-p-style {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu-itens {
+    position: absolute;
+
+    background-color: white;
+
+    border-radius: 3px;
+
+    padding: 3px;
+}
