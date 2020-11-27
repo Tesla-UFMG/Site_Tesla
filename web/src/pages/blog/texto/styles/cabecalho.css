@@ -1,0 +1,31 @@
+#cabecalho p {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+
+  color: #7c7c7c;
+
+  margin: 0;
+}
+
+#cabecalho .code {
+  font-size: 26px;
+}
+
+#cabecalho .title {
+  font-family: Gilroy-Extrabold;
+  font-size: 50px;
+  line-height: 50px;
+
+  color: #000000;
+}
+
+#cabecalho .date-autor {
+  font-size: 20px;
+
+  margin-top: 8px;
+}
+
+#cabecalho .read-time {
+  font-size: 22px;
+}

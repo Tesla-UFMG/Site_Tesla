@@ -206,6 +206,14 @@
     text-decoration: none;
 }
 
+#page1-blog {
+    background-color: #fff;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
 #page1-parceiros {
     background-image: url('../../assets/img/fotos/section4.jpg');
     background-size: cover;

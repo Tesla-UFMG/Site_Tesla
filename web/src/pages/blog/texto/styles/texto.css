@@ -1,0 +1,40 @@
+#texto-body .body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 100px 250px 30px;
+
+  position: relative;
+}
+
+.topicos-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  max-width: 230px;
+
+  position: fixed;
+  left: 35px;
+  top: 100px;
+}
+
+.topicos-lateral a {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #000000;
+
+  margin: 0;
+
+  text-decoration: none;
+}
+
+.topicos-lateral a strong {
+  color: #4ed840;
+}

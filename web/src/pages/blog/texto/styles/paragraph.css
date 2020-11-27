@@ -1,0 +1,23 @@
+#paragraph {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 33px;
+
+  text-indent: 1.5em;
+
+  text-align: justify;
+
+  color: #313131;
+
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+#paragraph strong {
+  font-family: Gilroy-Extrabold;
+  font-weight: bold;
+
+  color: #000000;
+}

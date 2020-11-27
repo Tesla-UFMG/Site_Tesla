@@ -1,0 +1,10 @@
+#paragraph-with-image {
+  display: flex;
+  align-items: center;
+}
+
+#paragraph-with-image img {
+  max-width: 50%;
+
+  margin-left: 15px;
+}

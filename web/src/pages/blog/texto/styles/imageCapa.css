@@ -1,0 +1,26 @@
+#img-capa {
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img-capa img {
+  width: 100%;
+
+  border-radius: 40px;
+}
+
+#img-capa .legend {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  color: #7c7c7c;
+
+  margin-bottom: 0;
+  margin-top: 15px;
+}
