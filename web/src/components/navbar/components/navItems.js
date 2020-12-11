@@ -37,7 +37,7 @@ function NavItem(props) {
                 </li>
 
                 <li className="nav-item mx-3">
-                    <Link className="nav-link nav-link-p-style" to="/">blog</Link>
+                    <Link className="nav-link nav-link-p-style" to="/feed-blog">blog</Link>
                 </li>
             </ul>
         </div>

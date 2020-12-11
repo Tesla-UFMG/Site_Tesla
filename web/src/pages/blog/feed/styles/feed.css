@@ -1,0 +1,208 @@
+#feed-page .navbar {
+  top: 0;
+}
+
+#feed-page .body .title {
+  width: 100%;
+  height: 200px;
+
+  background-image: url('../../../../assets/img/fotos/texto/feed2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -315px;
+
+  margin-top: 80px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+#feed-page .body .title p {
+  font-family: Gilroy-Extrabold;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 80px;
+
+  color: #fff;
+
+  margin: 0;
+}
+
+#feed-page .body .content {
+  width: 100%;
+  padding: 0 20px;
+}
+
+#feed-page .body .content .options-row {
+  border-bottom: 1px solid #707070;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+#feed-page .body .content .options-row .option {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #000;
+
+  margin-bottom: 0;
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+#feed-page .body .content .options-row .option.selected {
+  color: #4ED840;
+}
+
+#feed-page .body .content .options-row > div {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  margin-right: 15px;
+}
+
+#feed-page .body .content .options-row > div input {
+  border-radius: 5px;
+  border: none;
+  width: 0;
+
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #000;
+
+  transition: width 0.5s;
+
+  padding-left: 5px;
+}
+
+#feed-page .body .content .options-row > div input.active {
+  border: 1px solid #707070;
+  width: 200px;
+}
+
+#feed-page .body .content .options-row > div img {
+  width: 20px;
+
+  position: absolute;
+  right: 5px;
+
+  cursor: pointer;
+}
+
+#feed-page .body .content .texts-wrapper {
+  padding: 30px 80px 20px 40px;
+}
+
+#feed-page .body .content .texts-wrapper .text {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+}
+
+#feed-page .body .content .texts-wrapper .text .imagem-capa {
+  width: 30%;
+
+  border-radius: 20px;
+}
+
+#feed-page .body .content .texts-wrapper .text > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding-left: 30px;
+
+  position: relative;
+}
+
+#feed-page .body .content .texts-wrapper .text > div .text-title {
+  font-family: Gilroy-Extrabold;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #000;
+
+  margin-bottom: 10px;
+}
+
+#feed-page .body .content .texts-wrapper .text > div .autor {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #7c7c7c;
+
+  margin-bottom: 5px;
+}
+
+#feed-page .body .content .texts-wrapper .text > div .data {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #7c7c7c;
+
+  margin-bottom: 10px;
+}
+
+#feed-page .body .content .texts-wrapper .text > div .descricao {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+
+  text-align: justify;
+
+  color: #7c7c7c;
+
+  margin-bottom: 5px;
+}
+
+#feed-page .body .content .texts-wrapper .text > div .continuar {
+  font-family: Gilroy-Light;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+
+  color: #1D809A;
+
+  margin: 0;
+
+  cursor: pointer;
+}
+
+#feed-page .body .content .texts-wrapper .text > div img.type-text {
+  transform: rotate(90deg);
+
+  width: 40px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+}

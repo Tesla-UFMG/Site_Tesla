@@ -32,17 +32,17 @@ function Footer() {
                                         <Link to="/PrototiposNK319">Protótipos</Link>
                                     </li>
                                     <li>
-                                        <Link to="/">Equipe</Link>
+                                        <Link to="/Equipe">Equipe</Link>
                                     </li>
                                     <li>
-                                        <Link to="/">Parceiros</Link>
+                                        <Link to="/Patrocinadores">Parceiros</Link>
                                     </li>
                                 </ul>
                             </div>
                             <div>
                                 <ul className="list-unstyled c2">
                                     <li>
-                                        <Link to="/">Blog</Link>
+                                        <Link to="/feed-blog">Blog</Link>
                                     </li>
                                     <li>
                                         <Link to="/">Competição</Link>

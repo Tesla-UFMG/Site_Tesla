@@ -8,6 +8,7 @@ import NavItem from './components/navItems'
 
 import image_logo_tesla from '../../assets/img/logos/logo-fundo-preto.png';
 import logo_tesla_preto from '../../assets/img/logos/Sem senoide preta.svg';
+// import logo_tesla_preto from '../../assets/img/logos/logo-all-black-test.svg';
 
 class Header extends React.Component {
 
@@ -46,7 +47,7 @@ class Header extends React.Component {
                     <Link to="/PrototiposNK319">Prototipos</Link>
                     <Link to="/Equipe">Equipe</Link>
                     <Link to="/Patrocinadores">Parceiros</Link>
-                    <Link to="/">Blog</Link>
+                    <Link to="/feed-blog">Blog</Link>
                     <Link to="/">A Competição</Link>
                     <Link to="/">Galeria</Link>
                     <Link to="/">Rollouts</Link>
