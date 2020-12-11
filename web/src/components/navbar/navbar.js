@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 
 import NavItem from './components/navItems'
 
-import image_logo_tesla from '../../assets/img/logos/logo-fundo-preto.png'
-import logo_tesla_preto from '../../assets/img/logos/Sem senoide preta.svg'
+import image_logo_tesla from '../../assets/img/logos/logo-fundo-preto.png';
+import logo_tesla_preto from '../../assets/img/logos/Sem senoide preta.svg';
 
 class Header extends React.Component {
 

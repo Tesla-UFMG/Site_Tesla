@@ -21,7 +21,7 @@ html {
     right: 70px;
     transform: rotate(180deg);
 
-    z-index: 2;
+    z-index: 1;
 }
 
 .scroll-bot-icon {

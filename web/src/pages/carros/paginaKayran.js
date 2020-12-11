@@ -11,6 +11,7 @@ import Section3 from './components/Section3'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
+import Footer from '../../components/footer/footer';
 
 function PaginaKayran() {
     const [{ color, display }, handleScroll] = useNavBar();
@@ -83,6 +84,7 @@ function PaginaKayran() {
                 massaD="49,9%"
                 hashlinkTop="/PrototiposKayran#Kayran-2"
             />
+            <Footer />
         </body>
     );
 }

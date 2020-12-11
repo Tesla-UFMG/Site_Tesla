@@ -4,6 +4,7 @@ import './styles/paginaEquipe.css'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
+import Footer from '../../components/footer/footer';
 
 import { withRouter } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
@@ -143,6 +144,7 @@ function PaginaEquipe() {
                 />)
             })}
             
+            <Footer />
         </div>
     );
 }

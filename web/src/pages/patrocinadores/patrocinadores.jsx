@@ -3,6 +3,7 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 
 import NavBar from '../../components/navbar/navbar';
+import Footer from '../../components/footer/footer';
 
 import Manutencao from '../manutencao/paginaManutencao';
 
@@ -29,6 +30,8 @@ class PaginaPatrocinadores extends React.Component {
                 <hr></hr>
                 <Classificacao nome="bronze"></Classificacao>
                 <hr></hr> */}
+                
+                <Footer />
             </div>
         )
     }

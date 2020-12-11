@@ -4,6 +4,7 @@ import './styles/paginaHistoria.css'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
+import Footer from '../../components/footer/footer';
 
 import BodyHistoria from './components/bodyHistoria';
 
@@ -45,7 +46,7 @@ function PaginaHistoria() {
     return (
         <div>
             <NavBar color={color} display={display} />
-
+            
             <div id="inicio" className="container-fluid px-0">
 
                 <img src={image_inicio} alt="Imagem do NK319 na frente do Estadio Mineirão" className="img-fluid img-inicio"></img>
@@ -357,6 +358,8 @@ function PaginaHistoria() {
                     />
                 </div>
             </div>
+
+            <Footer />
         </div>
     );
 }

@@ -13,6 +13,7 @@ import PaginaCadastro from './pages/forms/paginaCadastro'
 import PaginaSenha from './pages/forms/paginaSenha'
 import PaginaFimCadastro from './pages/forms/paginaFimCadastro'
 import PaginaTexto from './pages/blog/texto/texto'
+import FullPageScroll from './components/fullPageScroll/fullPageScroll'
 
 export default () => {
     return (
@@ -28,6 +29,8 @@ export default () => {
             <Route exact path="/cadastro-senha" component={PaginaSenha} />
             <Route exact path="/fim-cadastro" component={PaginaFimCadastro} />
             <Route exact path="/texto-blog" component={PaginaTexto} />
+
+            <Route exact path="/fullpagescroll" component={FullPageScroll} />
         </Switch>
     )
 }

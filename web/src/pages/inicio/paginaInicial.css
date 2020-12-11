@@ -214,6 +214,158 @@
     position: relative;
 }
 
+#page1-blog .content {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 12vh;
+
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+#page1-blog .content .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page1-blog .content .section-title {
+    font-family: Gilroy-Extrabold;
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+
+    color: #4ED840;
+
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+#page1-blog .content .section-paragraph {
+    font-family: Gilroy-Light;
+    font-size: 2rem;
+
+    line-height: 40px;
+    text-align: center;
+    
+    color:black;
+
+    margin: 0;
+
+    max-width: 50%;
+}
+
+#page1-blog .content .section-button {
+    width: 210px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    border-radius: 30px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+
+    color:black;
+
+    padding: 3px 25px;
+
+    margin-left: 30px;
+}
+
+#page1-blog .content .section-button:hover {
+    transition: .6s;
+    
+    color: white;
+    background-color: black;
+
+    text-decoration: none;
+}
+
+#page1-blog .content .cards {
+    width: 100%;
+    height: 60%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+
+    margin-top: 30px;
+}
+
+#page1-blog .content .cards .card {
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid #707070;
+    border-radius: 36px;
+
+    padding: 15px;
+
+    display: flex;
+}
+
+#page1-blog .content .cards .card .img {
+    border-radius: 26px;
+    background-color: #707070;
+    background-image: url('../../assets/img/fotos/blog-inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 50%;
+}
+
+#page1-blog .content .cards .card > div:last-child {
+    margin-top: 20px;
+
+    position: relative;
+
+    height: 100%;
+}
+
+#page1-blog .content .cards .card > div .title {
+    font-family: Gilroy-Extrabold;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: start;
+
+    color: black;
+
+    margin-bottom: 0;
+}
+
+#page1-blog .content .cards .card > div .code {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: start;
+
+    color: #7c7c7c;
+
+    margin-bottom: 0;
+}
+
+#page1-blog .content .cards .card > div .read-time {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #7c7c7c;
+    margin-bottom: 0;
+
+    position: absolute;
+    bottom: 0;
+}
+
 #page1-parceiros {
     background-image: url('../../assets/img/fotos/section4.jpg');
     background-size: cover;
@@ -283,6 +435,10 @@
     background-color: white;
 
     text-decoration: none;
+}
+
+.footer-div {
+    height: auto !important;
 }
 
 @media (max-width: 1440px) {

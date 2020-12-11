@@ -1,7 +1,13 @@
 .navbar .navbar-nav {
     font-family: Gilroy-Extrabold;
     font-size: 18px;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
 }
 
 .navbar .navbar-nav .nav-link-p-style {

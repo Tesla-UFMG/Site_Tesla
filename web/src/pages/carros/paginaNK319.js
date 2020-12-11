@@ -17,6 +17,7 @@ import Section4 from './components/Section4'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
+import Footer from '../../components/footer/footer';
 
 function PaginaNK319() {
     const [{ color, display }, handleScroll] = useNavBar();
@@ -217,6 +218,7 @@ function PaginaNK319() {
                 ]}
                 hashlinkTop="/PrototiposNK319#NK319-3"
             />
+            <Footer />
         </body>
     );
 }

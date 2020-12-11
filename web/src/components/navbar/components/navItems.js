@@ -35,6 +35,10 @@ function NavItem(props) {
                 <li className="nav-item mx-3">
                     <Link className="nav-link nav-link-p-style" to="/Patrocinadores">parceiros</Link>
                 </li>
+
+                <li className="nav-item mx-3">
+                    <Link className="nav-link nav-link-p-style" to="/">blog</Link>
+                </li>
             </ul>
         </div>
     );
