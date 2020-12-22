@@ -50,7 +50,8 @@ class Header extends React.Component {
                     <Link to="/feed-blog">Blog</Link>
                     <Link to="/">A Competição</Link>
                     <Link to="/">Galeria</Link>
-                    <Link to="/">Rollouts</Link>
+                    <Link to="/Rollouts">Rollouts</Link>
+                    <Link to="/Loja">Loja</Link>
                 </div>
     
             </nav>

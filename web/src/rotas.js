@@ -14,6 +14,8 @@ import PaginaSenha from './pages/forms/paginaSenha'
 import PaginaFimCadastro from './pages/forms/paginaFimCadastro'
 import PaginaTexto from './pages/blog/texto/texto'
 import PaginaFeed from './pages/blog/feed/feed'
+import PaginaRollouts from './pages/rollouts/rollouts'
+import PaginaLoja from './pages/loja/loja'
 
 export default () => {
     return (
@@ -30,6 +32,8 @@ export default () => {
             <Route exact path="/fim-cadastro" component={PaginaFimCadastro} />
             <Route exact path="/texto-blog" component={PaginaTexto} />
             <Route exact path="/feed-blog" component={PaginaFeed} />
+            <Route exact path="/Rollouts" component={PaginaRollouts} />
+            <Route exact path="/Loja" component={PaginaLoja} />
         </Switch>
     )
 }

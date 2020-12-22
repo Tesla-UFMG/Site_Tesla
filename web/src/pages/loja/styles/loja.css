@@ -1,0 +1,176 @@
+#loja-page .body {
+  width: 100%;
+
+  padding: 100px 250px 30px;
+}
+
+#loja-page .body .title {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+
+  color: #000;
+
+  margin: 0;
+}
+
+#loja-page .body .line {
+  width: 100%;
+
+  border-bottom: 1px solid #707070;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding-bottom: 5px;
+  padding-right: 10px;
+
+  position: relative;
+}
+
+#loja-page .body .line .options {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #000;
+
+  margin-bottom: 0;
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+#loja-page .body .line .options.selected {
+  color: #4ED840;
+}
+
+#loja-page .body .line .shop-cart {
+  width: 30px;
+
+  cursor: pointer;
+}
+
+#loja-page .body .line .cart {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  z-index: 2;
+
+  width: 300px;
+
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 25px;
+
+  padding: 10px;
+}
+
+#loja-page .body .line .cart .items {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+#loja-page .body .line .cart .frete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #707070;
+
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+#loja-page .body .line .cart .frete .text {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #000;
+
+  margin-bottom: 0;
+}
+
+#loja-page .body .line .cart .frete .valor-frete {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000;
+
+  margin-bottom: 0;
+}
+
+#loja-page .body .line .cart .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#loja-page .body .line .cart .total .text {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000;
+
+  margin-bottom: 0;
+}
+
+#loja-page .body .line .cart .total .valor-total {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #4ED840;
+
+  margin-bottom: 0;
+}
+
+#loja-page .body .line .cart .finalizar-button {
+  width: 100%;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #4ed840;
+  border-radius: 30px;
+
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+#loja-page .body .produtos {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 50px;
+
+  padding-top: 30px;
+}
