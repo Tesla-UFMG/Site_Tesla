@@ -11,7 +11,7 @@
   background-size: cover;
   background-position-y: -315px;
 
-  margin-top: 80px;
+  margin-top: 70px;
 
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@
 }
 
 #feed-page .body .content .texts-wrapper {
-  padding: 30px 80px 20px 40px;
+  padding: 30px 150px 20px 150px;
 }
 
 #feed-page .body .content .texts-wrapper .text {
@@ -118,7 +118,7 @@
 }
 
 #feed-page .body .content .texts-wrapper .text .imagem-capa {
-  width: 30%;
+  width: 35%;
 
   border-radius: 20px;
 }
@@ -138,8 +138,8 @@
   font-family: Gilroy-Extrabold;
   font-weight: bold;
   font-style: normal;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 28px;
 
   color: #000;
 
@@ -174,8 +174,8 @@
   font-family: Gilroy-Light;
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
 
   text-align: justify;
 
@@ -189,6 +189,7 @@
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
+  line-height: 1;
 
   color: #1D809A;
 

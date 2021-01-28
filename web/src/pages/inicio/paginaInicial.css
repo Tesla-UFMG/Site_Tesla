@@ -212,6 +212,9 @@
     height: 100vh;
 
     position: relative;
+
+    display: flex;
+    justify-content: center;
 }
 
 #page1-blog .content {
@@ -221,8 +224,7 @@
     position: absolute;
     top: 12vh;
 
-    padding-left: 8vw;
-    padding-right: 8vw;
+    max-width: 1200px;
 }
 
 #page1-blog .content .top-row {
@@ -451,6 +453,42 @@
     }
 }
 
+@media (max-width: 1250px) {
+    #page1-blog .content {
+        max-width: 970px;
+    }
+
+    #page1-blog .content .section-title {
+        font-size: 60px;
+    }
+    
+    #page1-blog .content .section-paragraph {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    #page1-blog .content .section-button {
+        width: 180px;
+    }
+
+    #page1-blog .content .cards {
+        column-gap: 20px;
+    }
+
+    #page1-blog .content .cards .card > div .title {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    
+    #page1-blog .content .cards .card > div .code {
+        font-size: 14px;
+    }
+    
+    #page1-blog .content .cards .card > div .read-time {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1180px) {
     #page1-prototipos .content .section-title {
         font-size: 4rem;
@@ -495,6 +533,113 @@
     #page1-parceiros .content .section-paragraph {
         font-size: 1.6rem;
         line-height: 26px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #page1-blog .content {
+        max-width: 780px;
+        top: 16vh;
+    }
+
+    #page1-blog .content .section-title {
+        font-size: 50px;
+    }
+    
+    #page1-blog .content .section-paragraph {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    #page1-blog .content .section-button {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    #page1-blog .content .cards {
+        column-gap: 15px;
+        margin-top: 20px;
+
+        height: 45%;
+    }
+
+    #page1-blog .content .cards .card {
+        padding: 10px;
+    }
+
+    #page1-blog .content .cards .card > div:last-child {
+        margin-top: 10px;
+    }
+
+    #page1-blog .content .cards .card > div .title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    #page1-blog .content .cards .card > div .code {
+        font-size: 12px;
+    }
+    
+    #page1-blog .content .cards .card > div .read-time {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #page1-blog .content {
+        max-width: 780px;
+        top: 12vh;
+
+        padding: 0 20px;
+    }
+
+    #page1-blog .content .top-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #page1-blog .content .section-title {
+        font-size: 38px;
+
+        margin-right: 0;
+    }
+    
+    #page1-blog .content .section-paragraph {
+        text-align: start;
+        max-width: unset;
+    }
+    
+    #page1-blog .content .section-button {
+        width: 230px;
+        height: 36px;
+
+        font-size: 18px;
+
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    #page1-blog .content .cards {
+        display: flex;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+        height: 50%;
+    }
+
+    #page1-blog .content .cards .card {
+        width: 50%;
+        height: 100%;
+
+        flex: none;
+
+        scroll-snap-align: start;
     }
 }
 
@@ -559,6 +704,21 @@
 
     #page1-parceiros .content .section-paragraph {
         font-size: 1.2rem;
+    }
+
+    #page1-blog .content .cards {
+        display: flex;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+        height: 45%;
+    }
+
+    #page1-blog .content .cards .card {
+        width: 80%;
     }
 }
 

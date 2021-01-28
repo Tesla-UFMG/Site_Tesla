@@ -38,12 +38,12 @@
 }
 
 #pagina-equipe #video {
-    padding-top: 8vh;
+    padding-top: 20px;
     
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 170px;
+    padding-right: 170px;
 
-    padding-bottom: 5vh;
+    padding-bottom: 20px;
 }
 
 #pagina-equipe #video .embed {
@@ -63,8 +63,33 @@
     border: none;
 }
 
+#pagina-equipe #video > a {
+    width: 100%;
+}
+
 #pagina-equipe #video .scroll-bot-icon {
     position: relative;
-    top: 4vh;
-    left: 34.5vw;
+    top: 5px;
+}
+
+@media (max-width: 1100px) {
+    #pagina-equipe #video {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (max-width: 720px) {
+    #pagina-equipe #video {
+        padding-top: 70px;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+}
+
+@media (max-width: 425px) {
+    #pagina-equipe #video {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

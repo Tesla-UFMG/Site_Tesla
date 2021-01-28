@@ -120,6 +120,10 @@
         right: 0;
     }
 
+    .footer .info .opcoes .social {
+        left: 3vw;
+    }
+
     .footer .info .info-name {
         text-align: center;
     }

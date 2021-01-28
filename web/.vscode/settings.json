@@ -1,0 +1,7 @@
+{
+  "editor.snippetSuggestions": "bottom",
+  "css.lint.duplicateProperties": "warning",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}

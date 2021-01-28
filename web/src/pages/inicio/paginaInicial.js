@@ -36,7 +36,7 @@ function PaginaInicial() {
 
     return (
         <div id="page1">
-            <NavBar color={color} display={display}/>
+            <NavBar pageInicial={true} color={color} display={display}/>
 
             <FullPageScroll onScroll={handleScroll}>
                 <div id="page1-historia" className="container-fluid px-0">
