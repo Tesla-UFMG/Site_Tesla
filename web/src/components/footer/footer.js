@@ -26,16 +26,16 @@ function Footer() {
 
                                 <ul className="list-unstyled c1">
                                     <li>
-                                        <Link to="/Historia">História</Link>
+                                        <Link to="/historia">História</Link>
                                     </li>
                                     <li>
-                                        <Link to="/PrototiposNK319">Protótipos</Link>
+                                        <Link to="/prototipos-NK319">Protótipos</Link>
                                     </li>
                                     <li>
-                                        <Link to="/Equipe">Equipe</Link>
+                                        <Link to="/equipe">Equipe</Link>
                                     </li>
                                     <li>
-                                        <Link to="/Patrocinadores">Parceiros</Link>
+                                        <Link to="/patrocinadores">Parceiros</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -48,10 +48,10 @@ function Footer() {
                                         <Link to="/">Competição</Link>
                                     </li>
                                     <li>
-                                        <Link to="/">Galeria</Link>
+                                        <Link to="/galeria">Galeria</Link>
                                     </li>
                                     <li>
-                                        <Link to="/">Rollouts</Link>
+                                        <Link to="/rollouts">Rollouts</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -67,7 +67,7 @@ function Footer() {
                                     <Link to="/">Facebook</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Instagran</Link>
+                                    <Link to="/">Instagram</Link>
                                 </li>
                                 <li>
                                     <Link to="/">Youtube</Link>

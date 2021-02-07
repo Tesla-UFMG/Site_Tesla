@@ -16,24 +16,28 @@ import PaginaTexto from './pages/blog/texto/texto'
 import PaginaFeed from './pages/blog/feed/feed'
 import PaginaRollouts from './pages/rollouts/rollouts'
 import PaginaLoja from './pages/loja/loja'
+import PaginaGaleria from './pages/galeria/galeria'
+import PaginaGaleriaAno from './pages/galeria/galeriaAno'
 
 export default () => {
     return (
         <Switch>
             <Route exact path="/" component={PaginaInicial} />
-            <Route exact path="/Historia" component={PaginaHistoria} />
-            <Route exact path="/PrototiposNK319" component={PaginaNK319} />
-            <Route exact path="/PrototiposNK218" component={PaginaNK218} />
-            <Route exact path="/PrototiposKayran" component={PaginaKayran} />
-            <Route exact path="/Equipe" component={PaginaEquipe} />
-            <Route exact path="/Patrocinadores" component={PaginaPatrocinadores} />
+            <Route exact path="/historia" component={PaginaHistoria} />
+            <Route exact path="/prototipos-NK319" component={PaginaNK319} />
+            <Route exact path="/prototipos-NK218" component={PaginaNK218} />
+            <Route exact path="/prototipos-kayran" component={PaginaKayran} />
+            <Route exact path="/equipe" component={PaginaEquipe} />
+            <Route exact path="/patrocinadores" component={PaginaPatrocinadores} />
             <Route exact path="/cadastrar" component={PaginaCadastro} />
             <Route exact path="/cadastro-senha" component={PaginaSenha} />
             <Route exact path="/fim-cadastro" component={PaginaFimCadastro} />
             <Route exact path="/texto-blog" component={PaginaTexto} />
             <Route exact path="/feed-blog" component={PaginaFeed} />
-            <Route exact path="/Rollouts" component={PaginaRollouts} />
-            <Route exact path="/Loja" component={PaginaLoja} />
+            <Route exact path="/rollouts" component={PaginaRollouts} />
+            <Route exact path="/loja" component={PaginaLoja} />
+            <Route exact path="/galeria" component={PaginaGaleria} />
+            <Route exact path="/galeria/:ano" component={PaginaGaleriaAno} />
         </Switch>
     )
 }

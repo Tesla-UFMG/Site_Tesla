@@ -43,7 +43,7 @@ function PaginaInicial() {
                     <div className="col-6 content">
                         <h1 className="section-title">Bem-Vindos!</h1>
                         <p className="section-paragraph">Já conhece nossa equipe?</p>
-                        <Link to="/Historia" className="section-button">Conte-me mais</Link>
+                        <Link to="/historia" className="section-button">Conte-me mais</Link>
                     </div>
 
                     <div className="lateral-scroll-menu">
@@ -75,8 +75,8 @@ function PaginaInicial() {
                             <h1 className="section-title">AS MÁQUINAS</h1>
                         </div>
                         <div className="col">
-                            <p className="section-paragraph">Explore nossos protótipos e siaba a <br></br> história por tras de cada um deles!</p>
-                            <Link to="/PrototiposNK319" className="section-button">Conheça</Link>
+                            <p className="section-paragraph">Explore nossos protótipos e saiba a <br></br> história por trás de cada um deles!</p>
+                            <Link to="/prototipos-NK319" className="section-button">Conheça</Link>
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@ function PaginaInicial() {
                     <div className="col-6 content">
                         <h1 className="section-title">A EQUIPE</h1>
                         <p className="section-paragraph">Conheça as mentes <br></br> por trás desse projeto</p>
-                        <Link to="/" className="section-button">Saiba mais</Link>
+                        <Link to="/equipe" className="section-button">Saiba mais</Link>
                     </div>
 
                     <div className="lateral-scroll-menu">
@@ -144,7 +144,7 @@ function PaginaInicial() {
                         <div className="top-row">
                             <h1 className="section-title">BLOG</h1>
                             <p className="section-paragraph">Veja as publicações mais recentes no mundo da mobilidade elétrica</p>
-                            <Link to="/" className="section-button">Ver mais</Link>
+                            <Link to="/feed-blog" className="section-button">Ver mais</Link>
                         </div>
                         
                         <div className="cards">
@@ -196,7 +196,7 @@ function PaginaInicial() {
                         <h1 className="section-title">PARCEIROS</h1>
                         <p className="section-paragraph">Veja quais são as empresas que <br></br> ajudam a equipe a alcançar os <br></br> ótimos resultados</p>
                         <div className="buttons">
-                            <Link to="/" className="section-button">Patrocinadores</Link>
+                            <Link to="/patrocinadores" className="section-button">Patrocinadores</Link>
                             <Link to="/" className="section-button b2">Quero ajudar</Link>
                         </div>
                     </div>

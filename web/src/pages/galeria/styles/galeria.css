@@ -1,0 +1,98 @@
+#galeria-page .body {
+  width: 100%;
+
+  padding: 100px 250px 50px;
+}
+
+#galeria-page .body .title {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+
+  color: #000;
+
+  margin: 0;
+}
+
+#galeria-page .body .line {
+  width: 100%;
+
+  border-bottom: 1px solid #707070;
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#galeria-page .body .image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#galeria-page .body .image-row .image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+#galeria-page .body .year {
+  background-color: #707070;
+  border-radius: 20px;
+
+  width: 100%;
+
+  display: flex;
+
+  cursor: pointer;
+}
+
+#galeria-page .body .year p {
+  font-family: Gilroy-Extrabold;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1;
+  
+  color:white;
+
+  margin: 10px 20px;
+}
+
+#galeria-page .body .year.y-2020 {
+  background-image: url('../../../assets/img/fotos/_MG_0002-Pano.jpg');
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 20px;
+  height: 350px;
+
+  align-items: flex-end;
+}
+
+#galeria-page .body .year.y-2019 {
+  height: 250px;
+
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#galeria-page .body .year.y-2018 {
+  height: 520px;
+
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#galeria-page .body .year.y-2017 {
+  margin-bottom: 20px;
+  height: 250px;
+
+  align-items: flex-end;
+  justify-content: flex-start;
+}
