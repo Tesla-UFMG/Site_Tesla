@@ -5,3 +5,5 @@ exports.get = async() => {
   const res = await Categoria.find({})
   return res
 }
+
+exports
