@@ -4,6 +4,7 @@
 /backend/node_modules
 /painel/node_modules
 /web/node_modules
+/web/.vscode
 .pnp
 .pnp.js
 
