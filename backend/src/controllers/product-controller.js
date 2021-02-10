@@ -1,8 +1,11 @@
 const mongoose = require('mongoose')
 const Product = mongoose.model('Product')
+const ValidationContract = require('../validators/validation-contract')
+const repository = require('../repositories/product-repository')
 
 exports.get = (req,res,next) => {
-  Product.find({}, 'name slug sellPrice ').then(data =>{
+  repository.get()
+  .then(data =>{
     res.status(200).send(data)
   }).catch(e => {
     res.status(400).send({
@@ -13,10 +16,7 @@ exports.get = (req,res,next) => {
 }
 
 exports.getBySlug = (req,res,next) => {
-  Product.findOne({
-    slug: req.params.slug,
-    
-  }, 'name description slug sellPrice tags ')
+  repository.getBySlug(req.params.slug)
     .then(data =>{
       res.status(200).send(data)
     }).catch(e => {
@@ -28,9 +28,7 @@ exports.getBySlug = (req,res,next) => {
 }
 
 exports.getByTag = (req,res,next) => {
-  Product.find({
-    tags: req.params.tag
-  })
+  repository.getByTag(req.params.tag)
     .then(data =>{
       res.status(200).send(data)
     }).catch(e => {
@@ -42,9 +40,17 @@ exports.getByTag = (req,res,next) => {
 }
 
 
-exports.post = (req,res,next) => {   
-  let product = new Product(req.body)
-  product.save().then(x => {
+exports.post = (req,res,next) => {
+
+  let contract = new ValidationContract()
+  contract.hasMinLen(req.body.name,3,'O Nome deve ter pelo menos 3 caracteres')
+
+  if(!contract.isValid()){
+    res.status(400).send(contract.errors()).end()
+    return
+  }
+  repository.create(req.body)
+  .then(x => {
     res.status(201).send({
       message: 'Produto cadastrado com sucesso!'
     })
@@ -58,29 +64,22 @@ exports.post = (req,res,next) => {
 
 //mudar depois
 exports.put = (req,res,next) => {
-  Product
-    .findByIdAndUpdate(req.params.id,{
-      $set: {
-        name: req.body.name,
-        description: req.body.description,
-        slug: req.body.slug,
-        sellPrice: req.body.sellPrice
-      }
-  }).then(x => {
-    res.status(200).send({
-      message: 'Produto atualizado com sucesso!'
+  repository.update(req.params.id,req.body)
+    .then(x => {
+      res.status(200).send({
+        message: 'Produto atualizado com sucesso!'
+      })
+    }).catch(e => {
+      res.status(400).send({
+        message: 'Falha ao cadastrar produto',
+        data: e
+      })   
     })
-  }).catch(e => {
-    res.status(400).send({
-      message: 'Falha ao cadastrar produto',
-      data: e
-    })   
-  })
 }
 
 exports.delete = (req,res,next) => {
-  Product
-    .findOneAndRemove(req.body.id).then(x => {
+  repository.delete(req.params.id,req.body)
+    .then(x => {
     res.status(200).send({
       message: 'Produto removido com sucesso!'
     })
