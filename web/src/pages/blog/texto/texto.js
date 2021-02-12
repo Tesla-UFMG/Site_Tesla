@@ -172,7 +172,9 @@ function PaginaTexto() {
     <div id="texto-body">
       <NavBar color="preto" display="none" />
 
-      {renderText()}
+      <div id="conteudo-text-blog">
+        {renderText()}
+      </div>
     </div>
   );
 }
