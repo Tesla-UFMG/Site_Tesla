@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 //Carrega controller
-const controller = require('../controllers/usuario-controller')
+const controller = require('../controllers/user-controller')
 
 router.get('/', controller.get)
 router.post('/',controller.post)

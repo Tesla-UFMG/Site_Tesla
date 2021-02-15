@@ -14,31 +14,30 @@ exports.get = async(req,res,next) => {
   }
 }
 
-exports.getBySlug = (req,res,next) => {
+exports.getBySlug = async(req,res,next) => {
   try{
-    let data = repository.getBySlug(req.params.slug)
+    let data = await repository.getBySlug(req.params.slug)
     res.status(200).send(data)
-  }catch(e => {
+  }catch(e) {
       res.status(500).send({
         message: "Falha ao buscar produtos"
       })
-    })
+    }
 }
 
-exports.getByTag = (req,res,next) => {
-  repository.getByTag(req.params.tag)
-    .then(data =>{
-      res.status(200).send(data)
-    }).catch(e => {
-      res.status(400).send({
-        message: "Falha ao buscar produtos",
-        data: e
-      })
+exports.getByTag = async (req,res,next) => {
+  try{
+    let data = repository.getByTag(req.params.tag)
+    res.status(200).send(data)
+  } catch(e) {
+    res.status(500).send({
+      message: "Falha ao buscar produtos"
     })
+  }
 }
 
 
-exports.post = (req,res,next) => {
+exports.post = async(req,res,next) => {
 
   let contract = new ValidationContract()
   contract.hasMinLen(req.body.name,3,'O Nome deve ter pelo menos 3 caracteres')
@@ -47,44 +46,41 @@ exports.post = (req,res,next) => {
     res.status(400).send(contract.errors()).end()
     return
   }
-  repository.create(req.body)
-  .then(x => {
+  try{
+    await repository.create(req.body)
     res.status(201).send({
       message: 'Produto cadastrado com sucesso!'
     })
-  }).catch(e => {
+  } catch (e) {
     res.status(400).send({
-      message: 'Falha ao cadastrar o produto',
-      data: e
+      message: 'Falha ao cadastrar o produto'
     })
-  })
+  }
 }
 
-//mudar depois
-exports.put = (req,res,next) => {
-  repository.update(req.params.id,req.body)
-    .then(x => {
-      res.status(200).send({
-        message: 'Produto atualizado com sucesso!'
-      })
-    }).catch(e => {
-      res.status(400).send({
-        message: 'Falha ao cadastrar produto',
-        data: e
-      })   
+
+exports.put = async(req,res,next) => {
+  try{
+    await repository.update(req.params.id,req.body)
+    res.status(200).send({
+      message: 'Produto atualizado com sucesso!'
     })
+  }catch (e){
+    res.status(400).send({
+      message: 'Falha ao cadastrar produto'
+    })   
+  }
 }
 
-exports.delete = (req,res,next) => {
-  repository.delete(req.params.id,req.body)
-    .then(x => {
+exports.delete = async(req,res,next) => {
+  try{
+    repository.delete(req.params.id,req.body)
     res.status(200).send({
       message: 'Produto removido com sucesso!'
     })
-  }).catch(e => {
+  } catch(e){
     res.status(400).send({
-      message: 'Falha ao remover produto',
-      data: e
+      message: 'Falha ao remover produto'
     })   
-  })
+  }
 }

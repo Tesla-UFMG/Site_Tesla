@@ -36,6 +36,7 @@ exports.post = async(req,res,next) => {
         res.status(400).send(contract.errors()).end()
         return
     }
+    
     try{
 
         await repository.create(req.body)

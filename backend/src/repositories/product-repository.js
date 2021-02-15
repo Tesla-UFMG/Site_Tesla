@@ -16,7 +16,7 @@ exports.getBySlug = async(slug) => {
 }
 
 exports.getByTag = async(tag) => {
-  const res = Product.find({
+  const res =  await Product.find({
     tags: tag
   },'name description slug sellPrice tags ')
   return res

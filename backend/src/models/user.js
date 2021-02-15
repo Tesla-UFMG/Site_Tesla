@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const usuarioSchema = new Schema({
-    nome: {
+const userSchema = new Schema({
+    name: {
         type: String,
         trim: true              
     },
-    sobrenome: {
+    lastName: {
         type: String,
         trim: true
     },
@@ -16,7 +16,7 @@ const usuarioSchema = new Schema({
         unique: [true, "O email já está sendo usado"]
 
     },
-    senha: {
+    password: {
         type: String,
         required: true
     },
@@ -32,11 +32,13 @@ const usuarioSchema = new Schema({
 
 })
 
-/*
-    "nome" : "nome",
+/*{
+    "name" : "name",
     "email" : "bnmachado10@gmail.com",
-    "senha: "778452"
+    "password: "778452"
+  }
+    
 */
 
-const Usuario = mongoose.model('Usuario',usuarioSchema)
-module.exports = Usuario
+const User = mongoose.model('User',userSchema)
+module.exports = User

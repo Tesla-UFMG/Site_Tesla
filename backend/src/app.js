@@ -9,26 +9,26 @@ const router = express.Router()
 mongoose.connect('mongodb+srv://bruno:T3sla.lindos@site.j6bsq.gcp.mongodb.net/test')
 
 //Carrega models
-const Usuario = require('./models/usuario')
+const User = require('./models/user')
 const Sponsors = require('./models/sponsors')
 const Membro = require('./models/membro')
-//const Product = require('./models/product')
+const Product = require('./models/product')
 
 //Carrega as rotas
 const indexRoute = require('./routes/index-route')
-const usuarioRoute = require('./routes/usuario-route')
+const userRoute = require('./routes/user-route')
 const sponsorsRoute = require('./routes/sponsors-route')
 const membroRoute = require('./routes/membro-route')
-//const productRoute = require('./routes/product-route')
+const productRoute = require('./routes/product-route')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.use('/', indexRoute)
 app.use('/patrocinadores', sponsorsRoute)
-app.use('/usuario', usuarioRoute)
+app.use('/usuario', userRoute)
 app.use('/membros',membroRoute)
-//app.use('/product',productRoute)
+app.use('/produtos',productRoute)
 
 
 module.exports = app
