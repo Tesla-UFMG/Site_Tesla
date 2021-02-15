@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const patrocinadoresSchema = new Schema({
-    nome: {
+const sponsorsSchema = new Schema({
+    name: {
         type: String,
         trim: true              
     },
-    descricao: {
+    description: {
         type: String,
         trim: true
     },
@@ -22,7 +22,7 @@ const patrocinadoresSchema = new Schema({
         type: String,
         trim: true
     },
-    ativo: {
+    active: {
         type: Boolean,
         default: false,
     },
@@ -38,8 +38,8 @@ const patrocinadoresSchema = new Schema({
 
 /*
     {
-    "nome" : "nome",
-    "descricao" : "xpto",
+    "name" : "nome",
+    "description" : "xpto",
     "link" : "http://google.com.br",
     "facebook" : "facebook.com/bnmachado",
     "instagram" : "https://instagram.com.br/bnmachado",
@@ -48,4 +48,4 @@ const patrocinadoresSchema = new Schema({
 */
 
 
-module.exports = mongoose.model('Patrocinadores',patrocinadoresSchema)
+module.exports = mongoose.model('Sponsors',sponsorsSchema)

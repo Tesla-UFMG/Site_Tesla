@@ -3,26 +3,24 @@ const Product = mongoose.model('Product')
 const ValidationContract = require('../validators/validation-contract')
 const repository = require('../repositories/product-repository')
 
-exports.get = (req,res,next) => {
-  repository.get()
-  .then(data =>{
+exports.get = async(req,res,next) => {
+  try{
+    let data = await repository.get()
     res.status(200).send(data)
-  }).catch(e => {
-    res.status(400).send({
-      message: "Falha ao buscar produtos",
-      data: e
+  }catch (e){
+    res.status(500).send({
+      message: 'Falha ao processar sua requisição'
     })
-  })
+  }
 }
 
 exports.getBySlug = (req,res,next) => {
-  repository.getBySlug(req.params.slug)
-    .then(data =>{
-      res.status(200).send(data)
-    }).catch(e => {
-      res.status(400).send({
-        message: "Falha ao buscar produtos",
-        data: e
+  try{
+    let data = repository.getBySlug(req.params.slug)
+    res.status(200).send(data)
+  }catch(e => {
+      res.status(500).send({
+        message: "Falha ao buscar produtos"
       })
     })
 }

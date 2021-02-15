@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 //Carrega controller
-const controller = require('../controllers/patrocinadores-controller')
+const controller = require('../controllers/sponsors-controller')
 
 router.get('/',controller.get)
 router.get('/:id',controller.getById,)

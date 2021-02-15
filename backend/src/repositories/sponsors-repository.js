@@ -1,38 +1,38 @@
 const mongoose = require('mongoose');
-const Patrocinadores = mongoose.model("Patrocinadores")
+const Sponsors = mongoose.model("Sponsors")
 
 exports.get = async() => {
-    const res = await Patrocinadores.find({})
+    const res = await Sponsors.find({})
     return res
 }
 
 exports.getById = async(id) => {
-    const res = await Patrocinadores.findById(id)
+    const res = await Sponsors.findById(id)
     return res
 }
 
 
 exports.create = async(data) => {
-    let patrocinador = new Patrocinadores(data);
-    await patrocinador.save()
+    let sponsors = new Sponsors(data);
+    await sponsors.save()
 }
 
 exports.update = async(id , data) => {
-    await Patrocinadores
+    await Sponsors
         .findByIdAndUpdate(id, {
             $set: {
-                nome: data.nome,
-                descricao: data.descricao,
+                name: data.name,
+                description: data.description,
                 logo: data.logo,
                 link: data.link,
                 facebook: data.facebook,
                 instagram: data.instagram,
-                ativo: data.ativo
+                active: data.active
             }
         })
 }
 
 exports.delete = async(id) => {
-    await Patrocinadores
+    await Sponsors
     .findByIdAndRemove(id)
 }
