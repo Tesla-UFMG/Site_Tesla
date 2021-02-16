@@ -38,25 +38,24 @@ exports.post = async(req,res,next) => {
     }
 }
 
+//para atualizar a senha o campo chengePassword deve ser passado
 exports.put = async(req,res,next) => {
-
-    let contract = new ValidationContract();
-    contract.hasMinLen(req.body.name, 3 , "O nome deve ter pelo menos 3 caracteres")
-    contract.hasMinLen(req.body.password, 'A senha deve ter pelo menos 6 caracteres!')
-
-    if(!contract.isValid()){
-        res.status(400).send(contract.errors()).end()
-        return
-    }
+    const user = {...req.body}
     try{
+        contract.existsOrError(user.name, 'Nome nao informado!')
+        contract.existsOrError(user.lastName, 'Sobrenome não informado!')
+        contract.existsOrError(user.email, 'Email nao informado!')
+        contract.existsOrError(user.password, 'Senha não informada!')
+        contract.hasMinLen(user.password,8, 'Senhas precisam ter no mínimo 8 caracteres!')
+        contract.equalsOrError(user.password, user.confirmationPassword, 'Senhas nao conferem')
+        contract.equalsOrError(user.email,user.confirmationEmail,'Email nao informado')
         await repository.update(req.params.id,req.body)
-            res.status(200).send({
+        res.status(200).send({
                 message: 'Usuario atualizado com sucesso!'
             })
+        
     } catch(e){
-        res.status(500).send({
-            message: 'Falha ao atualizar usuario'
-        })
+        res.status(500).send(e)
     }
 }   
 

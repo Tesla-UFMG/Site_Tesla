@@ -27,9 +27,9 @@ exports.update = async(id , data) => {
     await User
         .findByIdAndUpdate(id, {
             $set: {
-                nome: data.nome,
+                name: data.name,
                 email: data.email,
-                senha: data.senha,
+                password: data.password,
             }
         })
 }
