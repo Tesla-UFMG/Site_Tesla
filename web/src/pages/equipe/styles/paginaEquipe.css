@@ -38,12 +38,12 @@
 }
 
 #pagina-equipe #video {
-    padding-top: 20px;
+    padding-top: 10vh;
     
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 250px;
+    padding-right: 250px;
 
-    padding-bottom: 20px;
+    padding-bottom: 10vh;
 }
 
 #pagina-equipe #video .embed {

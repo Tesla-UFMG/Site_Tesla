@@ -1,5 +1,5 @@
-#feed-page .navbar {
-  top: 0;
+#feed-page .navbar-tesla {
+  z-index: 2;
 }
 
 #feed-page .body .title {
@@ -33,6 +33,10 @@
 #feed-page .body .content {
   width: 100%;
   padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #feed-page .body .content .options-row {
@@ -44,6 +48,19 @@
 
   padding-top: 15px;
   padding-bottom: 5px;
+
+  width: 100%;
+
+  transition: 0.4s;
+}
+
+#feed-page .body .content .options-row.scrolled {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  background: #fff;
+  justify-content: center;
+  z-index: 1;
 }
 
 #feed-page .body .content .options-row .option {
@@ -106,6 +123,8 @@
 
 #feed-page .body .content .texts-wrapper {
   padding: 30px 150px 20px 150px;
+
+  max-width: 1600px;
 }
 
 #feed-page .body .content .texts-wrapper .text {

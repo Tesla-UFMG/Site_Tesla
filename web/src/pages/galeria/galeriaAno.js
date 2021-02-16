@@ -13,26 +13,29 @@ function PaginaGaleriaAno() {
     <div id="galeriaAno-page">
       <NavBar color={'preto'} display={'preto'}/>
 
-      <div className="body">
-        <h1 className="title">{ano}</h1>
-        <div className="line"></div>
+      <div id="conteudo-galeriaAno">
+        <div className="body">
+          <h1 className="title">{ano}</h1>
+          <div className="line"></div>
 
-        <div className="fotos">
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
-          <div className="foto"></div>
+          <div className="fotos">
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+            <div className="foto"></div>
+          </div>
+
         </div>
-
       </div>
+      
 
       <Footer />
     </div>

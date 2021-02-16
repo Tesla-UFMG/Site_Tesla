@@ -16,6 +16,29 @@ function PaginaFeed() {
   const [inputSearchActive, setInputSearchActive] = useState(false);
   const [optionSelected, setOptionSelected] = useState('todos');
 
+  const [optionRow, setOptionRow] = useState(false);
+
+  var last_known_scroll_position = 0;
+  var ticking = false;
+
+  window.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        if (last_known_scroll_position >= 270) {
+          setOptionRow(true);
+        } else {
+          setOptionRow(false);
+        }
+
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  });
+
   return (
     <div id="feed-page">
       <NavBar color={'preto'} display={'preto'}/>
@@ -27,7 +50,7 @@ function PaginaFeed() {
 
         <div className="content">
 
-          <div className="options-row">
+          <div className={"options-row " + (optionRow && "scrolled")}>
             <div>
               <input className={inputSearchActive ? 'active' : 'noActive'} type="text"/>
               <img src={lupa_icon} alt="Pesquisar" onClick={() => setInputSearchActive(true)}/>
@@ -88,6 +111,7 @@ function PaginaFeed() {
           </div>
         </div>
       </div>
+      
 
       <Footer />
     </div>

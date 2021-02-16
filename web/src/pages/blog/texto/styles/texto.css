@@ -1,3 +1,8 @@
+#texto-body #conteudo-text-blog {
+  display: flex;
+  justify-content: center;
+}
+
 #texto-body .body {
   display: flex;
   flex-direction: column;
@@ -7,6 +12,8 @@
   padding: 100px 250px 30px;
 
   position: relative;
+
+  max-width: 1600px;
 }
 
 .topicos-lateral {

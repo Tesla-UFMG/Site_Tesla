@@ -1,7 +1,14 @@
+#conteudo-galeria {
+  display: flex;
+  justify-content: center;
+}
+
 #galeria-page .body {
   width: 100%;
 
   padding: 100px 250px 50px;
+
+  max-width: 1600px;
 }
 
 #galeria-page .body .title {
@@ -76,6 +83,10 @@
 }
 
 #galeria-page .body .year.y-2019 {
+  background-image: url('../../../assets/img/fotos/_REN6967.jpg');
+  background-size: cover;
+  background-position: center;
+
   height: 250px;
 
   align-items: flex-end;
@@ -83,6 +94,10 @@
 }
 
 #galeria-page .body .year.y-2018 {
+  background-image: url('../../../assets/img/fotos/_MG_8902-2.jpg');
+  background-size: cover;
+  background-position: center;
+
   height: 520px;
 
   align-items: flex-end;
@@ -90,6 +105,10 @@
 }
 
 #galeria-page .body .year.y-2017 {
+  background-image: url('../../../assets/img/fotos/_MG_7130-2.jpg');
+  background-size: cover;
+  background-position: center;
+
   margin-bottom: 20px;
   height: 250px;
 
