@@ -13,6 +13,7 @@ const User = require('./models/user')
 const Sponsors = require('./models/sponsors')
 const Membro = require('./models/membro')
 const Product = require('./models/product')
+const Order = require('./models/order')
 
 //Carrega as rotas
 const indexRoute = require('./routes/index-route')

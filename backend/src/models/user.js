@@ -4,6 +4,7 @@ const Schema = mongoose.Schema
 const userSchema = new Schema({
     name: {
         type: String,
+        required:true,
         trim: true              
     },
     lastName: {
@@ -34,8 +35,13 @@ const userSchema = new Schema({
 
 /*{
     "name" : "name",
+    "lastName" : "machado",
     "email" : "bnmachado10@gmail.com",
-    "password: "778452"
+    "confirmEmail": "bnmachado10@gmail.com"
+    "password: "778452",
+    "confirmPassword": "778452",
+
+
   }
     
 */

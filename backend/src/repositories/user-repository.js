@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 const User = mongoose.model('User')
+const bcrypt = require('bcrypt-nodejs')
 
+encryptPassword = password => {
+    const salt = bcrypt.genSaltSync(10)
+    return bcrypt.hashSync(password,salt)
+}
 
 exports.get = async() => {
     const res = await User.find({})
@@ -8,6 +13,12 @@ exports.get = async() => {
 }
 
 exports.create = async(data) => {
+    
+    data.password = encryptPassword(data.password)
+    console.log(data)
+    delete data.confirmPassword
+    delete data.confirmEmail
+    
     let user = new User(data);
     await user.save()
 }
