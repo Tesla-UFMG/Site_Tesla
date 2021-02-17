@@ -1,3 +1,4 @@
+const dotenv = require('dotenv')
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
@@ -7,6 +8,8 @@ const config = require('./config')
 
 const app = express()
 const router = express.Router()
+
+dotenv.config()
 
 //Conecta com Db Mongo
 mongoose.connect(config.connectionString)
