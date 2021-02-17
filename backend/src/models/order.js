@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const orderSchema = new Schema({
     number: {
         type: String,
-        require: true             
+        require: [true,'impossivel cadastrar sem numero']            
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -12,19 +12,19 @@ const orderSchema = new Schema({
     },
     createDate: {
       type:Date,
-      required:true,
+      required: [true,'impossivel cadastrar sem data'],
       default: Date.now
     },
     status: {
       type: String,
-      required: true,
+      required: [true,'impossivel cadastrar sem dtatus'],
       enum: ['created','done','complete'],
       default: 'created'
     },
     items: [{
       quantity: {
         type: Number,
-        required:true,
+        required:[true,'impossivel cadastrar sem quantidade'],
         default: 1
       },
       product: {

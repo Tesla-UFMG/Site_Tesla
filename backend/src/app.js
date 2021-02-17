@@ -21,15 +21,17 @@ const userRoute = require('./routes/user-route')
 const sponsorsRoute = require('./routes/sponsors-route')
 const membroRoute = require('./routes/membro-route')
 const productRoute = require('./routes/product-route')
+const orderRoute = require('./routes/order-route')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 
 app.use('/', indexRoute)
 app.use('/patrocinadores', sponsorsRoute)
-app.use('/usuario', userRoute)
+app.use('/usuarios', userRoute)
 app.use('/membros',membroRoute)
 app.use('/produtos',productRoute)
+app.use('/pedidos',orderRoute)
 
 
 module.exports = app
