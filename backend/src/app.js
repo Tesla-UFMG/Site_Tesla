@@ -4,6 +4,7 @@ const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const config = require('./config')
+const path = require('path')
 
 
 const app = express()
@@ -12,7 +13,7 @@ const router = express.Router()
 dotenv.config()
 
 //Conecta com Db Mongo
-mongoose.connect(config.connectionString)
+mongoose.connect(process.env.MONGO_URL)
 
 //Carrega models
 const User = require('./models/user')
@@ -34,6 +35,10 @@ const orderRoute = require('./routes/order-route')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(morgan("dev"))
+app.use(
+  "/files",
+  express.static(path.resolve(__dirname, "..", "tmp", "uploads"))
+)
 
 
 app.use('/', indexRoute)
