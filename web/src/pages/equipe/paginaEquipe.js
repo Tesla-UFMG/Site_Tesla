@@ -117,14 +117,16 @@ function PaginaEquipe() {
                 </HashLink>
             </div>
 
-            <div id="video" className="row">
-                <div className="embed">
-                    <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" title="Video Equipe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div>
+                <div id="video" className="row">
+                    <div className="embed">
+                        <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" title="Video Equipe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
 
-                <HashLink to="/equipe#Equipe2020">
-                    <img src={image_scroll_icon_black} alt="scroll icon" className="scroll-bot-icon"></img>
-                </HashLink>
+                    <HashLink to="/equipe#Equipe2020">
+                        <img src={image_scroll_icon_black} alt="scroll icon" className="scroll-bot-icon"></img>
+                    </HashLink>
+                </div>
             </div>
 
             {dados.map(equipe => {

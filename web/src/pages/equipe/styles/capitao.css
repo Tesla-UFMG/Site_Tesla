@@ -1,9 +1,7 @@
 #pagina-equipe #Equipe2020 .capitao {
     display: flex;
-
+    justify-content: center;
     margin-bottom: 30px;
-
-    padding-left: 20vw;
 }
 
 #pagina-equipe #Equipe2020 .capitao .img-fluid {
