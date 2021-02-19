@@ -8,7 +8,7 @@ const { promisify } = require("util");
 const s3 = new aws.S3()
 
 
-
+ 
 const uploadSchema = new Schema({
   name:{
     type: String

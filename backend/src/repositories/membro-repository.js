@@ -6,8 +6,18 @@ exports.get = async() => {
     const res = await Membros.find({})
     return res
 }
+
 exports.getById = async(id) => {
     const res = await Membros.findById(id)
+    return res
+}
+ exports.getByYear = async(y) => {
+     const res = await Membros.find({year : y })
+     return res
+ }
+
+exports.getByUserId = async(id) => {
+    const res = await Membros.find({user: id})
     return res
 }
 

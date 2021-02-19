@@ -14,12 +14,14 @@ const userSchema = new Schema({
     email: {
         type: String,
         trim: true,
-        unique: [true, "O email já está sendo usado"]
+        unique: [true, "O email já está sendo usado"],
+        lowercase: true
 
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        select: false
     },
     admin: {
         type: Boolean,
@@ -28,6 +30,10 @@ const userSchema = new Schema({
     autor: {
         type: Boolean,
         defaut: false
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
     }
     
 
