@@ -12,10 +12,10 @@ exports.get = async() => {
     return res
 }
 
-exports.create = async(data) => {
+exports.create = async(data,msg) => {
     
     data.password = encryptPassword(data.password)
-    console.log(data)
+   
     delete data.confirmPassword
     delete data.confirmEmail
     

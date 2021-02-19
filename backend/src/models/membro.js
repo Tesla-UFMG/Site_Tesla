@@ -24,6 +24,26 @@ const membroSchema = new Schema({
         type: String,
         trim: true
     },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+    },
+    data: 
+        [
+            {
+            subsistema: {
+                type: String,
+                enum: ['Baterias' , 'Aquisição', 'Site', 'Sem Classificação'],
+                default: 'Sem Classificação',
+                require: true
+                },
+            year: {
+                type: Number,
+                default: 2020
+                }  
+            }
+            
+        ]
+    
 })
 
 /*

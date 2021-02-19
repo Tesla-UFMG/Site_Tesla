@@ -1,4 +1,4 @@
-const { authSecret } = require('/.env')
+/*const { authSecret } = require('/.env')
 const jwt = require('jwt-simple')
 const bcrypt = require('bcrypt-nodejs')
 
@@ -10,3 +10,4 @@ module.exports signin = async(req,res) => {
   const user = await
 }
 
+*/

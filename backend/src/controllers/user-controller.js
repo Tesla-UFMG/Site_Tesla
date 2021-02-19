@@ -1,9 +1,8 @@
 //const ValidationContract = require('../validators/validation-contract');
 const repository = require('../repositories/user-repository')
 const contract = require('../validators/validation-crud')
-//const md5 = require('md5') // lembrar de criptografar depois
-
-//const emailService = require('../services/email-service')
+const mongoose = require('mongoose')
+const User = mongoose.model('User')
 
 exports.get = async(req,res,next) => {
     try{
@@ -20,14 +19,16 @@ exports.post = async(req,res,next) => {
     const user = {...req.body}
     try{
     
-    contract.existsOrError(user.name, 'Nome nao informado!')
-    contract.existsOrError(user.lastName, 'Sobrenome não informado!')
-    contract.existsOrError(user.email, 'Email nao informado!')
-    contract.existsOrError(user.password, 'Senha não informada!')
-    contract.hasMinLen(user.password,8, 'Senhas precisam ter no mínimo 8 caracteres!')
-    contract.equalsOrError(user.password, user.confirmationPassword, 'Senhas nao conferem')
-    contract.equalsOrError(user.email,user.confirmationEmail,'Email nao informado')
-        
+        contract.existsOrError(user.name, 'Nome nao informado!')
+        contract.existsOrError(user.lastName, 'Sobrenome não informado!')
+        contract.existsOrError(user.email, 'Email nao informado!')
+        contract.existsOrError(user.password, 'Senha não informada!')
+        contract.hasMinLen(user.password,8, 'Senhas precisam ter no mínimo 8 caracteres!')
+        contract.equalsOrError(user.password, user.confirmationPassword, 'Senhas nao conferem')
+        contract.equalsOrError(user.email,user.confirmationEmail,'Email nao informado')
+        /*if(await User.findOne({ email })){
+            return res.status(401).send({ error: 'o email informado já existe'})
+        }*/
         await repository.create(req.body)
         //emailService.send(req.body.email, 'Bem Vindo Ao Tesla' , global.EMAIL_TMPL.replace('{0}', req.body.name))
         res.status(201).send({
