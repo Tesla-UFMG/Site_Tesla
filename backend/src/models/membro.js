@@ -7,15 +7,15 @@ const membroSchema = new Schema({
         require: true,
         trim: true              
     },
-    subsistema: {
-        type: String,
-        riquire: true,
-        trim: true,
-    },
-    cargo: {
-        type: String,
-        trim: true
-    },
+    // subsistema: {
+    //     type: String,
+    //     riquire: true,
+    //     trim: true,
+    // },
+    // cargo: {
+    //     type: String,
+    //     trim: true
+    // },
     linkedin: {
         type: String,
         trim: true
@@ -30,15 +30,19 @@ const membroSchema = new Schema({
     data: 
         [
             {
-            subsistema: {
-                type: String,
-                enum: ['Baterias' , 'Aquisição', 'Site', 'Sem Classificação'],
-                default: 'Sem Classificação',
-                require: true
+                subsistema: {
+                    type: String,
+                    enum: ['Baterias' , 'Aquisição', 'Site', 'Sem Classificação'],
+                    default: 'Sem Classificação',
+                    require: true
                 },
-            year: {
-                type: Number,
-                default: 2020
+                cargo: {
+                    type: String,
+                    trim: true
+                },
+                year: {
+                    type: Number,
+                    default: 2020
                 }  
             }
             
