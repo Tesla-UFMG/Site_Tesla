@@ -13,6 +13,10 @@ const uploadSchema = new Schema({
   name:{
     type: String
   },
+  paste: {
+    type: String,
+    default: "members",
+  },
   local: {
     type: String
   },
@@ -46,9 +50,10 @@ uploadSchema.pre('remove', function() {
     }).promise()
   } else {
     return promisify(fs.unlink)(
-      path.resolve(__dirname, "..", "..", "tmp", "uploads", this.key)
+      path.resolve(__dirname, "..", "..", "tmp", "uploads",this.paste, this.key)
     )
   }
 })
+
 const Upload = mongoose.model('Upload',uploadSchema)
 module.exports = Upload

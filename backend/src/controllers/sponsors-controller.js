@@ -44,7 +44,6 @@ exports.post = async(req,res,next) => {
             message: 'Patrocinador cadastrado com sucesso!'
         })
     } catch(e) {
-        console.log(e)
         res.status(500).send({
             message: 'Falha ao cadastrar patrocinador'
         })

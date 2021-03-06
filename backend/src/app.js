@@ -31,7 +31,6 @@ const sponsorsRoute = require('./routes/sponsors-route')
 const memberRoute = require('./routes/member-route')
 const productRoute = require('./routes/product-route')
 const orderRoute = require('./routes/order-route')
-//const uploadRoute = require('./routes/upload-route')
 
 app.use(cors())
 app.use(bodyParser.json())
