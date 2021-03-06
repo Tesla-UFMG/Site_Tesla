@@ -4,11 +4,11 @@ const crypto = require('crypto')
 const aws = require('aws-sdk')
 const multerS3 = require('multer-s3')
 
+
 const storageTypes = {
-  //upload de imagens logalmente salva na pasta temp e consome disco
   local: multer.diskStorage({
-    destination: (req,file,cb) => {
-      cb(null, path.resolve(__dirname, '..','..', 'tmp', 'uploads'))
+    destination: (req, file, cb) => {
+      cb(null, path.resolve(__dirname, "..", "..", "tmp", "uploads"));
     },
     filename: (req,file,cb) => {
       crypto.randomBytes(16,(err, hash) => {
@@ -38,18 +38,19 @@ const storageTypes = {
 }
 module.exports = {
   dest: path.resolve(__dirname, '..','..', 'tmp', 'uploads'),
-  storage: storageTypes[process.env.STORAGE_TYPE],
+  storage: storageTypes["local"],
   limits: {
     fileSize: 1 * 1024 * 1024,
     },
   fileFilter: (req, file, cb) => {
+  
     const  allowedMimes = [
       'image/jpeg',
       'image/pjpeg',
       'image/png',
       'image/gif'
     ]
-
+    console.log('pre-if')
     if(allowedMimes.includes(file.mimetype)){
       cb(null, true)
     } else{

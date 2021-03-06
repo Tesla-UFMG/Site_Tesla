@@ -1,4 +1,5 @@
-const dotenv = require('dotenv')
+require('dotenv').config()
+
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
@@ -9,7 +10,7 @@ const cors = require('cors')
 const app = express()
 const router = express.Router()
 
-dotenv.config()
+
 
 //Conecta com Db Mongo
 mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true })

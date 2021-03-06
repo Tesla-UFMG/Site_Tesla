@@ -6,19 +6,18 @@ const Upload = require('../models/upload')
 
 router.get('/uploads', async(req,res) => {
   const uploads =await Upload.find({})
-
   return res.json(uploads)
 })
 
-router.post("/uploads", multer(multerConfig).single("file"), async (req,res) => {
+router.post("/uploads", multer(multerConfig).single("file"), async (req, res) => {
   const { originalname: name, size, key, location: url = '' } = req.file
-
   const post = await Upload.create({
     name,
     size,
     key,
     url
   })
+  console.log(post)
   return res.json(post)
 })
 
