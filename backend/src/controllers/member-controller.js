@@ -49,10 +49,9 @@ exports.post = async(req,res,next) => {
     const member = {...req.body}
     try{
         contract.existsOrError(member.name, 'Nome nao informado!')
-        contract.hasMinLen(member.name, 'Nome precisa ter ao menos 3 caracteres')
-       // console.log("teste de acesso ", member.data)
-        //contract.existsOrError(member.data[2], 'subsistema não informado!')
-        //contract.existsOrError(member.data.img, 'Imagem não carregada!')
+        contract.hasMinLen(member.name,3, 'Nome precisa ter ao menos 3 caracteres')
+        contract.existsOrError(member.data[0].subsystem, 'subsistema não informado!')
+        contract.existsOrError(member.data[0].year, 'Pelo menos um ano deve ser cadastrado')
         
         await repository.create(req.body)
        
@@ -60,7 +59,6 @@ exports.post = async(req,res,next) => {
             message: 'Membro cadastrado com sucesso!'
         })
     } catch(e) {
-        console.log(e)
         res.status(500).send({
             message: e
         })
@@ -69,8 +67,12 @@ exports.post = async(req,res,next) => {
 
 exports.put = async(req,res,next) => {
 
-    let contract = new ValidationContract();
-    contract.hasMinLen(req.body.name, 3 , "O nome deve ter pelo menos 3 caracteres")
+    const member = {...req.body}
+
+    contract.existsOrError(member.name, 'Nome nao informado!')
+    contract.hasMinLen(member.name,3, 'Nome precisa ter ao menos 3 caracteres')
+    contract.existsOrError(member.data[0].subsystem, 'subsistema não informado!')
+    contract.existsOrError(member.data[0].year, 'Pelo menos um ano deve ser informado')
 
     try{
         await repository.update(req.params.id,req.body)
@@ -79,15 +81,20 @@ exports.put = async(req,res,next) => {
             })
     } catch(e){
         res.status(500).send({
-            message: 'Falha ao atualizar usuario'
+            message: e
         })
     }
 }   
 
 exports.delete = async(req,res,next) => {
     try{
-        
+        await repository.delete(req.params.id)
+        res.status(200).send({
+            message: 'Membro removido com sucesso!'
+        })
     } catch(e) {
-
+        res.status(500).send({
+            message: e
+        })
     }
 }

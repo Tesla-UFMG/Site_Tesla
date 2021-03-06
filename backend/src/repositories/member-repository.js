@@ -43,18 +43,28 @@ exports.create = async(data) => {
     
 }
 
-exports.update = async(id , data) => {
-    await Member
-        .findByIdAndUpdate(id, {
+exports.update = async(id , d) => {
+    check = await Member.findOne({_id: id})
+    if(check){
+        await Member
+        .findOneAndUpdate({_id : id}, {
             $set: {
-                name: data.name,
-                linkedin: data.linkedin,
-                img: data.img
+                name: d.name,
+                linkedin: d.linkedin,
+                data: d.data
             }
         })
+    }else{
+        throw("Id não encontrado")
+    }
+    
 }
 
 exports.delete = async(id) => {
-    await Member
-    .findByIdAndRemove(id)
+    const filter = {_id : id}
+    const res = await Member.findOneAndDelete(filter)
+    if(!res){
+        throw "Membro não encontrado"
+    }
+    return res
 }

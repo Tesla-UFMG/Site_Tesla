@@ -49,9 +49,9 @@ const memberSchema = new Schema({
     "linkedin" : "ulr",
         "data": [
             {
-                "img": "diretorio",
                 "office": "cargo",
-                "subsystem": "subsistema",
+                "img": "diretorio",
+                "subsystem": "Baterias",
                 "year": "2020"
             }
         ]
