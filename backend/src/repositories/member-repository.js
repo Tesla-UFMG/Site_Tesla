@@ -55,7 +55,7 @@ exports.update = async(id , d) => {
             }
         })
     }else{
-        throw("Id não encontrado")
+        throw("Patrocinador não encontrado")
     }
     
 }

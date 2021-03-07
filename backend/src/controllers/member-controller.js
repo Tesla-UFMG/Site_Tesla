@@ -68,13 +68,13 @@ exports.post = async(req,res,next) => {
 exports.put = async(req,res,next) => {
 
     const member = {...req.body}
-
-    contract.existsOrError(member.name, 'Nome nao informado!')
-    contract.hasMinLen(member.name,3, 'Nome precisa ter ao menos 3 caracteres')
-    contract.existsOrError(member.data[0].subsystem, 'subsistema não informado!')
-    contract.existsOrError(member.data[0].year, 'Pelo menos um ano deve ser informado')
-
+    
     try{
+        
+        contract.existsOrError(member.name, 'Nome nao informado!')
+        contract.hasMinLen(member.name,3, 'Nome precisa ter ao menos 3 caracteres')
+        contract.existsOrError(member.data[0].subsystem, 'subsistema não informado!')
+        contract.existsOrError(member.data[0].year, 'Pelo menos um ano deve ser informado')
         await repository.update(req.params.id,req.body)
             res.status(200).send({
                 message: 'Usuario atualizado com sucesso!'
