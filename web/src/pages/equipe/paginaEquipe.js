@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './styles/paginaEquipe.css'
 
@@ -16,6 +16,8 @@ import Equipe from './components/equipe'
 import Subsistema from './components/subsistema'
 import Capitao from './components/capitao'
 import Membro from './components/membro'
+
+import listMembros from '../../services/listMembros';
 
 const dados = [
     {
@@ -99,6 +101,14 @@ function PaginaEquipe() {
         }
     });
 
+    useEffect(() => {
+        async function fetchData() {
+            const lista_membros = await listMembros();
+            console.log(lista_membros.data)
+        }
+        fetchData();
+    }, [])
+
     return (
         <div id="pagina-equipe">
             <NavBar color={color} display={display} />
@@ -117,31 +127,37 @@ function PaginaEquipe() {
                 </HashLink>
             </div>
 
-            <div id="video" className="row">
-                <div className="embed">
-                    <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" title="Video Equipe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div>
+                <div id="video" className="row">
+                    <div className="embed">
+                        <iframe src="https://www.youtube.com/embed/BWegfyI_eoY" title="Video Equipe" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
 
-                <HashLink to="/equipe#Equipe2020">
-                    <img src={image_scroll_icon_black} alt="scroll icon" className="scroll-bot-icon"></img>
-                </HashLink>
+                    <HashLink to="/equipe#Equipe2020">
+                        <img src={image_scroll_icon_black} alt="scroll icon" className="scroll-bot-icon"></img>
+                    </HashLink>
+                </div>
             </div>
 
             {dados.map(equipe => {
-                return (<Equipe Id={"Equipe" + equipe.equipe}
-                    capitao={<Capitao imageCapitao={equipe.capitao.imagem} capitao={equipe.capitao.sexo} nomeCapitao={equipe.capitao.nome} />}
-                    subsistemas={equipe.subsistema.map(subsistema => {
-                        return (<Subsistema subsistema={subsistema.nome} 
-                            membros={subsistema.membros.map(membro => {
-                                return (<Membro 
-                                    imagePath={membro.imagem}
-                                    nome={membro.nome}
-                                    cargo={membro.cargo}
-                                />)
-                            })}
-                        />)
-                    })}
-                />)
+                return (
+                    <Equipe key={"Equipe" + equipe.equipe} 
+                        Id={"Equipe" + equipe.equipe}
+                        capitao={<Capitao imageCapitao={equipe.capitao.imagem} capitao={equipe.capitao.sexo} nomeCapitao={equipe.capitao.nome} />}
+                        subsistemas={equipe.subsistema.map(subsistema => {
+                            return (<Subsistema key={subsistema.nome}
+                                subsistema={subsistema.nome} 
+                                membros={subsistema.membros.map((membro, index) => {
+                                    return (<Membro key={membro.nome + index}
+                                        imagePath={membro.imagem}
+                                        nome={membro.nome}
+                                        cargo={membro.cargo}
+                                    />)
+                                })}
+                            />)
+                        })}
+                    />
+                )
             })}
             
             <Footer />
