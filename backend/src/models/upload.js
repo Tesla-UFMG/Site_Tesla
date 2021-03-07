@@ -14,8 +14,7 @@ const uploadSchema = new Schema({
     type: String
   },
   paste: {
-    type: String,
-    default: "members",
+    type: String
   },
   local: {
     type: String
@@ -45,8 +44,8 @@ uploadSchema.pre('save',function() {
 uploadSchema.pre('remove', function() {
   if(process.env.STORAGE_TYPE === 's3'){
     return s3.deleteObject({
-      Bucket: 'tesla-img',
-      key: this.key,
+      Bucket: process.env.BUCKET_NAME + "/" + this.paste,
+      Key: this.key,
     }).promise()
   } else {
     return promisify(fs.unlink)(

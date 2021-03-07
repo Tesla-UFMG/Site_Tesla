@@ -4,10 +4,13 @@ const crypto = require('crypto')
 const aws = require('aws-sdk')
 const multerS3 = require('multer-s3')
 
+exports.dir = function(diretorio) {
+res = process.env.BUCKET_NAME + "/" + diretorio
+return res
+}
 
 const storageTypes = {
   local: multer.diskStorage({
-    
     destination: (req, file, cb) => {
       file.paste = req.params.paste
       cb(null, path.resolve(__dirname, "..", "..", "tmp", "uploads",file.paste));
@@ -23,10 +26,15 @@ const storageTypes = {
   }),
   s3: multerS3({
     s3: new aws.S3(),
-    bucket: 'img-tesla',
+    bucket: (req,file,cb) => {
+      file.paste = req.params.paste
+      const buck = process.env.BUCKET_NAME + "/" + file.paste
+      cb(null, buck)
+    },
     contentType: multerS3.AUTO_CONTENT_TYPE,
     acl: 'public-read',
     key: (req,file,cb) => {
+      
       crypto.randomBytes(16,(err, hash) => {
         if(err) cb(err)
 

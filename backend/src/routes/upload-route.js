@@ -15,9 +15,12 @@ router.get('/uploads', async(req,res) => {
   }
  })
 
+
+ 
 router.post("/uploads/:paste", multer(multerConfig).single("file"), async (req, res) => {
   try{
     const { originalname: name, size, key, paste, location: url = '' } = req.file
+    console.log(req.file)
     const post = await Upload.create({
       name,
       paste,
@@ -25,12 +28,15 @@ router.post("/uploads/:paste", multer(multerConfig).single("file"), async (req, 
       key,
       url
     })
+    
+
+    console.log(process.env.BUCKET_NAME + "/" + paste)
     res.status(201).send({
     message: 'Upload efetuado com sucesso!'
     })
   } catch(e) {
     res.status(500).send({
-      message: 'Falha ao efetuar upload!'
+      message: e
     })
   }  
 })
@@ -38,14 +44,17 @@ router.post("/uploads/:paste", multer(multerConfig).single("file"), async (req, 
 router.delete('/uploads/:id' , async(req,res) => {
   try{
     const post = await Upload.findById(req.params.id)
+    console.log(post)
     await post.remove()
+
+    
     return res.status(200).send({
       message: 'Upload deletado com sucesso'
-    })
+   })
   }catch(e) {
-    res.status(500).send({
-      message: 'Falha ao deletar upload'
-    })
+   res.status(500).send({
+      message: e
+   })
   }
   
 })
