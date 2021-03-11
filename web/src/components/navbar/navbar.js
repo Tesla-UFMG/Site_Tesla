@@ -45,7 +45,7 @@ function Navbar(props) {
         <Link to="/equipe">Equipe</Link>
         <Link to="/patrocinadores">Parceiros</Link>
         <Link to="/feed-blog">Blog</Link>
-        <Link to="/">A Competição</Link>
+        <Link to="/competicao">A Competição</Link>
         <Link to="/galeria">Galeria</Link>
         <Link to="/rollouts">Rollouts</Link>
         <Link to="/loja">Loja</Link>

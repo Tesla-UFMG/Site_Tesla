@@ -18,6 +18,7 @@ import PaginaRollouts from './pages/rollouts/rollouts'
 import PaginaLoja from './pages/loja/loja'
 import PaginaGaleria from './pages/galeria/galeria'
 import PaginaGaleriaAno from './pages/galeria/galeriaAno'
+import PaginaCompeticao from './pages/competicao/paginaCompeticao'
 
 export default () => {
     return (
@@ -37,6 +38,7 @@ export default () => {
             <Route exact path="/rollouts" component={PaginaRollouts} />
             <Route exact path="/loja" component={PaginaLoja} />
             <Route exact path="/galeria" component={PaginaGaleria} />
+            <Route exact path="/competicao" component={PaginaCompeticao} />
             <Route exact path="/galeria/:ano" component={PaginaGaleriaAno} />
         </Switch>
     )
