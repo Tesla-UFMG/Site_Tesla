@@ -1,17 +1,13 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const membroSchema = new Schema({
-    nome: {
+const memberSchema = new Schema({
+    name: {
         type: String,
         require: true,
         trim: true              
     },
     linkedin: {
-        type: String,
-        trim: true
-    },
-    img: {
         type: String,
         trim: true
     },
@@ -21,11 +17,16 @@ const membroSchema = new Schema({
     data: 
         [
             {
-            cargo: {
+            
+            office: {
                 type:String,
                 trim: true
             },
-            subsistema: {
+            img: {
+                type: String,
+                trim: true
+            },
+            subsystem: {
                 type: String,
                 enum: ['Baterias' , 'Aquisição', 'Site', 'Sem Classificação'],
                 default: 'Sem Classificação',
@@ -44,17 +45,19 @@ const membroSchema = new Schema({
 
 /*
     {
-    "nome" : "nome",
+    "name" : "nome",
     "linkedin" : "ulr",
-    "img": "diretorio",
-    "data": [
-        "cargo": "cargo",
-        "subsistema": "subsistema",
-        "year": "2020"
+        "data": [
+            {
+                "office": "cargo",
+                "img": "diretorio",
+                "subsystem": "Baterias",
+                "year": "2020"
+            }
         ]
     }
     
 */
 
-const Membro = mongoose.model('Membro',membroSchema)
-module.exports = Membro
+const Member = mongoose.model('Member',memberSchema)
+module.exports = Member

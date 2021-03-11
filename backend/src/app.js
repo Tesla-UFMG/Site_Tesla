@@ -1,4 +1,5 @@
-const dotenv = require('dotenv')
+require('dotenv').config()
+
 const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
@@ -9,7 +10,7 @@ const cors = require('cors')
 const app = express()
 const router = express.Router()
 
-dotenv.config()
+
 
 //Conecta com Db Mongo
 mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true })
@@ -18,7 +19,7 @@ mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true })
 //Carrega models
 const User = require('./models/user')
 const Sponsors = require('./models/sponsors')
-const Membro = require('./models/membro')
+const Member = require('./models/member')
 const Product = require('./models/product')
 const Order = require('./models/order')
 const Upload = require('./models/upload')
@@ -27,10 +28,9 @@ const Upload = require('./models/upload')
 const indexRoute = require('./routes/index-route')
 const userRoute = require('./routes/user-route')
 const sponsorsRoute = require('./routes/sponsors-route')
-const membroRoute = require('./routes/membro-route')
+const memberRoute = require('./routes/member-route')
 const productRoute = require('./routes/product-route')
 const orderRoute = require('./routes/order-route')
-//const uploadRoute = require('./routes/upload-route')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -45,7 +45,7 @@ app.use(
 app.use('/', indexRoute)
 app.use('/patrocinadores', sponsorsRoute)
 app.use('/usuarios', userRoute)
-app.use('/membros',membroRoute)
+app.use('/membros',memberRoute)
 app.use('/produtos',productRoute)
 app.use('/pedidos',orderRoute)
 app.use(require("./routes/upload-route"))
