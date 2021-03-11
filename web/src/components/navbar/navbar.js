@@ -24,7 +24,7 @@ function Navbar(props) {
             <div className="dropdown-menu-itens">
               <p className="dropdown-item" onClick={() => history.push('/prototipos-NK319')}>NK319</p>
               <p className="dropdown-item" onClick={() => history.push('/prototipos-NK218')}>NK218</p>
-              <p className="dropdown-item" onClick={() => history.push('/prototipos-kyran')}>Kayran</p>
+              <p className="dropdown-item" onClick={() => history.push('/prototipos-kayran')}>Kayran</p>
             </div>
           )}
         </div>

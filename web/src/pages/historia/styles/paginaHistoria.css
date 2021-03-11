@@ -2,7 +2,7 @@
     margin: 0;
 }
 
-#inicio {
+#pagina-historia #inicio {
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -12,19 +12,19 @@
     position: relative;
 }
 
-#inicio .img-inicio {
+#pagina-historia #inicio .img-inicio {
     width: 100%;
     height: 70vh;
 
     object-fit: cover;
 }
 
-#inicio .content {
+#pagina-historia #inicio .content {
     position: relative;
     top: 1.5vh;
 }
 
-#inicio .content h1 {
+#pagina-historia #inicio .content h1 {
     font-family: Gilroy-Extrabold;
     font-size: 6vw;
     text-transform: uppercase;
@@ -35,7 +35,7 @@
     padding-left: 30px;
 }
 
-#inicio .content p {
+#pagina-historia #inicio .content p {
     font-family: Gilroy-Light;
     font-size: 2vw;
 
@@ -46,12 +46,12 @@
     padding-right: 15px;
 }
 
-#conteudo {
+#pagina-historia #conteudo {
     display: flex;
     justify-content: center;
 }
 
-#conteudo .content {
+#pagina-historia #conteudo .content {
     padding-top: 6vh;
 
     padding-left: 250px;
@@ -62,11 +62,11 @@
     max-width: 1600px;
 }
 
-#conteudo .content #intro-geral {
+#pagina-historia #conteudo .content #intro-geral {
     padding-top: 20px
 }
 
-#conteudo .content .embed {
+#pagina-historia #conteudo .content .embed {
     position: relative;
 
     width: 100%;
@@ -74,7 +74,7 @@
     padding-bottom: 56.25%;
 }
 
-#conteudo .content .embed iframe{
+#pagina-historia #conteudo .content .embed iframe{
     position: absolute;
 
     width: 100%;
@@ -83,7 +83,7 @@
     border: none;
 }
 
-#conteudo .content .text p {
+#pagina-historia #conteudo .content .text p {
     font-family: Gilroy-Light;
     font-size: 20px;
 
@@ -93,17 +93,17 @@
     text-indent: 3rem;
 }
 
-#conteudo .content .text {
+#pagina-historia #conteudo .content .text {
     margin-top: 40px;
 }
 
-#conteudo .content .title-img {
+#pagina-historia #conteudo .content .title-img {
     display: flex;
 
     margin-top: 40px;
 }
 
-#conteudo .content .title-img h1 {
+#pagina-historia #conteudo .content .title-img h1 {
     font-family: Gilroy-Extrabold;
     font-size: 100px;
     text-transform: uppercase;
@@ -113,78 +113,78 @@
     line-height: 90px;
 }
 
-#conteudo .content .com-img {
+#pagina-historia #conteudo .content .com-img {
     display: flex;
 }
 
-#conteudo .content .row-img {
+#pagina-historia #conteudo .content .row-img {
     padding: 40px;
 
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-#conteudo .content .row-img .img1 {
+#pagina-historia #conteudo .content .row-img .img1 {
     width: 48%;
     margin-right: 30px;
 }
 
-#conteudo .content .row-img .img2 {
+#pagina-historia #conteudo .content .row-img .img2 {
     width: 48%;
 }
 
 @media (max-width: 1370px) {
-    #conteudo .content .title-img h1 {
+    #pagina-historia #conteudo .content .title-img h1 {
         font-size: 80px;
         line-height: 70px;
     }
 }
 
 @media (max-width: 1135px) {
-    #conteudo .content .row-img .img1 {
+    #pagina-historia #conteudo .content .row-img .img1 {
         width: 60%;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    #conteudo .content .row-img .img2 {
+    #pagina-historia #conteudo .content .row-img .img2 {
         width: 60%;
     }
 }
 
 @media (max-width: 1100px) {
-    #conteudo .content {
+    #pagina-historia #conteudo .content {
         padding-left: 150px;
         padding-right: 150px;
     }
 }
 
 @media (max-width: 1060px) {
-    #conteudo .content .title-img h1 {
+    #pagina-historia #conteudo .content .title-img h1 {
         font-size: 60px;
         line-height: 55px;
     }
 }
 
 @media (max-width: 950px) {
-    #inicio .content h1 {
+    #pagina-historia #inicio .content h1 {
         line-height: 7vw;
         font-size: 8vw;
     }
 
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         line-height: 2.6vw;
     }
 }
 
 @media (max-width: 825px) {
-    #inicio .content h1 {
+    #pagina-historia #inicio .content h1 {
         line-height: 8vw;
 
         padding-left: 10px;
     }
 
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 1.3rem;
 
         line-height: 2.8vw;
@@ -192,74 +192,74 @@
 }
 
 @media (max-width: 800px) {
-    #conteudo .content .title-img h1 {
+    #pagina-historia #conteudo .content .title-img h1 {
         font-size: 50px;
         line-height: 50px;
     }
 }
 
 @media (max-width: 720px) {
-    #conteudo .content {
+    #pagina-historia #conteudo .content {
         padding-left: 8vw;
         padding-right: 8vw;
     }
 }
 
 @media (max-width: 680px) {
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 24px;
         line-height: 22px;
     }
 }
 
 @media (max-width: 660px) {
-    #conteudo .content .title-img h1 {
+    #pagina-historia #conteudo .content .title-img h1 {
         font-size: 40px;
         line-height: 35px;
     }
     
-    #conteudo .content .text p {
+    #pagina-historia #conteudo .content .text p {
         font-size: 16px;
         line-height: 19px;
     }
 }
 
 @media (max-width: 610px) {
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 20px;
         line-height: 20px;
     }
 }
 
 @media (max-width: 540px) {
-    #conteudo .content .title-img {
+    #pagina-historia #conteudo .content .title-img {
         flex-direction: column;
     }
 
-    #conteudo .content .title-img h1 {
+    #pagina-historia #conteudo .content .title-img h1 {
         margin-bottom: 20px;
     }
 
-    #conteudo .content .text p {
+    #pagina-historia #conteudo .content .text p {
         font-size: 14px;
         line-height: 16px;
     }
 }
 
 @media (max-width: 500px) {
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 18px;
     }
 }
 
 @media (max-width: 425px) {
-    #inicio .content h1 {
+    #pagina-historia #inicio .content h1 {
         font-size: 34px;
         line-height: 41px;
         margin-top: 20px;
     }
 
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 16px;
         line-height: 19px;
         margin-top: 20px;
@@ -267,11 +267,11 @@
 }
 
 @media (max-width: 405px) {
-    #inicio .content h1 {
+    #pagina-historia #inicio .content h1 {
         margin-top: 14px;
     }
 
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 14px;
         line-height: 16px;
         margin-top: 14px;
@@ -279,11 +279,11 @@
 }
 
 @media (max-width: 320px) {
-    #inicio .content h1 {
+    #pagina-historia #inicio .content h1 {
         margin-top: 10px;
     }
 
-    #inicio .content p {
+    #pagina-historia #inicio .content p {
         font-size: 14px;
         line-height: 13px;
         margin-top: 10px;
