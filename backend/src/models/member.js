@@ -23,8 +23,7 @@ const memberSchema = new Schema({
                 trim: true
             },
             img: {
-                type: String,
-                trim: true
+                type: Schema.Types.ObjectId
             },
             subsystem: {
                 type: String,

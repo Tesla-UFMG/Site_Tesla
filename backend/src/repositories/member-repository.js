@@ -33,7 +33,7 @@ exports.getBySub = async(sub) => {
 }
 
 exports.create = async(data) => {
-    check =  await Member.findOne({ name: data.name })
+    let check =  await Member.findOne({ name: data.name })
     if(check){
         throw("O membro ja esta cadastrado na base de dados")
     }else{
