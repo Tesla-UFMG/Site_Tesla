@@ -1,0 +1,19 @@
+#inicio-prototipos {
+    background-image: url('../../../assets/img/fotos/competicao.png');
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+
+    position: relative;
+}
+
+#inicio-prototipos .content {
+    margin-left: 8%;
+    padding-right: 15px;
+
+    position: absolute;
+    top: 83vh;
+
+    text-align: end;
+}

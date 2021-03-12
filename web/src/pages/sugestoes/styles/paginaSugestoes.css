@@ -1,0 +1,55 @@
+#tela {
+    
+    height: 100vh;
+
+    
+}
+
+#tela .a {
+    position: absolute;
+    top: 20vh;
+
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#tela .a h1{
+    font-family: Gilroy-Extrabold;
+    letter-spacing: -4px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+
+    color:black;
+}
+
+#tela .a .legenda{
+    font-family: Gilroy-Extrabold;
+    letter-spacing: -4px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+
+    margin-top: -25px;
+
+    color:rgb(83, 83, 83);
+}
+
+#tela .a .form-group{
+
+    font-weight: 500;
+
+}
+
+#tela .a input{
+    border: 1px solid black;
+    background-color: #ebebeb;
+}
+
+#tela .a textarea{
+    background-color: #ebebeb;
+    border: 1px solid black;
+}
+
+#tela .a button{
+    float: right;
+}
