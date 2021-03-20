@@ -48,6 +48,8 @@ function PaginaPrototipos() {
                     {years.map((year, index) => {
                         if (index >= (yearsIndex - 2) && index <= (yearsIndex + 2))
                             return <p key={index} className={"year " + (index === yearsIndex && 'center')}>{year.year}</p>
+                        else
+                            return null
                     })}
                     <div className="gradient right"></div>
                 </div>
