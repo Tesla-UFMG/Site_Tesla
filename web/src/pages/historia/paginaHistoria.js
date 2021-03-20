@@ -44,7 +44,7 @@ function PaginaHistoria() {
     });
 
     return (
-        <div>
+        <div id="pagina-historia">
             <NavBar color={color} display={display} />
             
             <div id="inicio" className="container-fluid px-0">

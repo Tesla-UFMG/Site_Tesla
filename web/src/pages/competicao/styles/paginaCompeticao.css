@@ -1,0 +1,234 @@
+#pagina-competicao #inicio {
+    background-image: url('../../../assets/img/fotos/competicao.png');
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+
+    position: relative;
+}
+
+#pagina-competicao #inicio .content {
+    margin-left: 8%;
+
+    position: absolute;
+    bottom: 40px;
+
+    text-align: end;
+}
+
+#pagina-competicao #inicio .content h1 {
+    font-family: Gilroy-Extrabold;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 1.2;
+
+    color: white;
+
+    margin: 0;
+}
+
+#pagina-competicao #conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+#pagina-competicao #conteudo .content {
+    padding-top: 6vh;
+
+    padding-left: 250px;
+    padding-right: 250px;
+
+    max-width: 1600px;
+}
+
+#pagina-competicao #conteudo > div .title {
+    font-family: Gilroy-Extrabold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.2;
+
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+#pagina-competicao #conteudo > div .text {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: #7c7c7c;
+
+    margin: 0;
+}
+
+#pagina-competicao #conteudo .row-oque-e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+#pagina-competicao #conteudo .row-oque-e > div:first-child {
+    width: 40%;
+}
+
+#pagina-competicao #conteudo .row-oque-e > div:last-child {
+    width: 60%;
+}
+
+#pagina-competicao #conteudo .row-oque-e .title {
+    text-align: end;
+}
+
+#pagina-competicao #conteudo .row-oque-e .text {
+    text-align: end;
+}
+
+#pagina-competicao #conteudo .equipe-evento {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    border-radius: 64px;
+}
+
+#pagina-competicao #conteudo .row-historico-participar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+#pagina-competicao #conteudo .row-historico-participar > div {
+    width: 100%;
+}
+
+#pagina-competicao #conteudo .row-historico-participar > div:first-child {
+    margin-right: 50px;
+}
+
+#pagina-competicao #conteudo .section-title {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.2;
+
+    color: #000;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+#pagina-competicao #conteudo .row-provas {
+    display: flex;
+    justify-content: center;
+}
+
+#pagina-competicao #conteudo .row-provas .design,
+#pagina-competicao #conteudo .row-provas .aceleracao,
+#pagina-competicao #conteudo .row-provas .autocross {
+    margin-right: 40px;
+}
+
+#pagina-competicao #conteudo .row-provas > div {
+    flex: 1;
+}
+
+#pagina-competicao #conteudo .row-provas .eficiencia {
+    max-width: 47.6%;
+}
+
+#pagina-competicao #conteudo .prova {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 40px;
+
+    border: 1px solid #707070;
+    border-radius: 64px;
+
+    margin-bottom: 40px;
+}
+
+#pagina-competicao #conteudo .prova .prova-title {
+    font-family: Gilroy-Extrabold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+
+    color: #000;
+
+    margin-bottom: 10px;
+}
+
+#pagina-competicao #conteudo .prova .prova-description {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+
+    color: #7c7c7c;
+
+    margin-bottom: 10px;
+}
+
+#pagina-competicao #conteudo .prova .prova-points {
+    font-family: Gilroy-Extrabold;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.2;
+
+    color: #4ED840;
+
+    margin-bottom: 0;
+
+    text-align: end;
+
+    width: 100%;
+}
+
+#pagina-competicao #conteudo .content .video-text {
+    font-family: Gilroy-Light;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+
+    color: #7c7c7c;
+
+    margin-bottom: 40px;
+}
+
+#pagina-competicao #conteudo .content .embed {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 56.25%;
+
+    margin-bottom: 50px;
+}
+
+#pagina-competicao #conteudo .content .embed iframe{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
