@@ -7,17 +7,16 @@ const orderSchema = new Schema({
         require: [true,'impossivel cadastrar sem numero']            
     },
     user: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: 'User',
     },
-    createDate: {
+    createAt: {
       type:Date,
-      required: [true,'impossivel cadastrar sem data'],
       default: Date.now
     },
     status: {
       type: String,
-      required: [true,'impossivel cadastrar sem dtatus'],
+      required: [true,'impossivel cadastrar sem status'],
       enum: ['created','done','complete'],
       default: 'created'
     },

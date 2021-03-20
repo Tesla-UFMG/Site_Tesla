@@ -31,9 +31,21 @@ const userSchema = new Schema({
         type: Boolean,
         defaut: false
     },
+    
     createdAt: {
         type: Date,
         default: Date.now
+    },
+    teslaMember: {
+        type: Boolean,
+        default: false
+    },
+    MemberId: {
+        type: Schema.Types.ObjectId
+    },
+    TeslaCoins: {
+        Type: Number,
+        default: 0
     }
     
 
@@ -45,7 +57,7 @@ const userSchema = new Schema({
     "email" : "bnmachado10@gmail.com",
     "confirmEmail": "bnmachado10@gmail.com"
     "password: "778452",
-    "confirmPassword": "778452",
+    "confirmPassword": "778452"
 
 
   }
