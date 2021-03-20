@@ -1,19 +1,226 @@
-#inicio-prototipos {
-    background-image: url('../../../assets/img/fotos/competicao.png');
-    background-size: cover;
-    background-position: center;
+#pagina-prototipos .conteudo-prototipos {
+  width: 100%;
 
-    height: 100vh;
+  padding: 100px 250px 50px;
 
-    position: relative;
+  max-width: 1600px;
 }
 
-#inicio-prototipos .content {
-    margin-left: 8%;
-    padding-right: 15px;
+#pagina-prototipos .conteudo-prototipos .title {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 1.2;
 
-    position: absolute;
-    top: 83vh;
+  color: #000;
 
-    text-align: end;
+  margin-bottom: 10px;
+}
+
+#pagina-prototipos .conteudo-prototipos .line {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 10px;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .arrows-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .arrows-wrapper img {
+  height: 50%;
+  margin-left: 120px;
+  cursor: pointer;
+}
+#pagina-prototipos .conteudo-prototipos .years-wrapper .arrows-wrapper img:first-child {
+  transform: rotate(180deg);
+  margin-left: 0;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .gradient {
+  position: absolute;
+
+  width: 200px;
+  height: 100%;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .gradient.left {
+  left: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .gradient.right {
+  right: 0;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .year {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+
+  color: #D5D4D4;
+
+  margin: 0;
+
+  width: 100%;
+  text-align: center;
+}
+
+#pagina-prototipos .conteudo-prototipos .years-wrapper .year.center {
+  color: #4ED840;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper > div {
+  position: absolute;
+  top: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper > div .car-name {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1.2;
+
+  color: #000;
+
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  border-bottom: 1px solid #707070;
+
+  width: 100%;
+  text-align: center;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper > div .ver-mais {
+  width: 100%;
+  height: 50px;
+
+  background-color: #4ED840;
+  border-radius: 86px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+  color: #fff;
+
+  margin-right: 10px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper > div .description {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2;
+
+  margin: 0;
+
+  color: #7C7C7C;
+
+  max-width: 40%;
+  text-align: center;
+}
+
+#pagina-prototipos .conteudo-prototipos .car-wrapper .car-img {
+  width: 80%;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards .card-info {
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 30px;
+
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards .card-info img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards .card-info > div {
+  width: 100%;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards .card-info .info {
+  font-family: Gilroy-Light;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin: 0;
+
+  color: #000;
+}
+
+#pagina-prototipos .conteudo-prototipos .info-cards .card-info .data {
+  font-family: Gilroy-Extrabold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.2;
+
+  color: #000;
+  margin: 0;
 }

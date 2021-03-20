@@ -8,7 +8,6 @@ import image_scroll_icon from '../../assets/icons/scroll-icon.svg'
 import logo_sae from '../../assets/img/fotos/competicao/logo-sae.png';
 import equipe from '../../assets/img/fotos/competicao/IMG_9757.png';
 
-import { withRouter } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 import './styles/paginaCompeticao.css'
@@ -206,51 +205,9 @@ function PaginaCompeticao() {
                 </div>
             </div>
 
-            {/* <div id="conteudo" className="container-fluid px-0">
-
-                <div className="row row-cols-1 content">
-                    
-                    <div className="text">
-                        <div className="col">
-                            <p>
-                                Criada em 2004.......
-                            </p>
-                        </div>
-                        <div className="col">
-                            <h1 className="section-title">O que é?</h1>
-                            <p>
-                                A competição.........
-                            </p>
-                        </div>
-                    
-                    </div>
-
-                </div>
-
-            <div id="conteudo" className="container-fluid px-0">
-                    
-                    <div className="text-left">
-                        <h1 className="section-title">O que é?</h1>
-                        <p>
-                            A competição.........
-                        </p>
-                        <p>
-                            Criada em 2004.......
-                        </p>
-
-                </div>
-
-            </div>
-            </div>
-
-            
-
-            <br></br> */}
-
             <Footer />
-
         </div>
     );
 }
 
-export default withRouter(PaginaCompeticao);
+export default PaginaCompeticao;

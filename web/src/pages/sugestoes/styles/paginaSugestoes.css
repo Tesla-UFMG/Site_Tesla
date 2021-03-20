@@ -1,55 +1,64 @@
-#tela {
-    
-    height: 100vh;
-
-    
-}
-
-#tela .a {
-    position: absolute;
-    top: 20vh;
-
+#tela-sugestoes {
     width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+
+    padding: 100px 250px 50px;
+
+    max-width: 1600px;
+
+    margin-bottom: 30px;
 }
 
-#tela .a h1{
+#tela-sugestoes h1 {
     font-family: Gilroy-Extrabold;
-    letter-spacing: -4px;
     font-size: 2.8rem;
-    text-transform: uppercase;
+    line-height: 1;
 
     color:black;
+
+    margin: 0;
 }
 
-#tela .a .legenda{
-    font-family: Gilroy-Extrabold;
-    letter-spacing: -4px;
-    font-size: 2.8rem;
-    text-transform: uppercase;
-
-    margin-top: -25px;
-
+#tela-sugestoes .legenda {
     color:rgb(83, 83, 83);
+
+    margin-bottom: 20px;
 }
 
-#tela .a .form-group{
+#tela-sugestoes .line {
+    border-bottom: 1px solid #707070;
+    margin-bottom: 20px;
+}
 
+#tela-sugestoes .form-group {
     font-weight: 500;
 
+    margin-bottom: 10px;
 }
 
-#tela .a input{
+#tela-sugestoes label {
+    margin-bottom: 5px;
+}
+
+#tela-sugestoes input {
     border: 1px solid black;
     background-color: #ebebeb;
+
+    border-radius: 10px;
 }
 
-#tela .a textarea{
+#tela-sugestoes textarea {
     background-color: #ebebeb;
     border: 1px solid black;
+
+    min-height: 80px;
+
+    border-radius: 10px;
 }
 
-#tela .a button{
+#tela-sugestoes button {
     float: right;
+
+    width: 150px;
+
+    margin-top: 10px;
 }
