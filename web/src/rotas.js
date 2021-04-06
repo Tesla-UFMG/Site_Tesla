@@ -18,6 +18,9 @@ import PaginaRollouts from './pages/rollouts/rollouts'
 import PaginaLoja from './pages/loja/loja'
 import PaginaGaleria from './pages/galeria/galeria'
 import PaginaGaleriaAno from './pages/galeria/galeriaAno'
+import PaginaCompeticao from './pages/competicao/paginaCompeticao'
+import PaginaSugestoes from './pages/sugestoes/paginaSugestoes'
+import PaginaPrototipos from './pages/prototipos/paginaPrototipos'
 
 export default () => {
     return (
@@ -37,6 +40,9 @@ export default () => {
             <Route exact path="/rollouts" component={PaginaRollouts} />
             <Route exact path="/loja" component={PaginaLoja} />
             <Route exact path="/galeria" component={PaginaGaleria} />
+            <Route exact path="/competicao" component={PaginaCompeticao} />
+            <Route exact path="/prototipos" component={PaginaPrototipos} />
+            <Route exact path="/sugestoes" component={PaginaSugestoes} />
             <Route exact path="/galeria/:ano" component={PaginaGaleriaAno} />
         </Switch>
     )

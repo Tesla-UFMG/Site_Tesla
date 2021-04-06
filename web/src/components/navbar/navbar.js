@@ -19,12 +19,12 @@ function Navbar(props) {
       <div id={props.display} className="options">
         <p className="option" onClick={() => history.push('/historia')}>história</p>
         <div className="dropdown" onMouseEnter={() => setDropdownHover(true)} onMouseLeave={() => setDropdownHover(false)}>
-          <p className="option dropdown-toggle">protótipos</p>
+          <p className="option dropdown-toggle" onClick={() => history.push('/prototipos')}>protótipos</p>
           {dropdownHover && (
             <div className="dropdown-menu-itens">
               <p className="dropdown-item" onClick={() => history.push('/prototipos-NK319')}>NK319</p>
               <p className="dropdown-item" onClick={() => history.push('/prototipos-NK218')}>NK218</p>
-              <p className="dropdown-item" onClick={() => history.push('/prototipos-kyran')}>Kayran</p>
+              <p className="dropdown-item" onClick={() => history.push('/prototipos-kayran')}>Kayran</p>
             </div>
           )}
         </div>
@@ -45,7 +45,7 @@ function Navbar(props) {
         <Link to="/equipe">Equipe</Link>
         <Link to="/patrocinadores">Parceiros</Link>
         <Link to="/feed-blog">Blog</Link>
-        <Link to="/">A Competição</Link>
+        <Link to="/competicao">A Competição</Link>
         <Link to="/galeria">Galeria</Link>
         <Link to="/rollouts">Rollouts</Link>
         <Link to="/loja">Loja</Link>
