@@ -17,7 +17,7 @@ router.get('/uploads', async(req,res) => {
 
 
  
-router.post("/uploads/:paste", multer(multerConfig).single("file"), async (req, res) => {
+router.post("/uploads/:dir", multer(multerConfig).single("file"), async (req, res) => {
   try{
     const { originalname: name, size, key, paste, location: url = '' } = req.file
     console.log(req.file)
@@ -29,8 +29,6 @@ router.post("/uploads/:paste", multer(multerConfig).single("file"), async (req, 
       url
     })
     
-
-    console.log(process.env.BUCKET_NAME + "/" + paste)
     res.status(201).send({
     message: 'Upload efetuado com sucesso!'
     })

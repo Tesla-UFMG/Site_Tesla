@@ -20,7 +20,7 @@
 
 import {mapState} from 'vuex'
 
-//usando gravatarpara img
+//usando gravatar para img
 import Gravatar from 'vue-gravatar'
 
 export default {

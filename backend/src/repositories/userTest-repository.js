@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const User = mongoose.model('User')
+const UserTest = mongoose.model('UserTest')
 const bcrypt = require('bcrypt-nodejs')
 
 encryptPassword = password => {
@@ -10,7 +10,7 @@ encryptPassword = password => {
 
 exports.authenticate = async(data) => {
     data.password = encryptPassword(data.password)
-    const user = await User.findOne({
+    const user = await UserTest.findOne({
         email: data.email
     })
     
@@ -24,17 +24,17 @@ exports.authenticate = async(data) => {
 
 
 exports.get = async() => {
-    const res = await User.find({})
+    const res = await UserTest.find({})
     return res
 }
 
 exports.getById = async(id) => {
-    const res = await User.findById(id)
+    const res = await UserTest.findById(id)
     return res
 }
 
 exports.create = async(data) => {
-    let check =  await User.findOne({ email: data.email})
+    let check =  await UserTest.findOne({ email: data.email})
     if(check){
         throw("O email já está sendo usado!")
     }else{
@@ -43,16 +43,16 @@ exports.create = async(data) => {
         delete data.confirmPassword
         delete data.confirmEmail
     
-        let user = new User(data);
+        let user = new UserTest(data);
         await user.save()
     }  
 }
 
 exports.update = async(id , data) => {
-    let check = await Member.findOne({_id: id})
+    let check = await UserTest.findOne({_id: id})
     if(check){
         data.password = encryptPassword(data.password)
-        await User
+        await UserTest
         .findOneAndUpdate(id, {
             $set: {
                 name: data.name,
@@ -68,10 +68,12 @@ exports.update = async(id , data) => {
 }
 
 exports.delete = async(id) => {
+    console.log("entra aqui")
     const filter = {_id : id}
-    const res = await Member.findOneAndDelete(filter)
+    const res = await UserTest.findOneAndDelete(filter)
     if(!res){
         throw "Usuario não encontrado"
     }
+    console.log(res)
     return res
 }

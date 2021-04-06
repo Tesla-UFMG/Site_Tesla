@@ -37,14 +37,14 @@ const uploadSchema = new Schema({
 
 uploadSchema.pre('save',function() {
   if(!this.url){
-    this.url = `${process.env.APP_URL}/files/${this.key}`
+    this.url = `${process.env.APP_URL}/files/${paste}/2017${this.key}`
   }
 })
 
 uploadSchema.pre('remove', function() {
   if(process.env.STORAGE_TYPE === 's3'){
     return s3.deleteObject({
-      Bucket: process.env.BUCKET_NAME + "/" + this.paste,
+      Bucket: process.env.BUCKET_NAME + "/" + this.paste + "/2017",
       Key: this.key,
     }).promise()
   } else {

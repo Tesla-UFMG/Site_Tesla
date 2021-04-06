@@ -1,7 +1,8 @@
 const repository = require('../repositories/member-repository')
 const contract = require('../validators/validation-crud')
+const sponsor = require('../controllers/sponsors-controller')
 
-exports.get = async(req,res,next) => {
+exports.get = async(req,res) => {
     try{
         let data = await repository.get()
         res.status(200).send(data)
@@ -33,6 +34,7 @@ exports.getById = async(req,res,next) =>{
         })
     }
 }
+
 
 exports.getByYear = async(req,res,next) =>{
     try{

@@ -2,38 +2,29 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const gallerySchema = new Schema({
-    name: {
-        type: String,
-        require: true,
-        trim: true              
-    },
     year: {
         type: Number,
-        riquire: true,
+        require: true,
         trim: true,
-    },
-    createdAt: {
-        type: Date,
-        default: Date.Now()
     },
     photos : [
       {
         img: {
-          type: String,
+          type: Schema.Types.ObjectId,
           trim: true
-        }
-        
+        },
+        postedAt: {
+          type: Date,
+          default: Date.now
+        }    
       }]
 })
 
 /*
     {
-    "name" : "nome",
     "year" : "2020",
-    "Linkedin" : "http://xxxx..xxx.x",
-    "img" : "rota"
+    "photos":[]
     }
-    
 */
 
 const Gallery = mongoose.model('Gallery',gallerySchema)

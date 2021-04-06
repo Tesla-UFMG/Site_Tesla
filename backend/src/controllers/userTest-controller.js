@@ -1,5 +1,5 @@
 //const ValidationContract = require('../validators/validation-contract');
-const repository = require('../repositories/user-repository')
+const repository = require('../repositories/userTest-repository')
 const contract = require('../validators/validation-crud')
 const authService = require('../services/auth-service')
 
@@ -36,7 +36,7 @@ exports.post = async(req,res,next) => {
         contract.existsOrError(user.password, 'Senha não informada!')
         contract.hasMinLen(user.password,8, 'Senhas precisam ter no mínimo 8 caracteres!')
         contract.equalsOrError(user.password, user.confirmPassword, 'Senhas nao conferem')
-        contract.equalsOrError(user.email,user.confirmEmail,'Email nao informado')
+        contract.equalsOrError(user.email,user.confirmEmail,'Emails nao sao iguais')
         
         await repository.create(req.body)
         res.status(201).send({
@@ -105,7 +105,7 @@ exports.delete = async(req,res,next) => {
         })
     } catch(e) {
         res.status(500).send({
-            message: 'Falha ao excluir usuario'
+            message: e
         })
     }
 }

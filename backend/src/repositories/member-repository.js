@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Member = mongoose.model('Member')
+const Upload = mongoose.model('Upload')
 
 
 exports.get = async() => {
@@ -41,6 +42,20 @@ exports.create = async(data) => {
         await member.save()
     }
     
+}
+
+exports.associateImg = async(memberId, imgId) => {
+    let checkImg = await Upload.findOne({_id : imgId})
+    let checkMember = await Member.findOne({_id : memberId})
+    if(checkImg && checkMember){
+        await Member.findOneAndUpdate({_id : id} , {
+            $set: {
+                data : imgId
+            }
+        })
+    }else{
+        throw("Imagem ou membro não encontrados")
+    }
 }
 
 exports.update = async(id , d) => {
