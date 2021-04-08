@@ -1,40 +1,69 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-import { withRouter } from 'react-router-dom'
+import "./components/patrocinadores-page.css";
 
 import NavBar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
 
 import Manutencao from '../manutencao/paginaManutencao';
 
-// import Patrocinador from './components/patrocinador'
-// import Classificacao from './components/classificacao'
+// import Patrocinador from './components/patrocinador';
+// import Classificacao from './components/classificacao';
 
-class PaginaPatrocinadores extends React.Component {
-    render(){
-        return(
-            <div>
-                <NavBar color='preto' display='preto' />
+import listSponsors from '../../services/listSponsors';
 
-                <Manutencao />
+function PaginaPatrocinadores() {
+    const [sponsors, setSponsors] = useState([])
 
-                {/* <br></br>
-                <br></br>
-                <br></br>
-                <Classificacao nome="platina"></Classificacao>
-                <Patrocinador logo = "C:\Site-Tesla\Site-Tesla\src\assets\img\logos" descricao = "O google é uma empresa ..."></Patrocinador>
-                <hr></hr>
-                <Classificacao nome="ouro"></Classificacao>
-                <hr></hr>
-                <Classificacao nome="prata"></Classificacao>
-                <hr></hr>
-                <Classificacao nome="bronze"></Classificacao>
-                <hr></hr> */}
-                
-                <Footer />
-            </div>
-        )
-    }
+    useEffect(() => {
+        listSponsors().then(res => {
+            if (res.status === 200) {
+                setSponsors(res.data)
+            }
+        })
+    }, [])
+
+    return(
+        <div id="patrocinador-page">
+            <NavBar color='preto' display='preto' />
+
+            <Manutencao />
+
+            {/* <div id="conteudo-patrocinador">
+                <div className="body">
+                    <Classificacao nome="Platina" />
+                    {sponsors.map(sponsor => {
+                        if (sponsor.type === 'platina') {
+                            return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
+                        }
+                    })}
+                    <hr></hr>
+                    <Classificacao nome="Ouro" />
+                    {sponsors.map(sponsor => {
+                        if (sponsor.type === 'gold') {
+                            return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
+                        }
+                    })}
+                    <hr></hr>
+                    <Classificacao nome="Prata" />
+                    {sponsors.map(sponsor => {
+                        if (sponsor.type === 'silver') {
+                            return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
+                        }
+                    })}
+                    <hr></hr>
+                    <Classificacao nome="Bronze" />
+                    {sponsors.map(sponsor => {
+                        if (sponsor.type === 'bronze') {
+                            return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
+                        }
+                    })}
+                </div>
+            </div> */}
+
+            <Footer />
+        </div>
+    )
 }
 
-export default withRouter(PaginaPatrocinadores);
+export default PaginaPatrocinadores;

@@ -7,7 +7,7 @@ export default class Patrocinador extends Component {
         const {descricao,logo} = this.props
         return(
             <div>
-                <LogoPatrocinador img= {logo}></LogoPatrocinador>
+                <LogoPatrocinador img={logo} />
                 <div>{descricao}</div>   
             </div>
         )

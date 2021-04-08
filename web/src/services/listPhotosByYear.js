@@ -1,7 +1,7 @@
 import api from './api';
 
-async function listMembros() {
-  return api.get(`/membros`).then(response => {
+async function listPhotosByYear(ano) {
+  return api.get(`/gallery/year/${ano}`).then(response => {
 
     return { status: response.status, data: response.data };
 
@@ -18,4 +18,4 @@ async function listMembros() {
   });
 }
 
-export default listMembros;
+export default listPhotosByYear;

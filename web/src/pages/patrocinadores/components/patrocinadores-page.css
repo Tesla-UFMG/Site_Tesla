@@ -1,0 +1,12 @@
+#conteudo-patrocinador {
+  display: flex;
+  justify-content: center;
+}
+
+#patrocinador-page .body {
+  width: 100%;
+
+  padding: 100px 250px 50px;
+
+  max-width: 1600px;
+}
