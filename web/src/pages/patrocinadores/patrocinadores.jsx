@@ -23,6 +23,8 @@ function PaginaPatrocinadores() {
         })
     }, [])
 
+    console.log(sponsors)
+
     return(
         <div id="patrocinador-page">
             <NavBar color='preto' display='preto' />
