@@ -216,7 +216,7 @@ function PaginaNK319() {
                         <img src={image_render_freio} alt="Render Freio" className="img-fluid render-freio"></img>
                     </div>
                 ]}
-                hashlinkTop="/prototipo-NK319#NK319-3"
+                hashlinkTop="/prototipos-NK319#NK319-3"
             />
             <Footer />
         </body>

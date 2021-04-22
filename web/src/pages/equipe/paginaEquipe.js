@@ -84,7 +84,7 @@ const dados = [
 
 function PaginaEquipe() {
     const [{ color, display }, handleScroll] = useNavBar();
-    
+
     var last_known_scroll_position = 0;
     var ticking = false;
 
@@ -105,6 +105,20 @@ function PaginaEquipe() {
         async function fetchData() {
             const lista_membros = await listMembros();
             console.log(lista_membros.data)
+
+            const subsistemaAux = {};
+            lista_membros.data.forEach(membro => {
+                membro.data.forEach(data => {
+                    if (!subsistemaAux[data.year]) {
+                        subsistemaAux[data.year] = [];
+                    }
+
+                    if (!subsistemaAux[data.year].includes(data.subsystem)) {
+                        subsistemaAux[data.year] = [...subsistemaAux[data.year], data.subsystem]
+                    }
+                })
+            })
+            console.log(subsistemaAux)
         }
         fetchData();
     }, [])
