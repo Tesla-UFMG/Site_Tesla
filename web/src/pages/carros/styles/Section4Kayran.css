@@ -1,0 +1,233 @@
+.div4 {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+}
+
+.div4 .row {
+    margin: 0;
+    justify-content: center;
+}
+
+.div4 .row .infos {
+    padding-left: 250px;
+    padding-right: 250px;
+    /* padding-left: 170px;
+    padding-right: 170px; */
+
+    margin-top: 60px;
+
+    max-width: 1600px;
+}
+
+.div4 .row .infos .col {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div4 .row .titleWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.div4 .row .titleWrapper .title {
+    font-family: Gilroy-Extrabold;
+    font-size: 60px;
+
+    color:black;
+
+    text-transform: uppercase;
+    border-bottom: 6px solid green; 
+
+    text-align: center;
+
+    height: 80px;
+}
+
+.div4 .row .subsistems {
+    font-family: Gilroy-Light;
+    font-size: 28px;
+
+    color: black;
+
+    margin: 0;
+}
+
+.div4 .row .text-elec {
+    font-family: Gilroy-Light;
+    font-size: 20px;
+
+    color: #58595b;
+
+    line-height: 24px;
+
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+.div4 .row .text-mec {
+    font-family: Gilroy-Light;
+    font-size: 20px;
+
+    color: #58595b;
+
+    line-height: 24px;
+
+    text-indent: 1.5em;
+    text-align: justify;
+}
+
+#NK319-4 .powertrain2 {
+    display: inline-flex;
+}
+
+#NK319-4 .chassi2 {
+    display: inline-flex;
+}
+
+#NK319-4 .direcao2 {
+    display: inline-flex;
+}
+
+#NK319-4 .direcao2 .second-col {
+    text-align: center;
+}
+
+#NK319-4 .direcao2 .render-direcao {
+    max-width: 50%;
+
+    position: relative; 
+    bottom: 15px;
+}
+
+#NK319-4 .suspensao2 {
+    display: inline-flex;
+}
+
+#NK319-4 .suspensao2 .first-col {
+    text-align: center;
+    flex-direction: column;
+}
+
+#NK319-4 .suspensao2 .render-susp {
+    max-width: 70%;
+}
+
+#NK319-4 .freio2 {
+    display: inline-flex;
+}
+
+@media (max-width: 1300px) {
+    .div4 .row .text-elec {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .div4 .row .text-mec {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .div4 .row .infos {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (max-width: 900px) {
+    .div4 .row .text-elec {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .div4 .row .text-mec {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 720px) {
+    .div4 .row .titleWrapper .title {
+        font-size: 46px;
+        height: 68px;
+    }
+
+    .div4 .row .subsistems {
+        font-size: 24px;
+    }
+
+    .div4 .row .infos {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    #NK319-4 .powertrain2 {
+        flex-direction: column-reverse;
+    }
+
+    #NK319-4 .powertrain2 .col {
+        padding: 0;
+    }
+
+    #NK319-4 .chassi2 {
+        flex-direction: column;
+    }
+
+    #NK319-4 .chassi2 .col {
+        padding: 0;
+    }
+
+    #NK319-4 .direcao2 {
+        flex-direction: column-reverse;
+    }
+
+    #NK319-4 .direcao2 .col {
+        padding: 0;
+    }
+
+    #NK319-4 .suspensao2 {
+        flex-direction: column;
+    }
+
+    #NK319-4 .suspensao2 .col {
+        padding: 0;
+    }
+
+    #NK319-4 .freio2 {
+        flex-direction: column-reverse;
+    }
+
+    #NK319-4 .freio2 .col {
+        padding: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .div4 .row .titleWrapper .title {
+        font-size: 40px;
+        height: 58px;
+    }
+}
+
+@media (max-width: 425px) {
+    .div4 .row .titleWrapper .title {
+        font-size: 34px;
+        height: 50px;
+    }
+
+    .div4 .row .subsistems {
+        font-size: 20px;
+    }
+
+    .div4 .row .infos {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

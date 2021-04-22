@@ -9,11 +9,12 @@ import image_render_direcao from '../../assets/img/renders/DIREÇÃO NK319.png'
 import image_render_freio from '../../assets/img/renders/FREIO NK319.png'
 import image_render_susp_dia from '../../assets/img/renders/SUSP DIA NK319.png'
 import image_render_susp_tras from '../../assets/img/renders/SUSP TRAS NK319.png'
+import image_render_aerodin from '../../assets/img/renders/AERO NK319.png'
 
 import Section1 from './components/Section1'
 import Section2 from './components/Section2'
 import Section3 from './components/Section3'
-import Section4 from './components/Section4'
+import Section4nk319 from './components/Section4nk319'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
@@ -55,8 +56,8 @@ function PaginaNK319() {
                 refinado, menores perdas mecânicas e soluções aerodinâmicas inovadoras."
                 p2="Lançado em 31 de outubro de 2019, foi à competição cheio de expectativas pela surpreendente 
                 segunda colocação no ano anterior. O grande empenho da equipe durante o ano levou ao primeiro 
-                lugar na prova de Design, porém o protótipo enfrentou alguns imprevistos nas provas dinâmicas 
-                e conquistou a quinta colocação geral."
+                lugar na prova de projeto, porém o protótipo enfrentou alguns imprevistos nas provas dinâmicas 
+                e assim, conquistou a quinta colocação geral."
                 geral="5°"
                 custos="5°"
                 apresentacao="5°"
@@ -86,7 +87,7 @@ function PaginaNK319() {
                 hashlinkTop="/PrototiposNK319#NK319-2"
                 hashlinkBot="/PrototiposNK319#NK319-4"
             />
-            <Section4 
+            <Section4nk319
                 Id="NK319-4"
                 textEletronica="O projeto eletrônico teve dois objetivos principais no ano de 2019: sensoriamento
                 abrangente do veículo, permitindo diagnóstico e validação dos diversos sistemas do
@@ -98,7 +99,7 @@ function PaginaNK319() {
                 de controle com os outros módulos."
                 textTelemetria="Investiu-se em instrumentação e aquisição de dados, tornando possível medir
                 deformação de peças estruturais, temperatura dos discos de freios, curso dos
-                amortecedores, pressão nas linhas de freio, além de aceleração e velocidade angular
+                amortecedores, pressão nas linhas de freio, além das acelerações e velocidade angular
                 do veículo. Esse processo ainda contou com o desenvolvimento de um datalogger para
                 registro de todos os dados aferidos. Associado a isso, os sistemas de telemetria e
                 interface foram aprimorados, garantindo que tanto a equipe nos boxes quanto o piloto
@@ -124,13 +125,7 @@ function PaginaNK319() {
                 textPowertrain={[
                     <div className="col">
                         <p className="text-mec" >
-                            O foco base para a transmissão 2019 foi aumentar a confiabilidade e eficiência do
-                            sistema, além de melhorar o dimensionamento de algumas peças consideradas
-                            superdimensionadas. Falhas estruturais e de fabricação foram corrigidas, a fim de
-                            reduzir vibrações e evitar desgaste acentuado de peças; também foi possível reduzir a
-                            massa e a inércia rotacional dos componentes, tanto pela otimização estrutural,
-                            quanto pela migração para o uso de juntas e semieixos de projeto próprio. Em
-                            paralelo, deu-se início aos estudos dos efeitos da fadiga em componentes mecânicos,
+                        O foco base para a transmissão 2019 foi aumentar a confiabilidade e a eficiência do sistema, bem como otimizar o dimensionamento das peças. Falhas estruturais e de fabricação foram corrigidas, a fim de reduzir vibrações e evitar desgaste acentuado do sistema. Também foi possível reduzir a massa e a inércia rotacional dos componentes, tanto pela otimização estrutural, quanto pela migração para o uso de juntas e semieixos de projeto próprio. Em paralelo, deu-se início aos estudos dos efeitos da fadiga em componentes mecânicos,
                             visando alicerçar o desenvolvimento de uma metodologia de dimensionamento de
                             peças mais precisa e condizente com as aplicações dos protótipos da equipe.
                         </p>
@@ -159,14 +154,23 @@ function PaginaNK319() {
                         </p>
                     </div>
                 ]}
-                textAero="A nova meta da equipe de completar a prova de enduro mesmo com limitações de
+                textAerodin={[
+                    <div className="col">
+                        <p className="text-mec" >
+                        A nova meta da equipe de completar a prova de enduro mesmo com limitações de
                 baterias e motores fez com que o pacote aerodinâmico fosse focado em proporcionar
                 maior eficiência ao veículo. Com base nisso, a asa dianteira, a carenagem traseira e o
                 bico foram desenvolvidos com o intuito exclusivo de diminuir a resistência
                 aerodinâmica, o que resultou em uma redução final de 50% nos níveis de arrasto. Todo
                 o projeto foi baseado no uso de CFD para o desenvolvimento e prototipagem e, de
                 modo a avaliar de forma efetiva a eficiência do pacote aerodinâmico e seus impactos
-                nas provas e pontuações finais, testes em túnel de vento e em pista foram realizados."
+                nas provas e pontuações finais, testes em túnel de vento e em pista foram realizados.
+                        </p>
+                    </div>,
+                    <div className="col second-col">
+                        <img src={image_render_aerodin} alt="Render Aerodinamica" className="img-fluid render-aerodin2"></img>
+                    </div>
+                ]}
                 textDirecao={[
                     <div className="col">
                         <p className="text-mec" >

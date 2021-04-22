@@ -95,7 +95,7 @@
 }
 
 .legend {
-    text-align: end;
+    text-align: center;
 
     margin-top: 30px;
     margin-bottom: 10px;
@@ -109,6 +109,55 @@
 
     line-height: 17px;
 }
+
+
+.agrupador{
+    padding: 20px;
+}
+
+.agrupador p{
+    text-align: center;
+}
+
+.um{
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
+.dois{
+    padding: 10px;
+    width: 50%;
+    float: left;
+}
+
+.dois img{
+    width: 100%;
+}
+
+.legendinha {
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.legendinha.embaixo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.legendinha p {
+    font-family: Gilroy-Extrabold;
+    font-size: 14px;
+
+    color: black;
+    text-align: center;
+
+    line-height: 17px;
+}
+
 
 .row-img {
     display: flex;
@@ -175,7 +224,7 @@
     }
 
     .positions .positions2 .position-col p {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .positions .positions2 .position-col .colocacao {

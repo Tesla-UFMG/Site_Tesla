@@ -115,7 +115,7 @@ function PaginaEquipe() {
 
             <div id="inicio-equipe" className="container-fluid px-0">
                 <div className="content">
-                    <h1 className="section-title">Conheça os Membros</h1>
+                    <h1>Conheça os Membros</h1>
                     <p className="section-paragraph">
                         Conheça os alunos que fazem esse projeto acontecer, 
                         distribuídos em 5 Sistemas, a equipe atualmente conta com 44 membros. 

@@ -53,6 +53,12 @@ function BodyHistoria(props) {
             
             <div className="row row-img">
                 {props.imageEquipe}
+
+                <div className="row legend">
+                <p>
+                    {props.legendaimagem}
+                </p>
+            </div>
             </div>
         </div>
     );

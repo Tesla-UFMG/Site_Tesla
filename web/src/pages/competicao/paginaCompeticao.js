@@ -75,7 +75,7 @@ function PaginaCompeticao() {
                             técnicas das equipes, que incluem projeto, custo, e uma apresentação de marketing. Meses antes da competição, os estudantes enviam para o comitê organizador 
                             relatórios de custos, estrutura, atenuador de impacto e projeto. Os relatórios são avaliados por engenheiros especialistas, e já valem como a primeira parte 
                             da avaliação dos protótipos. Já durante a competição, nas provas estáticas, as equipes devem demonstrar mais detalhadamente se o carro apresentado no projeto 
-                            equivale ao apresentado no evento. As provas dinâmicas são realizadas no segundo dia do evento. Todas as provas são pontuadas de maneiras diferentes, de forma 
+                            equivale ao apresentado no evento. As provas dinâmicas são realizadas no terceiro dia do evento. Todas as provas são pontuadas de maneiras diferentes, de forma 
                             a garantir que o melhor conjunto de projeto e carro vença a competição.
                         </p>
                     </div>
@@ -120,7 +120,7 @@ function PaginaCompeticao() {
                         <div className="prova custos">
                             <p className="prova-title">Custos</p>
                             <p className="prova-description">
-                                Envolve a submissão antecipada de documentos que descrevem os principais critérios de projeto do carro e uma apresentação técnica detalhada dos projetos na competição.
+                            Requer a submissão de um relatório detalhando o custo total de fabricação do carro e uma apresentação na competição.
                             </p>
                             <p className="prova-points">50 pts</p>
                         </div>
@@ -129,7 +129,7 @@ function PaginaCompeticao() {
                     <div className="row-apresentacao prova">
                         <p className="prova-title">Apresentação</p>
                         <p className="prova-description">
-                            Envolve a submissão antecipada de documentos que descrevem os principais critérios de projeto do carro e uma apresentação técnica detalhada dos projetos na competição.
+                            Envolve uma apresentação de negócios para um painel de executivos, detalhando como o carro se enquadra melhor às demandas do mercado amador de corridas.
                         </p>
                         <p className="prova-points">75 pts</p>
                     </div>
@@ -174,10 +174,10 @@ function PaginaCompeticao() {
                             <p className="prova-points">125 pts</p>
                         </div>
 
-                        <div className="prova skipad-2">
-                            <p className="prova-title">Skidpad</p>
+                        <div className="prova enduro">
+                            <p className="prova-title">Enduro</p>
                             <p className="prova-description">
-                                O evento principal, com 22 km do circuito de autocross e troca de pilotos no meio da prova, como teste da confiabilidade e resistência dos veículos (e muitas vezes dos pilotos!).
+                            O evento principal, com 22 km do circuito de autocross e troca de pilotos no meio da prova, como teste da confiabilidade e resistência dos veículos (e muitas vezes dos pilotos!).
                             </p>
                             <p className="prova-points">275 pts</p>
                         </div>
