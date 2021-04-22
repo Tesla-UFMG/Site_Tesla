@@ -36,6 +36,7 @@ function PaginaPatrocinadores() {
                         if (sponsor.type === 'platina') {
                             return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
                         }
+                        return null
                     })}
                     <hr></hr>
                     <Classificacao nome="Ouro" />
@@ -43,6 +44,7 @@ function PaginaPatrocinadores() {
                         if (sponsor.type === 'gold') {
                             return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
                         }
+                        return null
                     })}
                     <hr></hr>
                     <Classificacao nome="Prata" />
@@ -50,6 +52,7 @@ function PaginaPatrocinadores() {
                         if (sponsor.type === 'silver') {
                             return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
                         }
+                        return null
                     })}
                     <hr></hr>
                     <Classificacao nome="Bronze" />
@@ -57,6 +60,7 @@ function PaginaPatrocinadores() {
                         if (sponsor.type === 'bronze') {
                             return <Patrocinador logo={sponsor.logo} descricao={sponsor.description}/>
                         }
+                        return null
                     })}
                 </div>
             </div> */}

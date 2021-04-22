@@ -46,7 +46,7 @@ function PaginaNK319() {
                 Id="NK319-1"
                 carName="NK319"
                 colocacao="5° Lugar geral 2019"
-                hashlinkBot="/PrototiposNK319#NK319-2"
+                hashlinkBot="/prototipos-NK319#NK319-2"
             />
             <Section2 
                 Id="NK319-2"
@@ -65,8 +65,8 @@ function PaginaNK319() {
                 skid="-"
                 autocross="5°"
                 enduro="-"
-                hashlinkTop="/PrototiposNK319#NK319-1"
-                hashlinkBot="/PrototiposNK319#NK319-3"
+                hashlinkTop="/prototipos-NK319#NK319-1"
+                hashlinkBot="/prototipos-NK319#NK319-3"
             />
             <Section3 
                 Id="NK319-3"
@@ -83,8 +83,8 @@ function PaginaNK319() {
                 eixos="1150 mm"
                 massa="279 kg"
                 massaD="49,9%"
-                hashlinkTop="/PrototiposNK319#NK319-2"
-                hashlinkBot="/PrototiposNK319#NK319-4"
+                hashlinkTop="/prototipos-NK319#NK319-2"
+                hashlinkBot="/prototipos-NK319#NK319-4"
             />
             <Section4 
                 Id="NK319-4"
@@ -216,7 +216,7 @@ function PaginaNK319() {
                         <img src={image_render_freio} alt="Render Freio" className="img-fluid render-freio"></img>
                     </div>
                 ]}
-                hashlinkTop="/PrototiposNK319#NK319-3"
+                hashlinkTop="/prototipo-NK319#NK319-3"
             />
             <Footer />
         </body>

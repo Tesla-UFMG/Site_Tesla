@@ -40,7 +40,7 @@ function PaginaNK218() {
                 Id="NK218-1"
                 carName="NK218"
                 colocacao="2° Lugar geral 2018"
-                hashlinkBot="/PrototiposNK218#NK218-2"
+                hashlinkBot="/prototipos-NK218#NK218-2"
             />
             <Section2 
                 Id="NK218-2"
@@ -59,8 +59,8 @@ function PaginaNK218() {
                 skid="3°"
                 autocross="2°"
                 enduro="2°"
-                hashlinkTop="/PrototiposNK218#NK218-1"
-                hashlinkBot="/PrototiposNK218#NK218-3"
+                hashlinkTop="/prototipos-NK218#NK218-1"
+                hashlinkBot="/prototipos-NK218#NK218-3"
             />
             <Section3 
                 Id="NK218-3"
@@ -77,8 +77,8 @@ function PaginaNK218() {
                 eixos="1150 mm"
                 massa="267 kg"
                 massaD="49,9%"
-                hashlinkTop="/PrototiposNK218#NK218-2"
-                hashlinkBot="/PrototiposNK218#NK218-4"
+                hashlinkTop="/prototipos-NK218#NK218-2"
+                hashlinkBot="/prototipos-NK218#NK218-4"
             />
             <Section4 
                 Id="NK218-4"
@@ -185,7 +185,7 @@ function PaginaNK218() {
                         alavanca de pedal necessária com a força desejada.
                     </p>,
                 ]}
-                hashlinkTop="/PrototiposNK218#NK218-3"
+                hashlinkTop="/prototipos-NK218#NK218-3"
             />
             <Footer />
         </body>

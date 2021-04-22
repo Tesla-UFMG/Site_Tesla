@@ -41,7 +41,7 @@ function Navbar(props) {
 
       <div id={sandwichClicked ? 'mySidenavOpen' : 'mySidenav'} className="sidenav">
         <Link to="/historia">História</Link>
-        <Link to="/prototipos-NK319">Prototipos</Link>
+        <Link to="/prototipos">Protótipos</Link>
         <Link to="/equipe">Equipe</Link>
         <Link to="/patrocinadores">Parceiros</Link>
         <Link to="/feed-blog">Blog</Link>

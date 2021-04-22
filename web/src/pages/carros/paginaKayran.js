@@ -40,7 +40,7 @@ function PaginaKayran() {
                 Id="Kayran-1"
                 carName="Kayran"
                 colocacao="10° Lugar geral 2017"
-                hashlinkBot="/PrototiposKayran#Kayran-2"
+                hashlinkBot="/prototipos-Kayran#Kayran-2"
             />
             <Section2 
                 Id="Kayran-2"
@@ -59,8 +59,8 @@ function PaginaKayran() {
                 skid="-"
                 autocross="-"
                 enduro="-"
-                hashlinkTop="/PrototiposKayran#Kayran-1"
-                hashlinkBot="/PrototiposKayran#Kayran-3"
+                hashlinkTop="/prototipos-Kayran#Kayran-1"
+                hashlinkBot="/prototipos-Kayran#Kayran-3"
             />
             <Section3 
                 Id="Kayran-3"
@@ -82,7 +82,7 @@ function PaginaKayran() {
                 eixos="1150 mm"
                 massa="279 kg"
                 massaD="49,9%"
-                hashlinkTop="/PrototiposKayran#Kayran-2"
+                hashlinkTop="/prototipos-Kayran#Kayran-2"
             />
             <Footer />
         </body>
