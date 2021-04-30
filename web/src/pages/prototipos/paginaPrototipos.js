@@ -8,7 +8,8 @@ import './styles/paginaPrototipos.css'
 
 import prototipo_2018 from '../../assets/img/fotos/prototipos/NK218.png';
 import prototipo_2019 from '../../assets/img/fotos/prototipos/NK319.png';
-import prototipo_2017 from '../../assets/img/fotos/prototipos/kayran.png';
+import prototipo_2017 from '../../assets/img/fotos/prototipos/Kayran.png';
+import prototipo_2021 from '../../assets/img/fotos/prototipos/2021.png';
 
 import clock from '../../assets/icons/clock.svg';
 import engrenagem from '../../assets/icons/cogwheel.svg';
@@ -24,9 +25,18 @@ function PaginaPrototipos() {
         { year: '2017', car_name: 'Kayran', car_img: prototipo_2017, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-kayran'},
         { year: '2018', car_name: 'NK218', car_img: prototipo_2018, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK218'},
         { year: '2019', car_name: 'NK319', car_img: prototipo_2019, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK319'},
-        { year: '2020', car_name: 'NK420', car_img: prototipo_2018, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK319'},
+        { year: '2020', car_name: 'NK420', car_img: prototipo_2021, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK319'},
         { year: '2021' },
         { year: '2022' },
+    ]
+
+    const car_infos = [
+        {},
+        {},
+        { relogio: '4,6s', engrenagem: '350km/h', raio: '25kW' },
+        { relogio: '4,5s', engrenagem: '340km/h', raio: '24kW' },
+        { relogio: '4,4s', engrenagem: '330km/h', raio: '23kW' },
+        { relogio: '-', engrenagem: '-', raio: '-' },
     ]
 
     const [yearsIndex, setYearsIndex] = useState(4);
@@ -72,21 +82,21 @@ function PaginaPrototipos() {
                         <img src={clock} alt="Relógio"/>
                         <div>
                             <p className="info">0-100 Km/h</p>
-                            <p className="data">4,6s</p>
+                            <p className="data">{car_infos[yearsIndex].relogio}</p>
                         </div>
                     </div>
                     <div className="card-info">
                         <img src={engrenagem} alt="Engrenagem"/>
                         <div>
                             <p className="info">Vel. Máx.</p>
-                            <p className="data">350km/h</p>
+                            <p className="data">{car_infos[yearsIndex].engrenagem}</p>
                         </div>
                     </div>
                     <div className="card-info">
                         <img src={raio} alt="Raio"/>
                         <div>
                             <p className="info">Potência</p>
-                            <p className="data">25kW</p>
+                            <p className="data">{car_infos[yearsIndex].raio}</p>
                         </div>
                     </div>
                 </div>

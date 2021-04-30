@@ -302,8 +302,8 @@ function PaginaHistoria() {
                                         determinantes para um melhor desempenho dinâmico na competição.
                                     </p>
                                 </div>,
-                                <div className="text com-img">
-                                    <div className="col">
+                                <div className="text com-img vitor-borges">
+                                    <div className="col texts-col">
                                         <p>
                                             Somos capazes de antecipar o início da fase de testes e, assim, focar em maiores
                                             validações. Testamos o veículo até a última semana e novamente vamos para Piracicaba.
@@ -320,6 +320,9 @@ function PaginaHistoria() {
                                         <img src={prova_design_2019} className="img-fluid" alt="Prova design"></img>
                                     </div>
                                 </div>,
+                                <div className="row row-img two-imgs">
+                                    <img src={trab_carro} className="img-fluid img1" alt="Membros do Tesla trabalhando no carro"></img>
+                                </div>,
                                 <div className="text">
                                     <p>
                                         As provas dinâmicas vão se passando enquanto continuamos parados nos boxes
@@ -331,8 +334,7 @@ function PaginaHistoria() {
                                         que já haviam começado.
                                     </p>
                                 </div>,
-                                <div className="row row-img">
-                                    <img src={trab_carro} className="img-fluid img1" alt="Membros do Tesla trabalhando no carro"></img>
+                                <div className="row row-img two-imgs">
                                     <img src={carro_pista_2019} className="img-fluid img2" alt="Carro na pista"></img>
                                 </div>,
                                 <div className="text">

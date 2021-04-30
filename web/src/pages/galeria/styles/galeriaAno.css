@@ -6,7 +6,7 @@
 #galeriaAno-page .body {
   width: 100%;
 
-  padding: 100px 250px 50px;
+  padding: 100px 300px 50px;
 
   max-width: 1600px;
 }
@@ -15,7 +15,7 @@
   font-family: Gilroy-Extrabold;
   font-style: normal;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 60px;
 
   color: #000;
 
@@ -27,8 +27,7 @@
 
   border-bottom: 1px solid #707070;
 
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #galeriaAno-page .body .fotos {

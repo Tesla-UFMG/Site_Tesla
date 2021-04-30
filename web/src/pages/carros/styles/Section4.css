@@ -12,8 +12,9 @@
 }
 
 .div4 .row .infos {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 30px;
     /* padding-left: 170px;
     padding-right: 170px; */
 
@@ -57,74 +58,85 @@
 
     color: black;
 
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 .div4 .row .text-elec {
     font-family: Gilroy-Light;
-    font-size: 20px;
+    font-size: 18px;
 
     color: #58595b;
 
     line-height: 24px;
 
-    text-indent: 1.5em;
-    text-align: justify;
+    /* text-indent: 1.5em; */
+    /* text-align: justify; */
+    margin-bottom: 20px;
 }
 
 .div4 .row .text-mec {
     font-family: Gilroy-Light;
-    font-size: 20px;
+    font-size: 18px;
 
     color: #58595b;
 
     line-height: 24px;
 
-    text-indent: 1.5em;
-    text-align: justify;
+    /* text-indent: 1.5em; */
+    /* text-align: justify; */
+    margin-bottom: 20px;
 }
 
 #NK319-4 .powertrain2 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-#NK319-4 .chassi2 {
-    display: inline-flex;
+#NK319-4 .freio2 img,
+#NK319-4 .chassi2 img,
+#NK319-4 .powertrain2 img {
+    max-width: 60%
 }
+/* 
+#NK319-4 .chassi2 {
+    display: flex;
+} */
 
 #NK319-4 .direcao2 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column-reverse;
 }
-
+/* 
 #NK319-4 .direcao2 .second-col {
     text-align: center;
-}
+} */
 
 #NK319-4 .direcao2 .render-direcao {
-    max-width: 50%;
-
+    max-width: 30%;
+/* 
     position: relative; 
-    bottom: 15px;
+    bottom: 15px; */
 }
-
+/* 
 #NK319-4 .suspensao2 {
     display: inline-flex;
-}
-
+} */
+/* 
 #NK319-4 .suspensao2 .first-col {
     text-align: center;
     flex-direction: column;
-}
+} */
 
 #NK319-4 .suspensao2 .render-susp {
-    max-width: 70%;
+    max-width: 50%;
 }
 
 #NK319-4 .freio2 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .div4 .row .text-elec {
         font-size: 16px;
         line-height: 20px;
@@ -134,43 +146,72 @@
         font-size: 16px;
         line-height: 20px;
     }
+} */
+
+@media (max-width: 1200px) {
+    .div4 .row .infos {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
     .div4 .row .infos {
-        padding-left: 140px;
-        padding-right: 140px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 }
 
 @media (max-width: 900px) {
     .div4 .row .text-elec {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .div4 .row .text-mec {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 800px) {
+    .div4 .row .text-elec {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
     }
     
     .div4 .row .text-mec {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
+    }
+
+    .div4 .row .subsistems {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .div4 .row .titleWrapper .title {
+        font-size: 45px;
+        height: 65px;
     }
 }
 
 @media (max-width: 720px) {
-    .div4 .row .titleWrapper .title {
+    /* .div4 .row .titleWrapper .title {
         font-size: 46px;
         height: 68px;
-    }
+    } */
 
-    .div4 .row .subsistems {
+    /* .div4 .row .subsistems {
         font-size: 24px;
-    }
+    } */
 
     .div4 .row .infos {
-        padding-left: 8vw;
-        padding-right: 8vw;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 
-    #NK319-4 .powertrain2 {
+    /* #NK319-4 .powertrain2 {
         flex-direction: column-reverse;
     }
 
@@ -208,24 +249,31 @@
 
     #NK319-4 .freio2 .col {
         padding: 0;
-    }
+    } */
 }
 
 @media (max-width: 620px) {
     .div4 .row .titleWrapper .title {
-        font-size: 40px;
-        height: 58px;
+        font-size: 35px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 550px) {
+    .div4 .row .infos {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
 @media (max-width: 425px) {
     .div4 .row .titleWrapper .title {
-        font-size: 34px;
+        font-size: 30px;
         height: 50px;
     }
 
     .div4 .row .subsistems {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .div4 .row .infos {

@@ -37,11 +37,11 @@
 
 #pagina-historia #inicio .content p {
     font-family: Gilroy-Light;
-    font-size: 2vw;
+    font-size: 24px;
 
     text-align: end;
 
-    line-height: 2.2vw;
+    line-height: 1.4;
 
     padding-right: 15px;
 }
@@ -54,8 +54,8 @@
 #pagina-historia #conteudo .content {
     padding-top: 6vh;
 
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
     /* padding-left: 170px;
     padding-right: 170px; */
 
@@ -85,12 +85,12 @@
 
 #pagina-historia #conteudo .content .text p {
     font-family: Gilroy-Light;
-    font-size: 20px;
+    color: #58595b;
+    font-size: 18px;
+    line-height: 24px;
 
-    line-height: 23px;
-
-    text-align: justify;
-    text-indent: 3rem;
+    /* text-align: justify; */
+    /* text-indent: 3rem; */
 }
 
 #pagina-historia #conteudo .content .text {
@@ -99,22 +99,59 @@
 
 #pagina-historia #conteudo .content .title-img {
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
     margin-top: 40px;
 }
 
 #pagina-historia #conteudo .content .title-img h1 {
     font-family: Gilroy-Extrabold;
-    font-size: 100px;
+    font-size: 60px;
     text-transform: uppercase;
 
     color: black;
 
-    line-height: 90px;
+    line-height: 1;
+    margin-bottom: 40px;
+
+    padding: 0;
+
+    width: 100%;
+    text-align: start;
+}
+
+#pagina-historia #conteudo .content .title-img img {
+    width: 45%;
 }
 
 #pagina-historia #conteudo .content .com-img {
     display: flex;
+    flex-direction: column-reverse;
+}
+
+#pagina-historia #conteudo .content .com-img .col {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#pagina-historia #conteudo .content .com-img img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+#pagina-historia #conteudo .content .com-img .texts-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#pagina-historia #conteudo .content .com-img.vitor-borges {
+    margin-top: 20px;
+}
+
+#pagina-historia #conteudo .content .com-img.vitor-borges img {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 #pagina-historia #conteudo .content .row-img {
@@ -124,23 +161,32 @@
     padding-right: 5vw;
 }
 
-#pagina-historia #conteudo .content .row-img .img1 {
-    width: 48%;
-    margin-right: 30px;
+#pagina-historia #conteudo .content .row-img.two-imgs {
+    padding: 0;
 }
 
 #pagina-historia #conteudo .content .row-img .img2 {
     width: 48%;
 }
 
-@media (max-width: 1370px) {
+#pagina-historia #conteudo .content .row-img .img1 {
+    width: 48%;
+    margin-right: 30px;
+}
+
+#pagina-historia #conteudo .content .row-img.two-imgs img {
+    width: 60%;
+    margin: 0;
+}
+
+/* @media (max-width: 1370px) {
     #pagina-historia #conteudo .content .title-img h1 {
         font-size: 80px;
         line-height: 70px;
     }
-}
+} */
 
-@media (max-width: 1135px) {
+/* @media (max-width: 1135px) {
     #pagina-historia #conteudo .content .row-img .img1 {
         width: 60%;
         margin-right: 0;
@@ -150,30 +196,51 @@
     #pagina-historia #conteudo .content .row-img .img2 {
         width: 60%;
     }
+} */
+
+@media (max-width: 1260px) {
+    #pagina-historia #inicio .content p {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    #pagina-historia #conteudo .content .title-img h1 {
+        font-size: 50px;
+    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+    #pagina-historia #conteudo .content {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+}
+
+@media (max-width: 1050px) {
     #pagina-historia #conteudo .content {
         padding-left: 150px;
         padding-right: 150px;
     }
 }
 
-@media (max-width: 1060px) {
+/* @media (max-width: 1060px) {
     #pagina-historia #conteudo .content .title-img h1 {
         font-size: 60px;
         line-height: 55px;
     }
-}
+} */
 
 @media (max-width: 950px) {
     #pagina-historia #inicio .content h1 {
         line-height: 7vw;
         font-size: 8vw;
     }
+}
 
-    #pagina-historia #inicio .content p {
-        line-height: 2.6vw;
+@media (max-width: 900px) {
+    #pagina-historia #conteudo .content .text p {
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
@@ -185,34 +252,39 @@
     }
 
     #pagina-historia #inicio .content p {
-        font-size: 1.3rem;
+        font-size: 18px;
+    }
 
-        line-height: 2.8vw;
+    #pagina-historia #conteudo .content .title-img h1 {
+        font-size: 45px;
     }
 }
 
 @media (max-width: 800px) {
-    #pagina-historia #conteudo .content .title-img h1 {
+    /* #pagina-historia #conteudo .content .title-img h1 {
         font-size: 50px;
         line-height: 50px;
+    } */
+
+    #pagina-historia #conteudo .content .title-img h1 {
+        font-size: 40px;
     }
 }
 
 @media (max-width: 720px) {
     #pagina-historia #conteudo .content {
-        padding-left: 8vw;
-        padding-right: 8vw;
+        padding-left: 75px;
+        padding-right: 75px;
     }
 }
 
 @media (max-width: 680px) {
     #pagina-historia #inicio .content p {
-        font-size: 24px;
-        line-height: 22px;
+        font-size: 14px;
     }
 }
 
-@media (max-width: 660px) {
+/* @media (max-width: 660px) {
     #pagina-historia #conteudo .content .title-img h1 {
         font-size: 40px;
         line-height: 35px;
@@ -222,16 +294,27 @@
         font-size: 16px;
         line-height: 19px;
     }
-}
+} */
 
 @media (max-width: 610px) {
-    #pagina-historia #inicio .content p {
+    /* #pagina-historia #inicio .content p {
         font-size: 20px;
         line-height: 20px;
+    } */
+
+    #pagina-historia #conteudo .content .title-img h1 {
+        font-size: 35px;
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
+    #pagina-historia #conteudo .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* @media (max-width: 540px) {
     #pagina-historia #conteudo .content .title-img {
         flex-direction: column;
     }
@@ -244,11 +327,11 @@
         font-size: 14px;
         line-height: 16px;
     }
-}
+} */
 
 @media (max-width: 500px) {
     #pagina-historia #inicio .content p {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -259,10 +342,15 @@
         margin-top: 20px;
     }
 
-    #pagina-historia #inicio .content p {
+    /* #pagina-historia #inicio .content p {
         font-size: 16px;
         line-height: 19px;
         margin-top: 20px;
+    } */
+
+    #pagina-historia #conteudo .content {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -272,9 +360,7 @@
     }
 
     #pagina-historia #inicio .content p {
-        font-size: 14px;
-        line-height: 16px;
-        margin-top: 14px;
+        font-size: 10px;
     }
 }
 
@@ -282,10 +368,10 @@
     #pagina-historia #inicio .content h1 {
         margin-top: 10px;
     }
-
+/* 
     #pagina-historia #inicio .content p {
         font-size: 14px;
         line-height: 13px;
         margin-top: 10px;
-    }
+    } */
 }

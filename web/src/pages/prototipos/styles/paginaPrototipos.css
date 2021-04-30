@@ -1,7 +1,7 @@
 #pagina-prototipos .conteudo-prototipos {
   width: 100%;
 
-  padding: 100px 250px 50px;
+  padding: 100px 300px 50px;
 
   max-width: 1600px;
 }
@@ -10,12 +10,12 @@
   font-family: Gilroy-Extrabold;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 1.2;
 
   color: #000;
 
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 #pagina-prototipos .conteudo-prototipos .line {
@@ -50,7 +50,7 @@
 
 #pagina-prototipos .conteudo-prototipos .years-wrapper .arrows-wrapper img {
   height: 50%;
-  margin-left: 120px;
+  margin-left: 100px;
   cursor: pointer;
 }
 #pagina-prototipos .conteudo-prototipos .years-wrapper .arrows-wrapper img:first-child {
@@ -79,18 +79,19 @@
   font-family: Gilroy-Extrabold;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
 
   color: #D5D4D4;
 
-  margin: 0;
+  margin: 0 auto;
 
-  width: 100%;
+  width: 80%;
   text-align: center;
 }
 
 #pagina-prototipos .conteudo-prototipos .years-wrapper .year.center {
   color: #4ED840;
+  margin: 0 10px;
 }
 
 #pagina-prototipos .conteudo-prototipos .car-wrapper {
@@ -157,19 +158,20 @@
   font-family: Gilroy-Light;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 22px;
 
   margin: 0;
 
   color: #7C7C7C;
 
   max-width: 40%;
-  text-align: center;
+  text-align: flex-start;
 }
 
 #pagina-prototipos .conteudo-prototipos .car-wrapper .car-img {
-  width: 80%;
+  width: 60%;
+  margin-top: 25px;
 }
 
 #pagina-prototipos .conteudo-prototipos .info-cards {
@@ -223,4 +225,39 @@
 
   color: #000;
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  #pagina-prototipos .conteudo-prototipos {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+}
+
+@media (max-width: 1050px) {
+  #pagina-prototipos .conteudo-prototipos {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 720px) {
+  #pagina-prototipos .conteudo-prototipos {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (max-width: 550px) {
+  #pagina-prototipos .conteudo-prototipos {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  #pagina-prototipos .conteudo-prototipos {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
