@@ -30,7 +30,7 @@
     color: #a4a6a9;
 
     font-family: Gilroy-Light;
-    font-size: 20px;
+    font-size: 13px;
 }
 
 .footer .info .opcoes a:hover { /* a = Link */
@@ -39,7 +39,7 @@
 
 .footer .info .opcoes h5{
     font-family: Gilroy-Extrabold;
-    font-size: 22px;
+    font-size: 14px;
 }
 
 .footer .info .opcoes .paths {
@@ -72,17 +72,22 @@
 
 .footer .info .info-name h4 {
     font-family: Gilroy-Extrabold;
-    font-size: 26px;
+    font-size: 14px;
 }
 
 .footer .info .info-name p {
     font-family: Gilroy-Light;
-    font-size: 21px;
+    font-size: 12px;
+}
+
+.footer .footer-copyright {
+    font-family: Gilroy-Light;
+    font-size: 10px;
 }
 
 @media (max-width: 1120px) {
     .footer .info .col-imagem .img-fluid {
-        width: 205px;
+        width: 180px;
     }
 
     .footer .info .opcoes {

@@ -23,6 +23,7 @@ import prova_design_2019 from '../../assets/img/fotos/historia/_REN6842.jpg'
 import trab_carro from '../../assets/img/fotos/historia/_REN6965.jpg'
 import carro_pista_2019 from '../../assets/img/fotos/historia/_REN7124.jpg'
 import equipe_2019 from '../../assets/img/fotos/historia/_REN7651.jpg'
+import sala from '../../assets/img/fotos/historia/sala.png'
 
 function PaginaHistoria() {
     const [{ color, display }, handleScroll] = useNavBar();
@@ -56,12 +57,12 @@ function PaginaHistoria() {
                     </div>
 
                     <div className="col">
-                        <p>
+                        <p className = "inicial">
                             Somos uma equipe de competição da
                             Universidade Federal de Minas Gerais,
                             sediada em Belo Horizonte e composta por
-                            alunos de graduação de diversas áreas da
-                            Escola de Engenharia da UFMG.
+                            alunos de graduação de diversas áreas do conhecimento
+                            da Universidade.
                         </p>
                     </div>
                 </div>
@@ -86,7 +87,7 @@ function PaginaHistoria() {
                                 equipes universitárias de todo o país. Nessa competição são avaliadas a performance
                                 de cada protótipo na pista, com provas de aceleração, curva, volta rápida e
                                 resistência, pilotadas pelos próprios integrantes; assim como as apresentações
-                                técnicas das equipes, que incluem projeto, custos, manufatura e marketing. Somado a
+                                técnicas das equipes, que incluem projeto, custos, manufatura e business. Somado a
                                 todas essas etapas, todos os protótipos ainda precisam passar pela aprovação de
                                 rigorosas inspeções técnicas de segurança.
                             </p>
@@ -100,6 +101,11 @@ function PaginaHistoria() {
                         <div className="row title-img">
                             <h1 className="col">COMO TUDO COMEÇOU</h1>
                             <img src={reuniao_novidades} className="img-fluid col" alt="Fundadores do Fórmula Tesla UFMG"></img>
+                            <div className="legendinha embaixo">
+                                <p>
+                                    Fundadores da equipe
+                                </p>
+                            </div>
                         </div>
                         
                         <div className="text">
@@ -115,7 +121,16 @@ function PaginaHistoria() {
                                 composta por 26 alunos de graduação. Dá-se início aos estudos, esboços de projeto e
                                 conexões com equipes parceiras.
                             </p>
+
                         </div>
+                        <div className="col">
+                                        <img src={sala} className="img-fluid" alt="sala projeto"></img>
+                                        <div className="legendinha">
+                                        <p>
+                                            Primeira sala de projetos
+                                        </p>
+                                        </div>
+                                    </div>
                     </div>
                     
                     <BodyHistoria
@@ -135,6 +150,7 @@ function PaginaHistoria() {
                         prova5= "apresentação"
                         videoLink= {[<iframe src="https://www.youtube.com/embed/lPQjy78QGok" title="Video 2017" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>]}
                         legenda= "Em 2017 projetos ousados e alguns até mesmo inéditos no país começam a ganhar vida, enquanto um patrocínio salvador abraça a nossa causa."
+                        legendaimagem= "Equipe 2017"
                         textos= {[<div className="text">
                                     <p>
                                         O ano fica marcado pelo otimismo implacável dos integrantes e por muita energia para virar 
@@ -157,6 +173,11 @@ function PaginaHistoria() {
                                 <div className="text com-img">
                                     <div className="col">
                                         <img src={oficina_noite} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
+                                        <div className="legendinha">
+                                        <p>
+                                            Madrugada antes da competição
+                                        </p>
+                                        </div>
                                     </div>
                                     <div className="col">
                                         <p>
@@ -176,7 +197,7 @@ function PaginaHistoria() {
                                         inédito na competição nacional – o emprego da motorização dupla traseira.
                                     </p>
                                     <p>
-                                        E não era só, também fomos os únicos a desenvolver o nosso próprio sistema eletrônico de
+                                        E não era só, também fomos os únicos até aquele momento a desenvolver o nosso próprio sistema eletrônico de
                                         monitoramento de baterias (BMS). Mas, mais importante do que isso, nós criamos um
                                         time, uma família! Acreditávamos no nosso potencial, confiávamos uns nos outros e
                                         sabíamos que juntos, independentemente do resultado, iríamos crescer, como
@@ -203,6 +224,7 @@ function PaginaHistoria() {
                         prova5= "autocross"
                         videoLink= {[<iframe src="https://www.youtube.com/embed/s_YGnP0zI4s" title="Video 2018" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>]}
                         legenda= "Com a nova mentalidade de “um passo de cada vez”, conseguir a aprovação dos juízes nas inspeções técnicas de segurança passa a ser o principal objetivo."
+                        legendaimagem= "Equipe 2018"
                         textos= {[<div className="text">
                                     <p>
                                         Agora, com uma estruturação interna totalmente reorganizada, o Fórmula Tesla
@@ -218,6 +240,11 @@ function PaginaHistoria() {
                                 <div className="text com-img">
                                     <div className="col">
                                         <img src={carro_gif} className="img-fluid" alt="Carro andando no teste"></img>
+                                        <div className="legendinha">
+                                        <p>
+                                            Primeiro teste do Kayran
+                                        </p>
+                                        </div>
                                     </div>
                                     <div className="col">
                                         <p>
@@ -240,6 +267,11 @@ function PaginaHistoria() {
                                 </div>,
                                 <div className="row row-img">
                                     <img src={carro_pista_2018} className="img-fluid" alt="Carro andando na pista"></img>
+                                    <div className="legendinha">
+                                        <p>
+                                        NK-218 na prova de aceleração
+                                        </p>
+                                        </div>
                                 </div>,
                                 <div className="text">
                                     <p>
@@ -284,6 +316,7 @@ function PaginaHistoria() {
                         prova5= "autocross"
                         videoLink= {[<iframe src="https://www.youtube.com/embed/-MkqLh-w-Ew" title="Video 2019" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>]}
                         legenda= "2019 começa grande. Conseguimos um patrocínio financeiro de peso. Ousamos e iniciamos o desenvolvimento de sistemas que antes julgávamos impossíveis de serem feitos."
+                        legendaimagem= "Equipe 2019"
                         textos= {[<div className="text">
                                     <p>
                                         Novos componentes e logística de equipe são planejados e todo o protótipo é
@@ -318,6 +351,11 @@ function PaginaHistoria() {
                                     </div>
                                     <div className="col">
                                         <img src={prova_design_2019} className="img-fluid" alt="Prova design"></img>
+                                        <div className="legendinha">
+                                        <p>
+                                            Prova de Design (projeto)
+                                        </p>
+                                        </div>
                                     </div>
                                 </div>,
                                 <div className="row row-img two-imgs">
@@ -330,12 +368,29 @@ function PaginaHistoria() {
                                         estamos a dez minutos de se encerrar a prova de Autocross, terminamos o reparo,
                                         somos aprovados no teste de frenagem e corremos para a pista com o carro. Porém,
                                         entramos na prova logo quando começa a chover e não conseguimos fazer um bom
-                                        tempo. Ao final da prova, levamos o carro em ritmo acelerado para as finais de projeto,
-                                        que já haviam começado.
+                                        tempo. Ao final da prova, levamos o carro em ritmo acelerado para a final de projeto,
+                                        que já havia começado.
                                     </p>
                                 </div>,
-                                <div className="row row-img two-imgs">
-                                    <img src={carro_pista_2019} className="img-fluid img2" alt="Carro na pista"></img>
+                                <div className="row row-img">
+                                    <div className="agrupador">
+                                        <div className="um">
+                                            <img src={trab_carro} className="img-fluid img1" alt="Membros do Tesla trabalhando no carro"></img>
+                                            <div className="legendinha embaixo pa">
+                                                <p>
+                                                    Equipe nos boxes da competição
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="dois">
+                                            <img src={carro_pista_2019} className="img-fluid img2" alt="Carro na pista"></img>
+                                            <div className="legendinha embaixo pa">
+                                                <p>
+                                                    Prova de Autocross
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>,
                                 <div className="text">
                                     <p>
@@ -346,7 +401,7 @@ function PaginaHistoria() {
                                     </p>
                                     <p>
                                         Mas a cara de choro dos membros desapareceu rapidamente quando recebemos a
-                                        notícia de que havíamos ganhado as finais de projeto. Tínhamos o melhor projeto de
+                                        notícia de que havíamos ganhado as final de projeto. Tínhamos o melhor projeto de
                                         Fórmula SAE Elétrico do Brasil!
                                     </p>
                                     <p>

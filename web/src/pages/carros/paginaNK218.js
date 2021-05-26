@@ -65,9 +65,9 @@ function PaginaNK218() {
             <Section3 
                 Id="NK218-3"
                 detec={[<img src={image_detec} alt="detec" className="detec"></img>]}
-                motor="2x WEG VE-M01"
-                potencia="54 cv (39,7 kW)"
-                torque="8,2 Nm (39,7 kW)"
+                motor="WEG VE-M01"
+                potencia="54 cv"
+                torque="8,2 kgf.m"
                 tempo="4,6 s"
                 velocidade="99 km/h"
                 consumo="244 Wh/km"
@@ -121,8 +121,7 @@ function PaginaNK218() {
                 textPowertrain={[
                     <p className="text-mec" >
                         Após novas análises em 2018, com simulações que levaram em consideração o novo
-                        grip e massa do veículo, manteve-se a redução de 9:1, que se mostrou adequada mais
-                        uma vez por razões de custo e empacotamento, ao ser em dois estágios. Com o
+                        grip e massa do veículo, manteve-se a redução de 9:1 em dois estágios, que se mostrou adequada mais uma vez por razões de custo e empacotamento. Com o
                         objetivo de reduzir a massa do sistema e otimizá-lo como um todo, novas geometrias
                         de peça foram desenhadas e um estudo de fadiga iniciado. Também, com o
                         desenvolvimento de tensionadores e a aquisição de um novo e mais adequado
@@ -132,9 +131,8 @@ function PaginaNK218() {
                 ]}
                 textChassi={[
                     <p className="text-mec">
-                        Em 2018, dimensionou-se uma carroceria mais enxuta, cerca de 10% mais leve, e fez-
-                        se uso de um modelo matemático para estimar um valor de rigidez torcional
-                        apropriada. Com estudos mais aprofundados via método dos elementos finitos, foi
+                        Em 2018, dimensionou-se uma carroceria mais enxuta, cerca de 10% mais leve, e fez-se uso de um modelo matemático para estimar um valor de rigidez torcional
+                        apropriado. Com estudos mais aprofundados via método dos elementos finitos, foi
                         possível simular o valor de rigidez à torção e analisar os níveis de tensão sofridos
                         durante a operação do veículo. Realizaram-se, então, diversos testes e aquisições de
                         dados no intuito de validar as análises computacionais e assegurar o bom desempenho
@@ -146,7 +144,7 @@ function PaginaNK218() {
                 de CFD foram feitas em Star CCM+ utilizando-se diversos modelos de turbulência, um
                 para cada etapa de desenvolvimento, possibilitando uma análise mais ampla do
                 comportamento do escoamento ao redor do veículo. As análises para determinar a
-                rigidez do produto laminado foram feitas nos softwares Ansys e Abaqus."
+                rigidez da carenagem foram feitas nos softwares Ansys e Abaqus."
                 textDirecao={[
                     <p className="text-mec" >
                         O projeto de direção do protótipo 2018 foi feito com dois objetivos principais: otimizar
@@ -181,8 +179,7 @@ function PaginaNK218() {
                         desse ano, a modelagem do sistema de freios foi realizada com o auxílio de dados de
                         pneu do FSAE TTC. Além disso, o pedal box, estrutura que compreende os pedais,
                         cilindros mestres e balance bar, foi projetado analisando-se parâmetros anatômicos,
-                        como força do piloto, tamanho do pé e comprimento das pernas, para atender à
-                        alavanca de pedal necessária com a força desejada.
+                        como força do piloto, tamanho do pé e comprimento das pernas, para o adequado dimensionamento da alavanca de pedal.
                     </p>,
                 ]}
                 hashlinkTop="/prototipos-NK218#NK218-3"

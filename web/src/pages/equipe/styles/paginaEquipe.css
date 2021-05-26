@@ -8,14 +8,31 @@
     position: relative;
 }
 
-#pagina-equipe #inicio-equipe .content {
-    margin-left: 66%;
-    padding-right: 15px;
+@media (min-width: 901px){
+    #pagina-equipe #inicio-equipe .content {
+        margin-left: 66%;
+        padding-right: 15px;
+    
+        position: absolute;
+        top: 45vh;
+    
+        text-align: end;
+    }
+    
+}
 
-    position: absolute;
-    top: 45vh;
+#pagina-equipe #inicio-equipe .content p {
+    font-family: Gilroy-Light;
+    font-size: 2.2vw;
 
-    text-align: end;
+    color: white;
+    line-height: 2.2vw;
+}
+
+@media(max-width: 650px){
+    #pagina-equipe #inicio-equipe .content p {
+        display: none;
+    }
 }
 
 #pagina-equipe #inicio-equipe .content h1 {
@@ -27,14 +44,15 @@
     line-height: 5.1vw;
 }
 
-#pagina-equipe #inicio-equipe .content p {
-    font-family: Gilroy-Light;
-    font-size: 2.2vw;
-
-    text-align: end;
-
-    color: white;
-    line-height: 2.2vw;
+@media(max-width: 650px){
+    #pagina-equipe #inicio-equipe .content h1 {
+        font-family: Gilroy-Extrabold;
+        font-size: 10.1vw;
+        text-transform: uppercase;
+        line-height: 8.1vw;
+        color: white;
+        position: absolute;
+    }
 }
 
 #pagina-equipe #video {
@@ -92,4 +110,15 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+}
+
+@media (max-width: 900px){
+    #pagina-equipe #inicio-equipe .content {
+        margin-left: 10%;
+        padding-right: 200px;
+    
+        position: absolute;
+        top: 45vh;
+    }
+    
 }

@@ -50,7 +50,7 @@ function Section2(props) {
 
                         <div className="col">
                             <p className="colocacoes">{props.skid}</p>
-                            <p className="provas">skid pad</p>
+                            <p className="provas">skidpad</p>
                         </div>
                         
                         <div className="col">

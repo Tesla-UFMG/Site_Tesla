@@ -8,7 +8,7 @@ import './styles/paginaPrototipos.css'
 
 import prototipo_2018 from '../../assets/img/fotos/prototipos/NK218.png';
 import prototipo_2019 from '../../assets/img/fotos/prototipos/NK319.png';
-import prototipo_2017 from '../../assets/img/fotos/prototipos/Kayran.png';
+import prototipo_2017 from '../../assets/img/fotos/prototipos/kayran.png';
 import prototipo_2021 from '../../assets/img/fotos/prototipos/2021.png';
 
 import clock from '../../assets/icons/clock.svg';
@@ -22,10 +22,10 @@ function PaginaPrototipos() {
     const years = [
         { year: '' },
         { year: '' },
-        { year: '2017', car_name: 'Kayran', car_img: prototipo_2017, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-kayran'},
-        { year: '2018', car_name: 'NK218', car_img: prototipo_2018, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK218'},
-        { year: '2019', car_name: 'NK319', car_img: prototipo_2019, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK319'},
-        { year: '2020', car_name: 'NK420', car_img: prototipo_2021, desc: 'Nosso 4º protótipo, obteve o 1º lugar na competição nacional. Trouxe projetos inovadores para regeneração de energia.', link: '/prototipos-NK319'},
+        { year: '2017', car_name: 'Kayran', car_img: prototipo_2017, desc: 'Desenvolvido em 2017, foi o primeiro protótipo da equipe, colocando em prática o objetivo dos integrantes de desenvolver tecnologia nacional e transformar estudantes em profissionais capacitados.', link: '/prototipos-kayran'},
+        { year: '2018', car_name: 'NK218', car_img: prototipo_2018, desc: 'Coroado com o segundo lugar geral da competição, o modelo conta com diversos prêmios na FSAE 2018.', link: '/prototipos-NK218'},
+        { year: '2019', car_name: 'NK319', car_img: prototipo_2019, desc: 'O grande empenho da equipe durante o ano levou ao primeiro lugar na prova de projeto.', link: '/prototipos-NK319'},
+        { year: '2020', car_name: 'NK420', car_img: prototipo_2021, desc: 'Carro em desenvolvimento.', link: '/prototipos-NK420'},
         { year: '2021' },
         { year: '2022' },
     ]
