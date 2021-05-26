@@ -46,9 +46,9 @@ function Section4(props) {
                         {props.textChassi}
                     </div>
                     <p className="subsistems aero">AERODINÂMICA</p>
-                    <p className="text-mec aero2">
+                    <div className="aero2 text-mec">
                         {props.textAero}
-                    </p>
+                    </div>
                     <p className="subsistems direcao">DIREÇÃO</p>
                     <div className="direcao2">
                         {props.textDirecao}

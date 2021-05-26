@@ -108,7 +108,7 @@ function PaginaHistoria() {
                             </div>
                         </div>
                         
-                        <div className="text">
+                        <div className="text" style={{ marginTop: '20px' }}>
                             <p>
                                 Nossa história começa em meados de 2016, com o fundador Abraão Guia, então
                                 aluno de Engenharia Elétrica, recrutando alguns de seus colegas de curso para
@@ -124,13 +124,11 @@ function PaginaHistoria() {
 
                         </div>
                         <div className="col">
-                                        <img src={sala} className="img-fluid" alt="sala projeto"></img>
-                                        <div className="legendinha">
-                                        <p>
-                                            Primeira sala de projetos
-                                        </p>
-                                        </div>
-                                    </div>
+                            <img src={sala} className="img-fluid" alt="sala projeto"></img>
+                            <div className="legendinha">
+                                <p>Primeira sala de projetos</p>
+                            </div>
+                        </div>
                     </div>
                     
                     <BodyHistoria
@@ -171,12 +169,10 @@ function PaginaHistoria() {
                                     </p>
                                 </div>,
                                 <div className="text com-img">
-                                    <div className="col">
+                                    <div className="col col-legenda" >
                                         <img src={oficina_noite} className="img-fluid" alt="Membros do Tesla trabalhando no carro"></img>
                                         <div className="legendinha">
-                                        <p>
-                                            Madrugada antes da competição
-                                        </p>
+                                            <p>Madrugada antes da competição</p>
                                         </div>
                                     </div>
                                     <div className="col">
@@ -238,7 +234,7 @@ function PaginaHistoria() {
                                     </p>
                                 </div>,
                                 <div className="text com-img">
-                                    <div className="col">
+                                    <div className="col col-legenda">
                                         <img src={carro_gif} className="img-fluid" alt="Carro andando no teste"></img>
                                         <div className="legendinha">
                                         <p>
@@ -349,7 +345,7 @@ function PaginaHistoria() {
                                             também elétricos.
                                         </p>
                                     </div>
-                                    <div className="col">
+                                    <div className="col col-legenda"  style={{ marginBottom: '10px' }}>
                                         <img src={prova_design_2019} className="img-fluid" alt="Prova design"></img>
                                         <div className="legendinha">
                                         <p>
@@ -360,8 +356,13 @@ function PaginaHistoria() {
                                 </div>,
                                 <div className="row row-img two-imgs">
                                     <img src={trab_carro} className="img-fluid img1" alt="Membros do Tesla trabalhando no carro"></img>
+                                    <div className="legendinha embaixo pa">
+                                        <p>
+                                            Equipe nos boxes da competição
+                                        </p>
+                                    </div>
                                 </div>,
-                                <div className="text">
+                                <div className="text" style={{ marginTop: '20px' }}>
                                     <p>
                                         As provas dinâmicas vão se passando enquanto continuamos parados nos boxes
                                         realizando a manutenção do veículo. Depois de duas provas já perdidas, quando
@@ -372,27 +373,13 @@ function PaginaHistoria() {
                                         que já havia começado.
                                     </p>
                                 </div>,
-                                <div className="row row-img">
-                                    <div className="agrupador">
-                                        <div className="um">
-                                            <img src={trab_carro} className="img-fluid img1" alt="Membros do Tesla trabalhando no carro"></img>
-                                            <div className="legendinha embaixo pa">
-                                                <p>
-                                                    Equipe nos boxes da competição
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div className="dois">
-                                            <img src={carro_pista_2019} className="img-fluid img2" alt="Carro na pista"></img>
-                                            <div className="legendinha embaixo pa">
-                                                <p>
-                                                    Prova de Autocross
-                                                </p>
-                                            </div>
-                                        </div>
+                                <div className="row row-img two-imgs">
+                                    <img src={carro_pista_2019} className="img-fluid img2" alt="Carro na pista"></img>
+                                    <div className="legendinha embaixo pa">
+                                        <p>Prova de Autocross</p>
                                     </div>
                                 </div>,
-                                <div className="text">
+                                <div className="text" style={{ marginTop: '20px' }}>
                                     <p>
                                         No dia seguinte, Enduro, a prova dinâmica mais temida. Havíamos testado
                                         suficientemente o carro em Belo Horizonte, porém, depois dos problemas que tivemos

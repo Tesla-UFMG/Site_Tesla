@@ -8,7 +8,7 @@ import image_Kayran_3 from '../../assets/img/fotos/Kayran2.jpg'
 import Section1 from './components/Section1'
 import Section2 from './components/Section2'
 import Section3 from './components/Section3'
-import Section4Kayran from './components/Section4Kayran'
+import Section4 from './components/Section4Kayran'
 
 import NavBar from '../../components/navbar/navbar';
 import useNavBar from '../../hooks/useNavBar';
@@ -63,26 +63,6 @@ function PaginaKayran() {
                 hashlinkTop="/prototipos-Kayran#Kayran-1"
                 hashlinkBot="/prototipos-Kayran#Kayran-3"
             />
-            <Section2 
-                Id="Kayran-2"
-                p1="Desenvolvido em 2017, foi o primeiro protótipo da equipe, colocando em prática o
-                objetivo dos integrantes de desenvolver tecnologia nacional e transformar estudantes
-                em profissionais capacitados. Embora pesado e de grandes dimensões, por possuir
-                estrutura e componentes robustos, o Kayran era bastante confiável mecanicamente."
-                p2="Foi pioneiro na competição FSAE Brasil ao utilizar a motorização dupla e o BMS de
-                fabricação própria e, mesmo sem ter conseguido realizar as provas dinâmicas,
-                alcançou décimo lugar na classificação geral."
-                geral="10°"
-                custos="10°"
-                apresentacao="10°"
-                design="8°"
-                aceleracao="-"
-                skid="-"
-                autocross="-"
-                enduro="-"
-                hashlinkTop="/PrototiposKayran#Kayran-1"
-                hashlinkBot="/PrototiposKayran#Kayran-3"
-            />
             <Section3 
                 Id="Kayran-3"
                 detec={[
@@ -105,7 +85,7 @@ function PaginaKayran() {
                 massaD="49,9%"
                 hashlinkTop="/prototipos-Kayran#Kayran-2"
             />
-            <Section4Kayran
+            <Section4
                 Id="Kayran-4"
                 textEletronica="O projeto eletrônico de 2017 consistiu em desenvolver um sistema de controle do conjunto trativo, sistema de gerenciamento de bateria e sistemas de segurança. Teve como funções processar a demanda de torque para cada roda; comandar os inversores e, por consequência, os motores; desenvolver os sistemas de segurança; fazer o sensoriamento dos pedais, volante e velocidade das rodas; gerenciar e proteger as baterias; entre outras funções. "
                 textControle="A plataforma de microcontroladores selecionada foi a PIC® da Microchip, usada em todas as placas do carro, por questões de manutenção e troca de conhecimento entre os subsistemas; e a comunicação com os inversores feita com protocolo serial RS-485, utilizando par trançado e sinal diferencial. A ECU foi totalmente desenvolvida pela equipe, reduzindo custos e tornando o sistema mais adequado às necessidades do veículo. Ao mesmo tempo, por centralizar o tratamento de dados e ser capaz de se comunicar usando diferentes padrões de comunicação, o sistema tornou possível comandar outros tipos de inversores e drivers, permitindo seu uso em aplicações diversas. "

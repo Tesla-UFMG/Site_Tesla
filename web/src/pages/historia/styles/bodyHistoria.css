@@ -1,5 +1,5 @@
 .positions {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -139,7 +139,7 @@
 .legendinha {
     text-align: center;
 
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -150,13 +150,15 @@
 }
 
 .legendinha p {
-    font-family: Gilroy-Extrabold;
+    font-family: Gilroy-Light;
     font-size: 14px;
 
-    color: black;
+    color: #58595b;
     text-align: center;
 
     line-height: 17px;
+
+    margin: 0;
 }
 
 

@@ -13,13 +13,13 @@
 }
 
 #pagina-historia #conteudo .content .text.com-img .legendinha p {
-    font-family: Gilroy-Extrabold;
+    font-family: Gilroy-Light;
     font-size: 14px;
     text-align: center;
-    color: black;
+    color: 58595b;
 
-    line-height: 20px;
-    margin-top: 5px;
+    line-height: 1.2;
+    margin-top: 0;
 }
 
 #pagina-historia #inicio .img-inicio {
@@ -145,6 +145,11 @@
     justify-content: center;
 }
 
+#pagina-historia #conteudo .content .com-img .col.col-legenda {
+    flex-direction: column;
+    align-items: center;
+}
+
 #pagina-historia #conteudo .content .com-img img {
     width: 60%;
     margin-top: 20px;
@@ -161,11 +166,11 @@
 
 #pagina-historia #conteudo .content .com-img.vitor-borges img {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 #pagina-historia #conteudo .content .row-img {
-    padding: 40px;
+    /* padding: 40px; */
 
     padding-left: 5vw;
     padding-right: 5vw;
