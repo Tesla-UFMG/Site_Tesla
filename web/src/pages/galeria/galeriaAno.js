@@ -6,7 +6,9 @@ import "./styles/galeriaAno.css";
 import NavBar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
 
-import listPhotosByYear from '../../services/listPhotosByYear';
+// import listPhotosByYear from '../../services/listPhotosByYear';
+
+import { fotos_2017, fotos_2018, fotos_2019 } from '../../provider/galeriaProvider';
 
 function PaginaGaleriaAno() {
   const { ano } = useParams();
@@ -14,12 +16,19 @@ function PaginaGaleriaAno() {
   const [photos, setPhotos] = useState([])
 
   useEffect(() => {
-    listPhotosByYear(ano).then(res => {
-      console.log(res)
-      if (res.status === 200) {
-        setPhotos(res.data)
-      }
-    })
+    // listPhotosByYear(ano).then(res => {
+    //   console.log(res)
+    //   if (res.status === 200) {
+    //     setPhotos(res.data)
+    //   }
+    // })
+    if (ano === '2017') {
+      setPhotos(fotos_2017)
+    } else if (ano === '2018') {
+      setPhotos(fotos_2018)
+    } else if (ano === '2019') {
+      setPhotos(fotos_2019)
+    }
   }, [ano])
 
   return (
